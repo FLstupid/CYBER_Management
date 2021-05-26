@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ec4cf79e78af44e8997dfe3211eef30a" Name="Diagram1">
+        <EntityTypeShape EntityType="Cyber_netModel.Chinhanh" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cyber_netModel.Chitiet_hoadon" Width="1.5" PointX="17.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cyber_netModel.District" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cyber_netModel.Hoadon" Width="1.5" PointX="12" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cyber_netModel.Hoadon_thucan" Width="1.5" PointX="15" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cyber_netModel.Khachhang" Width="1.5" PointX="9.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cyber_netModel.Maytinh" Width="1.5" PointX="7.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cyber_netModel.Nhanvien" Width="1.5" PointX="5.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cyber_netModel.Phongmay" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cyber_netModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cyber_netModel.Thucan" Width="1.5" PointX="15" PointY="2.375" IsExpanded="true" />
+        <AssociationConnector Association="Cyber_netModel.chinhanh_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Cyber_netModel.FK__Nhanvien__Id_chi__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="Cyber_netModel.FK__Phongmay__Id_chi__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="Cyber_netModel.FK__Chitiet_h__Id_ho__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="Cyber_netModel.FK__Chitiet_h__Id_th__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="Cyber_netModel.hoadon_fk_kh" ManuallyRouted="false" />
+        <AssociationConnector Association="Cyber_netModel.hoadon_fk_nv" ManuallyRouted="false" />
+        <AssociationConnector Association="Cyber_netModel.hoadon_thucan_fk_kh" ManuallyRouted="false" />
+        <AssociationConnector Association="Cyber_netModel.hoadon_thucan_fk_nv" ManuallyRouted="false" />
+        <AssociationConnector Association="Cyber_netModel.khachhang_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Cyber_netModel.FK__Maytinh__Id_Phon__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="Cyber_netModel.FK__Nhanvien__Id_Man__2F10007B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

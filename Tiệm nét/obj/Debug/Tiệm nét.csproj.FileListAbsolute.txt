@@ -1,0 +1,65 @@
+C:\Users\win10\Desktop\Tiệm nét\Tiệm nét\bin\Debug\Tiệm nét.exe.config
+C:\Users\win10\Desktop\Tiệm nét\Tiệm nét\bin\Debug\Tiệm nét.exe
+C:\Users\win10\Desktop\Tiệm nét\Tiệm nét\bin\Debug\Tiệm nét.pdb
+C:\Users\win10\Desktop\Tiệm nét\Tiệm nét\bin\Debug\Guna.UI2.dll
+C:\Users\win10\Desktop\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.csprojAssemblyReference.cache
+C:\Users\win10\Desktop\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Properties.Resources.resources
+C:\Users\win10\Desktop\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.csproj.GenerateResource.cache
+C:\Users\win10\Desktop\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.csproj.CoreCompileInputs.cache
+C:\Users\win10\Desktop\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.csproj.CopyComplete
+C:\Users\win10\Desktop\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.exe
+C:\Users\win10\Desktop\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.pdb
+C:\Users\win10\Desktop\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Login.resources
+C:\Users\win10\Desktop\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Staff.resources
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\bin\Debug\Tiệm nét.exe.config
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\bin\Debug\Tiệm nét.exe
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\bin\Debug\Tiệm nét.pdb
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\bin\Debug\Guna.UI2.dll
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.csprojAssemblyReference.cache
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Bill.resources
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.branch.resources
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Loading.resources
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Login.resources
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Properties.Resources.resources
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Staff.resources
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.csproj.GenerateResource.cache
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.csproj.CoreCompileInputs.cache
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.csproj.CopyComplete
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.exe
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.pdb
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.InfoBill.resources
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Menu.resources
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Computer.resources
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Statistic.resources
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Resoce.resources
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Service.resources
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Customer.resources
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.FoodBill.resources
+C:\Users\xthua\OneDrive\Desktop\UTE\Lập trình window\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.FoodCategries.resources
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\bin\Debug\Tiệm nét.exe.config
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\bin\Debug\Tiệm nét.exe
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\bin\Debug\Tiệm nét.pdb
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\bin\Debug\EntityFramework.dll
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\bin\Debug\Guna.UI2.dll
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\bin\Debug\EntityFramework.xml
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.csprojAssemblyReference.cache
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Bill.resources
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.branch.resources
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Customer.resources
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.FoodBill.resources
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.InfoBill.resources
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Loading.resources
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Login.resources
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Computer.resources
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Menu.resources
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Properties.Resources.resources
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Resoce.resources
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.FoodCategries.resources
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Service.resources
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Staff.resources
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm_nét.Statistic.resources
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.csproj.GenerateResource.cache
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.csproj.CoreCompileInputs.cache
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.csproj.CopyComplete
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.exe
+D:\HK2-2\Lập trình với windows\END\Tiệm nét\Tiệm nét\obj\Debug\Tiệm nét.pdb

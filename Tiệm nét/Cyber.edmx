@@ -1,0 +1,813 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Cyber_netModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Chinhanh">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Chinhanh" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Id_district" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Chitiet_hoadon">
+          <Key>
+            <PropertyRef Name="Id_thucan" />
+            <PropertyRef Name="Id_hoadon" />
+          </Key>
+          <Property Name="Id_thucan" Type="int" Nullable="false" />
+          <Property Name="Id_hoadon" Type="int" Nullable="false" />
+          <Property Name="Count" Type="int" Nullable="false" />
+          <Property Name="Total" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="District">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="District" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Hoadon">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="Id_khachhang" Type="int" Nullable="false" />
+          <Property Name="Id_nhanvien" Type="int" Nullable="false" />
+          <Property Name="Time_use" Type="int" Nullable="false" />
+          <Property Name="Fee" Type="int" Nullable="false" />
+          <Property Name="Extra_fee" Type="int" Nullable="false" />
+          <Property Name="Description" Type="char" MaxLength="255" Nullable="false" />
+          <Property Name="Total" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Hoadon_thucan">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="Id_khachhang" Type="int" Nullable="false" />
+          <Property Name="Id_nhanvien" Type="int" Nullable="false" />
+          <Property Name="Total" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Khachhang">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Password" Type="char" MaxLength="50" Nullable="false" />
+          <Property Name="Phone" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="Id_maytinh" Type="int" Nullable="false" />
+          <Property Name="Id_phongmay" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Maytinh">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Id_Phongmay" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Status" Type="char" MaxLength="30" Nullable="false" />
+          <Property Name="Time_use" Type="int" Nullable="false" />
+          <Property Name="Id_Phongmay" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Nhanvien">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Id_Manager" Type="int" Nullable="false" />
+          <Property Name="Gender" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Id_chinhanh" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Phongmay">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Typed" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Count" Type="int" Nullable="false" />
+          <Property Name="Id_chinhanh" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Thucan">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Price" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="chinhanh_fk">
+          <End Role="District" Type="Self.District" Multiplicity="1" />
+          <End Role="Chinhanh" Type="Self.Chinhanh" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="District">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Chinhanh">
+              <PropertyRef Name="Id_district" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Chitiet_h__Id_ho__403A8C7D">
+          <End Role="Hoadon_thucan" Type="Self.Hoadon_thucan" Multiplicity="1" />
+          <End Role="Chitiet_hoadon" Type="Self.Chitiet_hoadon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hoadon_thucan">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Chitiet_hoadon">
+              <PropertyRef Name="Id_hoadon" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Chitiet_h__Id_th__3F466844">
+          <End Role="Thucan" Type="Self.Thucan" Multiplicity="1" />
+          <End Role="Chitiet_hoadon" Type="Self.Chitiet_hoadon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Thucan">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Chitiet_hoadon">
+              <PropertyRef Name="Id_thucan" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Maytinh__Id_Phon__2C3393D0">
+          <End Role="Phongmay" Type="Self.Phongmay" Multiplicity="1" />
+          <End Role="Maytinh" Type="Self.Maytinh" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Phongmay">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Maytinh">
+              <PropertyRef Name="Id_Phongmay" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Nhanvien__Id_chi__300424B4">
+          <End Role="Chinhanh" Type="Self.Chinhanh" Multiplicity="1" />
+          <End Role="Nhanvien" Type="Self.Nhanvien" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Chinhanh">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Nhanvien">
+              <PropertyRef Name="Id_chinhanh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Nhanvien__Id_Man__2F10007B">
+          <End Role="Nhanvien" Type="Self.Nhanvien" Multiplicity="1" />
+          <End Role="Nhanvien1" Type="Self.Nhanvien" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nhanvien">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Nhanvien1">
+              <PropertyRef Name="Id_Manager" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Phongmay__Id_chi__29572725">
+          <End Role="Chinhanh" Type="Self.Chinhanh" Multiplicity="1" />
+          <End Role="Phongmay" Type="Self.Phongmay" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Chinhanh">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Phongmay">
+              <PropertyRef Name="Id_chinhanh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="hoadon_fk_kh">
+          <End Role="Khachhang" Type="Self.Khachhang" Multiplicity="1" />
+          <End Role="Hoadon" Type="Self.Hoadon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Khachhang">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Hoadon">
+              <PropertyRef Name="Id_khachhang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="hoadon_fk_nv">
+          <End Role="Nhanvien" Type="Self.Nhanvien" Multiplicity="1" />
+          <End Role="Hoadon" Type="Self.Hoadon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nhanvien">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Hoadon">
+              <PropertyRef Name="Id_nhanvien" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="hoadon_thucan_fk_kh">
+          <End Role="Khachhang" Type="Self.Khachhang" Multiplicity="1" />
+          <End Role="Hoadon_thucan" Type="Self.Hoadon_thucan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Khachhang">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Hoadon_thucan">
+              <PropertyRef Name="Id_khachhang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="hoadon_thucan_fk_nv">
+          <End Role="Nhanvien" Type="Self.Nhanvien" Multiplicity="1" />
+          <End Role="Hoadon_thucan" Type="Self.Hoadon_thucan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nhanvien">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Hoadon_thucan">
+              <PropertyRef Name="Id_nhanvien" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="khachhang_fk">
+          <End Role="Maytinh" Type="Self.Maytinh" Multiplicity="1" />
+          <End Role="Khachhang" Type="Self.Khachhang" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Maytinh">
+              <PropertyRef Name="Id" />
+              <PropertyRef Name="Id_Phongmay" />
+            </Principal>
+            <Dependent Role="Khachhang">
+              <PropertyRef Name="Id_maytinh" />
+              <PropertyRef Name="Id_phongmay" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Cyber_netModelStoreContainer">
+          <EntitySet Name="Chinhanh" EntityType="Self.Chinhanh" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Chitiet_hoadon" EntityType="Self.Chitiet_hoadon" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="District" EntityType="Self.District" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Hoadon" EntityType="Self.Hoadon" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Hoadon_thucan" EntityType="Self.Hoadon_thucan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Khachhang" EntityType="Self.Khachhang" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Maytinh" EntityType="Self.Maytinh" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Nhanvien" EntityType="Self.Nhanvien" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Phongmay" EntityType="Self.Phongmay" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Thucan" EntityType="Self.Thucan" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="chinhanh_fk" Association="Self.chinhanh_fk">
+            <End Role="District" EntitySet="District" />
+            <End Role="Chinhanh" EntitySet="Chinhanh" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Chitiet_h__Id_ho__403A8C7D" Association="Self.FK__Chitiet_h__Id_ho__403A8C7D">
+            <End Role="Hoadon_thucan" EntitySet="Hoadon_thucan" />
+            <End Role="Chitiet_hoadon" EntitySet="Chitiet_hoadon" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Chitiet_h__Id_th__3F466844" Association="Self.FK__Chitiet_h__Id_th__3F466844">
+            <End Role="Thucan" EntitySet="Thucan" />
+            <End Role="Chitiet_hoadon" EntitySet="Chitiet_hoadon" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Maytinh__Id_Phon__2C3393D0" Association="Self.FK__Maytinh__Id_Phon__2C3393D0">
+            <End Role="Phongmay" EntitySet="Phongmay" />
+            <End Role="Maytinh" EntitySet="Maytinh" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Nhanvien__Id_chi__300424B4" Association="Self.FK__Nhanvien__Id_chi__300424B4">
+            <End Role="Chinhanh" EntitySet="Chinhanh" />
+            <End Role="Nhanvien" EntitySet="Nhanvien" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Nhanvien__Id_Man__2F10007B" Association="Self.FK__Nhanvien__Id_Man__2F10007B">
+            <End Role="Nhanvien" EntitySet="Nhanvien" />
+            <End Role="Nhanvien1" EntitySet="Nhanvien" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Phongmay__Id_chi__29572725" Association="Self.FK__Phongmay__Id_chi__29572725">
+            <End Role="Chinhanh" EntitySet="Chinhanh" />
+            <End Role="Phongmay" EntitySet="Phongmay" />
+          </AssociationSet>
+          <AssociationSet Name="hoadon_fk_kh" Association="Self.hoadon_fk_kh">
+            <End Role="Khachhang" EntitySet="Khachhang" />
+            <End Role="Hoadon" EntitySet="Hoadon" />
+          </AssociationSet>
+          <AssociationSet Name="hoadon_fk_nv" Association="Self.hoadon_fk_nv">
+            <End Role="Nhanvien" EntitySet="Nhanvien" />
+            <End Role="Hoadon" EntitySet="Hoadon" />
+          </AssociationSet>
+          <AssociationSet Name="hoadon_thucan_fk_kh" Association="Self.hoadon_thucan_fk_kh">
+            <End Role="Khachhang" EntitySet="Khachhang" />
+            <End Role="Hoadon_thucan" EntitySet="Hoadon_thucan" />
+          </AssociationSet>
+          <AssociationSet Name="hoadon_thucan_fk_nv" Association="Self.hoadon_thucan_fk_nv">
+            <End Role="Nhanvien" EntitySet="Nhanvien" />
+            <End Role="Hoadon_thucan" EntitySet="Hoadon_thucan" />
+          </AssociationSet>
+          <AssociationSet Name="khachhang_fk" Association="Self.khachhang_fk">
+            <End Role="Maytinh" EntitySet="Maytinh" />
+            <End Role="Khachhang" EntitySet="Khachhang" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Cyber_netModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Chinhanh">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Chinhanh1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Id_district" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="District" Relationship="Self.chinhanh_fk" FromRole="Chinhanh" ToRole="District" />
+          <NavigationProperty Name="Nhanviens" Relationship="Self.FK__Nhanvien__Id_chi__300424B4" FromRole="Chinhanh" ToRole="Nhanvien" />
+          <NavigationProperty Name="Phongmays" Relationship="Self.FK__Phongmay__Id_chi__29572725" FromRole="Chinhanh" ToRole="Phongmay" />
+        </EntityType>
+        <EntityType Name="Chitiet_hoadon">
+          <Key>
+            <PropertyRef Name="Id_thucan" />
+            <PropertyRef Name="Id_hoadon" />
+          </Key>
+          <Property Name="Id_thucan" Type="Int32" Nullable="false" />
+          <Property Name="Id_hoadon" Type="Int32" Nullable="false" />
+          <Property Name="Count" Type="Int32" Nullable="false" />
+          <Property Name="Total" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Hoadon_thucan" Relationship="Self.FK__Chitiet_h__Id_ho__403A8C7D" FromRole="Chitiet_hoadon" ToRole="Hoadon_thucan" />
+          <NavigationProperty Name="Thucan" Relationship="Self.FK__Chitiet_h__Id_th__3F466844" FromRole="Chitiet_hoadon" ToRole="Thucan" />
+        </EntityType>
+        <EntityType Name="District">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="District1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Chinhanhs" Relationship="Self.chinhanh_fk" FromRole="District" ToRole="Chinhanh" />
+        </EntityType>
+        <EntityType Name="Hoadon">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Id_khachhang" Type="Int32" Nullable="false" />
+          <Property Name="Id_nhanvien" Type="Int32" Nullable="false" />
+          <Property Name="Time_use" Type="Int32" Nullable="false" />
+          <Property Name="Fee" Type="Int32" Nullable="false" />
+          <Property Name="Extra_fee" Type="Int32" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Total" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Khachhang" Relationship="Self.hoadon_fk_kh" FromRole="Hoadon" ToRole="Khachhang" />
+          <NavigationProperty Name="Nhanvien" Relationship="Self.hoadon_fk_nv" FromRole="Hoadon" ToRole="Nhanvien" />
+        </EntityType>
+        <EntityType Name="Hoadon_thucan">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Id_khachhang" Type="Int32" Nullable="false" />
+          <Property Name="Id_nhanvien" Type="Int32" Nullable="false" />
+          <Property Name="Total" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Chitiet_hoadon" Relationship="Self.FK__Chitiet_h__Id_ho__403A8C7D" FromRole="Hoadon_thucan" ToRole="Chitiet_hoadon" />
+          <NavigationProperty Name="Khachhang" Relationship="Self.hoadon_thucan_fk_kh" FromRole="Hoadon_thucan" ToRole="Khachhang" />
+          <NavigationProperty Name="Nhanvien" Relationship="Self.hoadon_thucan_fk_nv" FromRole="Hoadon_thucan" ToRole="Nhanvien" />
+        </EntityType>
+        <EntityType Name="Khachhang">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Id_maytinh" Type="Int32" Nullable="false" />
+          <Property Name="Id_phongmay" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Hoadons" Relationship="Self.hoadon_fk_kh" FromRole="Khachhang" ToRole="Hoadon" />
+          <NavigationProperty Name="Hoadon_thucan" Relationship="Self.hoadon_thucan_fk_kh" FromRole="Khachhang" ToRole="Hoadon_thucan" />
+          <NavigationProperty Name="Maytinh" Relationship="Self.khachhang_fk" FromRole="Khachhang" ToRole="Maytinh" />
+        </EntityType>
+        <EntityType Name="Maytinh">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Id_Phongmay" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Time_use" Type="Int32" Nullable="false" />
+          <Property Name="Id_Phongmay" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Khachhangs" Relationship="Self.khachhang_fk" FromRole="Maytinh" ToRole="Khachhang" />
+          <NavigationProperty Name="Phongmay" Relationship="Self.FK__Maytinh__Id_Phon__2C3393D0" FromRole="Maytinh" ToRole="Phongmay" />
+        </EntityType>
+        <EntityType Name="Nhanvien">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Id_Manager" Type="Int32" Nullable="false" />
+          <Property Name="Gender" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Id_chinhanh" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Chinhanh" Relationship="Self.FK__Nhanvien__Id_chi__300424B4" FromRole="Nhanvien" ToRole="Chinhanh" />
+          <NavigationProperty Name="Hoadons" Relationship="Self.hoadon_fk_nv" FromRole="Nhanvien" ToRole="Hoadon" />
+          <NavigationProperty Name="Hoadon_thucan" Relationship="Self.hoadon_thucan_fk_nv" FromRole="Nhanvien" ToRole="Hoadon_thucan" />
+          <NavigationProperty Name="Nhanvien1" Relationship="Self.FK__Nhanvien__Id_Man__2F10007B" FromRole="Nhanvien" ToRole="Nhanvien1" />
+          <NavigationProperty Name="Nhanvien2" Relationship="Self.FK__Nhanvien__Id_Man__2F10007B" FromRole="Nhanvien1" ToRole="Nhanvien" />
+        </EntityType>
+        <EntityType Name="Phongmay">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Typed" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Count" Type="Int32" Nullable="false" />
+          <Property Name="Id_chinhanh" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Chinhanh" Relationship="Self.FK__Phongmay__Id_chi__29572725" FromRole="Phongmay" ToRole="Chinhanh" />
+          <NavigationProperty Name="Maytinhs" Relationship="Self.FK__Maytinh__Id_Phon__2C3393D0" FromRole="Phongmay" ToRole="Maytinh" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Thucan">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Price" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Chitiet_hoadon" Relationship="Self.FK__Chitiet_h__Id_th__3F466844" FromRole="Thucan" ToRole="Chitiet_hoadon" />
+        </EntityType>
+        <Association Name="chinhanh_fk">
+          <End Role="District" Type="Self.District" Multiplicity="1" />
+          <End Role="Chinhanh" Type="Self.Chinhanh" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="District">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Chinhanh">
+              <PropertyRef Name="Id_district" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Nhanvien__Id_chi__300424B4">
+          <End Role="Chinhanh" Type="Self.Chinhanh" Multiplicity="1" />
+          <End Role="Nhanvien" Type="Self.Nhanvien" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Chinhanh">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Nhanvien">
+              <PropertyRef Name="Id_chinhanh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Phongmay__Id_chi__29572725">
+          <End Role="Chinhanh" Type="Self.Chinhanh" Multiplicity="1" />
+          <End Role="Phongmay" Type="Self.Phongmay" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Chinhanh">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Phongmay">
+              <PropertyRef Name="Id_chinhanh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Chitiet_h__Id_ho__403A8C7D">
+          <End Role="Hoadon_thucan" Type="Self.Hoadon_thucan" Multiplicity="1" />
+          <End Role="Chitiet_hoadon" Type="Self.Chitiet_hoadon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hoadon_thucan">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Chitiet_hoadon">
+              <PropertyRef Name="Id_hoadon" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Chitiet_h__Id_th__3F466844">
+          <End Role="Thucan" Type="Self.Thucan" Multiplicity="1" />
+          <End Role="Chitiet_hoadon" Type="Self.Chitiet_hoadon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Thucan">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Chitiet_hoadon">
+              <PropertyRef Name="Id_thucan" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="hoadon_fk_kh">
+          <End Role="Khachhang" Type="Self.Khachhang" Multiplicity="1" />
+          <End Role="Hoadon" Type="Self.Hoadon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Khachhang">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Hoadon">
+              <PropertyRef Name="Id_khachhang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="hoadon_fk_nv">
+          <End Role="Nhanvien" Type="Self.Nhanvien" Multiplicity="1" />
+          <End Role="Hoadon" Type="Self.Hoadon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nhanvien">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Hoadon">
+              <PropertyRef Name="Id_nhanvien" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="hoadon_thucan_fk_kh">
+          <End Role="Khachhang" Type="Self.Khachhang" Multiplicity="1" />
+          <End Role="Hoadon_thucan" Type="Self.Hoadon_thucan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Khachhang">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Hoadon_thucan">
+              <PropertyRef Name="Id_khachhang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="hoadon_thucan_fk_nv">
+          <End Role="Nhanvien" Type="Self.Nhanvien" Multiplicity="1" />
+          <End Role="Hoadon_thucan" Type="Self.Hoadon_thucan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nhanvien">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Hoadon_thucan">
+              <PropertyRef Name="Id_nhanvien" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="khachhang_fk">
+          <End Role="Maytinh" Type="Self.Maytinh" Multiplicity="1" />
+          <End Role="Khachhang" Type="Self.Khachhang" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Maytinh">
+              <PropertyRef Name="Id" />
+              <PropertyRef Name="Id_Phongmay" />
+            </Principal>
+            <Dependent Role="Khachhang">
+              <PropertyRef Name="Id_maytinh" />
+              <PropertyRef Name="Id_phongmay" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Maytinh__Id_Phon__2C3393D0">
+          <End Role="Phongmay" Type="Self.Phongmay" Multiplicity="1" />
+          <End Role="Maytinh" Type="Self.Maytinh" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Phongmay">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Maytinh">
+              <PropertyRef Name="Id_Phongmay" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Nhanvien__Id_Man__2F10007B">
+          <End Role="Nhanvien" Type="Self.Nhanvien" Multiplicity="1" />
+          <End Role="Nhanvien1" Type="Self.Nhanvien" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nhanvien">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Nhanvien1">
+              <PropertyRef Name="Id_Manager" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Cyber_netEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Chinhanhs" EntityType="Self.Chinhanh" />
+          <EntitySet Name="Chitiet_hoadon" EntityType="Self.Chitiet_hoadon" />
+          <EntitySet Name="Districts" EntityType="Self.District" />
+          <EntitySet Name="Hoadons" EntityType="Self.Hoadon" />
+          <EntitySet Name="Hoadon_thucan" EntityType="Self.Hoadon_thucan" />
+          <EntitySet Name="Khachhangs" EntityType="Self.Khachhang" />
+          <EntitySet Name="Maytinhs" EntityType="Self.Maytinh" />
+          <EntitySet Name="Nhanviens" EntityType="Self.Nhanvien" />
+          <EntitySet Name="Phongmays" EntityType="Self.Phongmay" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="Thucans" EntityType="Self.Thucan" />
+          <AssociationSet Name="chinhanh_fk" Association="Self.chinhanh_fk">
+            <End Role="District" EntitySet="Districts" />
+            <End Role="Chinhanh" EntitySet="Chinhanhs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Nhanvien__Id_chi__300424B4" Association="Self.FK__Nhanvien__Id_chi__300424B4">
+            <End Role="Chinhanh" EntitySet="Chinhanhs" />
+            <End Role="Nhanvien" EntitySet="Nhanviens" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Phongmay__Id_chi__29572725" Association="Self.FK__Phongmay__Id_chi__29572725">
+            <End Role="Chinhanh" EntitySet="Chinhanhs" />
+            <End Role="Phongmay" EntitySet="Phongmays" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Chitiet_h__Id_ho__403A8C7D" Association="Self.FK__Chitiet_h__Id_ho__403A8C7D">
+            <End Role="Hoadon_thucan" EntitySet="Hoadon_thucan" />
+            <End Role="Chitiet_hoadon" EntitySet="Chitiet_hoadon" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Chitiet_h__Id_th__3F466844" Association="Self.FK__Chitiet_h__Id_th__3F466844">
+            <End Role="Thucan" EntitySet="Thucans" />
+            <End Role="Chitiet_hoadon" EntitySet="Chitiet_hoadon" />
+          </AssociationSet>
+          <AssociationSet Name="hoadon_fk_kh" Association="Self.hoadon_fk_kh">
+            <End Role="Khachhang" EntitySet="Khachhangs" />
+            <End Role="Hoadon" EntitySet="Hoadons" />
+          </AssociationSet>
+          <AssociationSet Name="hoadon_fk_nv" Association="Self.hoadon_fk_nv">
+            <End Role="Nhanvien" EntitySet="Nhanviens" />
+            <End Role="Hoadon" EntitySet="Hoadons" />
+          </AssociationSet>
+          <AssociationSet Name="hoadon_thucan_fk_kh" Association="Self.hoadon_thucan_fk_kh">
+            <End Role="Khachhang" EntitySet="Khachhangs" />
+            <End Role="Hoadon_thucan" EntitySet="Hoadon_thucan" />
+          </AssociationSet>
+          <AssociationSet Name="hoadon_thucan_fk_nv" Association="Self.hoadon_thucan_fk_nv">
+            <End Role="Nhanvien" EntitySet="Nhanviens" />
+            <End Role="Hoadon_thucan" EntitySet="Hoadon_thucan" />
+          </AssociationSet>
+          <AssociationSet Name="khachhang_fk" Association="Self.khachhang_fk">
+            <End Role="Maytinh" EntitySet="Maytinhs" />
+            <End Role="Khachhang" EntitySet="Khachhangs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Maytinh__Id_Phon__2C3393D0" Association="Self.FK__Maytinh__Id_Phon__2C3393D0">
+            <End Role="Phongmay" EntitySet="Phongmays" />
+            <End Role="Maytinh" EntitySet="Maytinhs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Nhanvien__Id_Man__2F10007B" Association="Self.FK__Nhanvien__Id_Man__2F10007B">
+            <End Role="Nhanvien" EntitySet="Nhanviens" />
+            <End Role="Nhanvien1" EntitySet="Nhanviens" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Cyber_netModelStoreContainer" CdmEntityContainer="Cyber_netEntities">
+          <EntitySetMapping Name="Chinhanhs">
+            <EntityTypeMapping TypeName="Cyber_netModel.Chinhanh">
+              <MappingFragment StoreEntitySet="Chinhanh">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Chinhanh1" ColumnName="Chinhanh" />
+                <ScalarProperty Name="Id_district" ColumnName="Id_district" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Chitiet_hoadon">
+            <EntityTypeMapping TypeName="Cyber_netModel.Chitiet_hoadon">
+              <MappingFragment StoreEntitySet="Chitiet_hoadon">
+                <ScalarProperty Name="Id_thucan" ColumnName="Id_thucan" />
+                <ScalarProperty Name="Id_hoadon" ColumnName="Id_hoadon" />
+                <ScalarProperty Name="Count" ColumnName="Count" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Districts">
+            <EntityTypeMapping TypeName="Cyber_netModel.District">
+              <MappingFragment StoreEntitySet="District">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="District1" ColumnName="District" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Hoadons">
+            <EntityTypeMapping TypeName="Cyber_netModel.Hoadon">
+              <MappingFragment StoreEntitySet="Hoadon">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Id_khachhang" ColumnName="Id_khachhang" />
+                <ScalarProperty Name="Id_nhanvien" ColumnName="Id_nhanvien" />
+                <ScalarProperty Name="Time_use" ColumnName="Time_use" />
+                <ScalarProperty Name="Fee" ColumnName="Fee" />
+                <ScalarProperty Name="Extra_fee" ColumnName="Extra_fee" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Hoadon_thucan">
+            <EntityTypeMapping TypeName="Cyber_netModel.Hoadon_thucan">
+              <MappingFragment StoreEntitySet="Hoadon_thucan">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Id_khachhang" ColumnName="Id_khachhang" />
+                <ScalarProperty Name="Id_nhanvien" ColumnName="Id_nhanvien" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Khachhangs">
+            <EntityTypeMapping TypeName="Cyber_netModel.Khachhang">
+              <MappingFragment StoreEntitySet="Khachhang">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Id_maytinh" ColumnName="Id_maytinh" />
+                <ScalarProperty Name="Id_phongmay" ColumnName="Id_phongmay" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Maytinhs">
+            <EntityTypeMapping TypeName="Cyber_netModel.Maytinh">
+              <MappingFragment StoreEntitySet="Maytinh">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Time_use" ColumnName="Time_use" />
+                <ScalarProperty Name="Id_Phongmay" ColumnName="Id_Phongmay" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Nhanviens">
+            <EntityTypeMapping TypeName="Cyber_netModel.Nhanvien">
+              <MappingFragment StoreEntitySet="Nhanvien">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id_Manager" ColumnName="Id_Manager" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Id_chinhanh" ColumnName="Id_chinhanh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Phongmays">
+            <EntityTypeMapping TypeName="Cyber_netModel.Phongmay">
+              <MappingFragment StoreEntitySet="Phongmay">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Typed" ColumnName="Typed" />
+                <ScalarProperty Name="Count" ColumnName="Count" />
+                <ScalarProperty Name="Id_chinhanh" ColumnName="Id_chinhanh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="Cyber_netModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Thucans">
+            <EntityTypeMapping TypeName="Cyber_netModel.Thucan">
+              <MappingFragment StoreEntitySet="Thucan">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
