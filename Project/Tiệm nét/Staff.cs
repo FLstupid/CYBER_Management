@@ -39,20 +39,20 @@ namespace Tiệm_nét
         }
         private void LoadData()
         {
-            if (txtstaffID.Equals(""))
+            if (txtstaffID.Text.Equals(""))
                 txtstaffID.Text = "1";
             try
             {
+                Reset();
                 db = new Cyber_netEntities();
                 var data = db.Nhanviens.ToList();
                 int StaffID = int.Parse(txtstaffID.Text.Trim());
                 Nhanvien Staff = data.Where(x => x.Id == StaffID).SingleOrDefault();
-            //Reset();
-            txtname.Text = Staff.Id.ToString();
-            txtaddress.Text = Staff.Address;
-            txtbranch.Text = Staff.Chinhanh.ToString();
-            txtgender.Text = Staff.Gender;
-            txtmanager_id.Text = Staff.Id_Manager.ToString();
+                txtname.Text = Staff.Id.ToString();
+                txtaddress.Text = Staff.Address;
+                txtbranch.Text = Staff.Chinhanh.Chinhanh1;
+                txtgender.Text = Staff.Gender;
+                txtmanager_id.Text = Staff.Id_Manager.ToString();
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }

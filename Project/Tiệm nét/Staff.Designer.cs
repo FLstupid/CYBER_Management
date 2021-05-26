@@ -158,7 +158,7 @@ namespace Tiệm_nét
             this.label_manager.Name = "label_manager";
             this.label_manager.Size = new System.Drawing.Size(195, 31);
             this.label_manager.TabIndex = 6;
-            this.label_manager.Text = "Manager ID :";
+            this.label_manager.Text = "Manager Id :";
             // 
             // Label_branch
             // 
@@ -175,7 +175,7 @@ namespace Tiệm_nét
             // 
             this.txtname.BackColor = System.Drawing.Color.Transparent;
             this.txtname.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtname.Location = new System.Drawing.Point(205, 207);
+            this.txtname.Location = new System.Drawing.Point(273, 207);
             this.txtname.Margin = new System.Windows.Forms.Padding(4);
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(115, 31);
@@ -186,7 +186,7 @@ namespace Tiệm_nét
             // 
             this.txtgender.BackColor = System.Drawing.Color.Transparent;
             this.txtgender.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtgender.Location = new System.Drawing.Point(217, 260);
+            this.txtgender.Location = new System.Drawing.Point(285, 260);
             this.txtgender.Margin = new System.Windows.Forms.Padding(4);
             this.txtgender.Name = "txtgender";
             this.txtgender.Size = new System.Drawing.Size(115, 31);
@@ -197,7 +197,7 @@ namespace Tiệm_nét
             // 
             this.txtaddress.BackColor = System.Drawing.Color.Transparent;
             this.txtaddress.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtaddress.Location = new System.Drawing.Point(205, 311);
+            this.txtaddress.Location = new System.Drawing.Point(273, 311);
             this.txtaddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtaddress.Name = "txtaddress";
             this.txtaddress.Size = new System.Drawing.Size(115, 31);
@@ -208,7 +208,7 @@ namespace Tiệm_nét
             // 
             this.txtmanager_id.BackColor = System.Drawing.Color.Transparent;
             this.txtmanager_id.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmanager_id.Location = new System.Drawing.Point(251, 364);
+            this.txtmanager_id.Location = new System.Drawing.Point(319, 364);
             this.txtmanager_id.Margin = new System.Windows.Forms.Padding(4);
             this.txtmanager_id.Name = "txtmanager_id";
             this.txtmanager_id.Size = new System.Drawing.Size(115, 31);
@@ -219,7 +219,7 @@ namespace Tiệm_nét
             // 
             this.txtbranch.BackColor = System.Drawing.Color.Transparent;
             this.txtbranch.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbranch.Location = new System.Drawing.Point(205, 416);
+            this.txtbranch.Location = new System.Drawing.Point(273, 416);
             this.txtbranch.Margin = new System.Windows.Forms.Padding(4);
             this.txtbranch.Name = "txtbranch";
             this.txtbranch.Size = new System.Drawing.Size(115, 31);
