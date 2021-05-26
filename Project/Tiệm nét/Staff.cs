@@ -28,10 +28,33 @@ namespace Tiệm_nét
             btconfirm.Visible = true;
             btcancel.Visible = true;
         }
+
+        void Reset()
+        {
+            txtname.ResetText();
+            txtaddress.ResetText();
+            txtbranch.ResetText();
+            txtgender.ResetText();
+            txtmanager_id.ResetText();
+        }
         private void LoadData()
         {
-            db = new Cyber_netEntities();
-            
+            if (txtstaffID.Equals(""))
+                txtstaffID.Text = "1";
+            try
+            {
+                db = new Cyber_netEntities();
+                var data = db.Nhanviens.ToList();
+                int StaffID = int.Parse(txtstaffID.Text.Trim());
+                Nhanvien Staff = data.Where(x => x.Id == StaffID).SingleOrDefault();
+            //Reset();
+            txtname.Text = Staff.Id.ToString();
+            txtaddress.Text = Staff.Address;
+            txtbranch.Text = Staff.Chinhanh.ToString();
+            txtgender.Text = Staff.Gender;
+            txtmanager_id.Text = Staff.Id_Manager.ToString();
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
         private void btconfirm_Click(object sender, EventArgs e)
         {
@@ -48,6 +71,11 @@ namespace Tiệm_nét
         {
             Add = true;
             btEditOn();
+        }
+
+        private void Staff_Load(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }
