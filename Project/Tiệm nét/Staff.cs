@@ -48,7 +48,7 @@ namespace Tiệm_nét
                 var data = db.Nhanviens.ToList();
                 int StaffID = int.Parse(txtstaffID.Text.Trim());
                 Nhanvien Staff = data.Where(x => x.Id == StaffID).SingleOrDefault();
-                txtname.Text = Staff.Id.ToString();
+                txtname.Text = Staff.Name;
                 txtaddress.Text = Staff.Address;
                 txtbranch.Text = Staff.Chinhanh.Chinhanh1;
                 txtgender.Text = Staff.Gender;
@@ -74,6 +74,11 @@ namespace Tiệm_nét
         }
 
         private void Staff_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void btReload_Click(object sender, EventArgs e)
         {
             LoadData();
         }
