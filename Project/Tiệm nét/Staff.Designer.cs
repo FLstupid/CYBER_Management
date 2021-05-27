@@ -38,6 +38,18 @@ namespace Tiệm_nét
             this.Label_manager = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Label_branch = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.name = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtstaffID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtGender = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtManager = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBranch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btDelete = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btEdit = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btReload = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -47,26 +59,14 @@ namespace Tiệm_nét
             this.btAdd = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Avatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.txtstaffID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtGender = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtManager = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtBranch = new Guna.UI2.WinForms.Guna2TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Avatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Avatar)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -165,261 +165,12 @@ namespace Tiệm_nét
             this.name.TabIndex = 16;
             this.name.Text = null;
             // 
-            // btDelete
-            // 
-            this.btDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btDelete.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btDelete.CheckedState.Parent = this.btDelete;
-            this.btDelete.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btDelete.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btDelete.HoverState.Image")));
-            this.btDelete.HoverState.ImageSize = new System.Drawing.Size(50, 50);
-            this.btDelete.HoverState.Parent = this.btDelete;
-            this.btDelete.Image = ((System.Drawing.Image)(resources.GetObject("btDelete.Image")));
-            this.btDelete.ImageRotate = 0F;
-            this.btDelete.ImageSize = new System.Drawing.Size(68, 68);
-            this.btDelete.Location = new System.Drawing.Point(669, 454);
-            this.btDelete.Margin = new System.Windows.Forms.Padding(4);
-            this.btDelete.Name = "btDelete";
-            this.btDelete.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btDelete.PressedState.Parent = this.btDelete;
-            this.btDelete.Size = new System.Drawing.Size(122, 97);
-            this.btDelete.TabIndex = 76;
-            this.btDelete.UseTransparentBackground = true;
-            this.btDelete.Click += new System.EventHandler(this.btDelete_Click);
-            // 
-            // btEdit
-            // 
-            this.btEdit.BackColor = System.Drawing.Color.Transparent;
-            this.btEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btEdit.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btEdit.CheckedState.Parent = this.btEdit;
-            this.btEdit.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btEdit.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btEdit.HoverState.Image")));
-            this.btEdit.HoverState.ImageSize = new System.Drawing.Size(50, 50);
-            this.btEdit.HoverState.Parent = this.btEdit;
-            this.btEdit.Image = ((System.Drawing.Image)(resources.GetObject("btEdit.Image")));
-            this.btEdit.ImageRotate = 0F;
-            this.btEdit.ImageSize = new System.Drawing.Size(68, 68);
-            this.btEdit.Location = new System.Drawing.Point(409, 454);
-            this.btEdit.Margin = new System.Windows.Forms.Padding(4);
-            this.btEdit.Name = "btEdit";
-            this.btEdit.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btEdit.PressedState.Parent = this.btEdit;
-            this.btEdit.Size = new System.Drawing.Size(122, 97);
-            this.btEdit.TabIndex = 75;
-            this.btEdit.UseTransparentBackground = true;
-            this.btEdit.Click += new System.EventHandler(this.btEdit_Click);
-            // 
-            // btReload
-            // 
-            this.btReload.BackColor = System.Drawing.Color.Transparent;
-            this.btReload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btReload.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btReload.CheckedState.Parent = this.btReload;
-            this.btReload.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btReload.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btReload.HoverState.Image")));
-            this.btReload.HoverState.ImageSize = new System.Drawing.Size(50, 50);
-            this.btReload.HoverState.Parent = this.btReload;
-            this.btReload.Image = ((System.Drawing.Image)(resources.GetObject("btReload.Image")));
-            this.btReload.ImageRotate = 0F;
-            this.btReload.ImageSize = new System.Drawing.Size(56, 56);
-            this.btReload.Location = new System.Drawing.Point(539, 454);
-            this.btReload.Margin = new System.Windows.Forms.Padding(4);
-            this.btReload.Name = "btReload";
-            this.btReload.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btReload.PressedState.Parent = this.btReload;
-            this.btReload.Size = new System.Drawing.Size(122, 97);
-            this.btReload.TabIndex = 74;
-            this.btReload.UseTransparentBackground = true;
-            this.btReload.Click += new System.EventHandler(this.btReload_Click);
-            // 
-            // btCancel
-            // 
-            this.btCancel.BackColor = System.Drawing.Color.Transparent;
-            this.btCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btCancel.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btCancel.CheckedState.Parent = this.btCancel;
-            this.btCancel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btCancel.HoverState.ImageSize = new System.Drawing.Size(50, 50);
-            this.btCancel.HoverState.Parent = this.btCancel;
-            this.btCancel.Image = ((System.Drawing.Image)(resources.GetObject("btCancel.Image")));
-            this.btCancel.ImageRotate = 0F;
-            this.btCancel.Location = new System.Drawing.Point(684, 124);
-            this.btCancel.Margin = new System.Windows.Forms.Padding(4);
-            this.btCancel.Name = "btCancel";
-            this.btCancel.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btCancel.PressedState.Parent = this.btCancel;
-            this.btCancel.Size = new System.Drawing.Size(67, 58);
-            this.btCancel.TabIndex = 73;
-            this.btCancel.UseTransparentBackground = true;
-            this.btCancel.Click += new System.EventHandler(this.btcancel_Click);
-            // 
-            // btConfirm
-            // 
-            this.btConfirm.BackColor = System.Drawing.Color.Transparent;
-            this.btConfirm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btConfirm.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btConfirm.CheckedState.Parent = this.btConfirm;
-            this.btConfirm.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btConfirm.HoverState.ImageSize = new System.Drawing.Size(50, 50);
-            this.btConfirm.HoverState.Parent = this.btConfirm;
-            this.btConfirm.Image = ((System.Drawing.Image)(resources.GetObject("btConfirm.Image")));
-            this.btConfirm.ImageRotate = 0F;
-            this.btConfirm.Location = new System.Drawing.Point(591, 124);
-            this.btConfirm.Margin = new System.Windows.Forms.Padding(4);
-            this.btConfirm.Name = "btConfirm";
-            this.btConfirm.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btConfirm.PressedState.Parent = this.btConfirm;
-            this.btConfirm.Size = new System.Drawing.Size(67, 58);
-            this.btConfirm.TabIndex = 72;
-            this.btConfirm.UseTransparentBackground = true;
-            this.btConfirm.Click += new System.EventHandler(this.btconfirm_Click);
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.Location = new System.Drawing.Point(962, 535);
-            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(105, 89);
-            this.guna2ImageButton1.TabIndex = 47;
-            // 
-            // btAdd
-            // 
-            this.btAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btAdd.CheckedState.Parent = this.btAdd;
-            this.btAdd.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btAdd.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btAdd.HoverState.Image")));
-            this.btAdd.HoverState.ImageSize = new System.Drawing.Size(50, 50);
-            this.btAdd.HoverState.Parent = this.btAdd;
-            this.btAdd.Image = ((System.Drawing.Image)(resources.GetObject("btAdd.Image")));
-            this.btAdd.ImageRotate = 0F;
-            this.btAdd.ImageSize = new System.Drawing.Size(68, 68);
-            this.btAdd.Location = new System.Drawing.Point(279, 454);
-            this.btAdd.Margin = new System.Windows.Forms.Padding(4);
-            this.btAdd.Name = "btAdd";
-            this.btAdd.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btAdd.PressedState.Parent = this.btAdd;
-            this.btAdd.Size = new System.Drawing.Size(122, 97);
-            this.btAdd.TabIndex = 46;
-            this.btAdd.UseTransparentBackground = true;
-            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(13, 15);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(196, 158);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 19;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            // 
-            // Avatar
-            // 
-            this.Avatar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Avatar.Location = new System.Drawing.Point(820, 230);
-            this.Avatar.Margin = new System.Windows.Forms.Padding(4);
-            this.Avatar.Name = "Avatar";
-            this.Avatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.Avatar.ShadowDecoration.Parent = this.Avatar;
-            this.Avatar.Size = new System.Drawing.Size(206, 178);
-            this.Avatar.TabIndex = 8;
-            this.Avatar.TabStop = false;
-            // 
-            // guna2PictureBox7
-            // 
-            this.guna2PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.Image")));
-            this.guna2PictureBox7.Location = new System.Drawing.Point(788, 581);
-            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox7.Name = "guna2PictureBox7";
-            this.guna2PictureBox7.ShadowDecoration.Parent = this.guna2PictureBox7;
-            this.guna2PictureBox7.Size = new System.Drawing.Size(52, 37);
-            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox7.TabIndex = 124;
-            this.guna2PictureBox7.TabStop = false;
-            // 
-            // guna2PictureBox6
-            // 
-            this.guna2PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox6.Image")));
-            this.guna2PictureBox6.Location = new System.Drawing.Point(688, 573);
-            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox6.Name = "guna2PictureBox6";
-            this.guna2PictureBox6.ShadowDecoration.Parent = this.guna2PictureBox6;
-            this.guna2PictureBox6.Size = new System.Drawing.Size(63, 51);
-            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox6.TabIndex = 123;
-            this.guna2PictureBox6.TabStop = false;
-            // 
-            // guna2PictureBox5
-            // 
-            this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
-            this.guna2PictureBox5.Location = new System.Drawing.Point(567, 573);
-            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.ShadowDecoration.Parent = this.guna2PictureBox5;
-            this.guna2PictureBox5.Size = new System.Drawing.Size(75, 51);
-            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox5.TabIndex = 122;
-            this.guna2PictureBox5.TabStop = false;
-            // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
-            this.guna2PictureBox3.Location = new System.Drawing.Point(467, 566);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
-            this.guna2PictureBox3.Size = new System.Drawing.Size(62, 51);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox3.TabIndex = 121;
-            this.guna2PictureBox3.TabStop = false;
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
-            this.guna2PictureBox2.Location = new System.Drawing.Point(348, 566);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(72, 51);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 120;
-            this.guna2PictureBox2.TabStop = false;
-            // 
-            // guna2PictureBox8
-            // 
-            this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
-            this.guna2PictureBox8.Location = new System.Drawing.Point(212, 553);
-            this.guna2PictureBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox8.Name = "guna2PictureBox8";
-            this.guna2PictureBox8.ShadowDecoration.Parent = this.guna2PictureBox8;
-            this.guna2PictureBox8.Size = new System.Drawing.Size(79, 65);
-            this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox8.TabIndex = 119;
-            this.guna2PictureBox8.TabStop = false;
-            // 
             // txtstaffID
             // 
             this.txtstaffID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtstaffID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtstaffID.AutoRoundedCorners = true;
+            this.txtstaffID.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.txtstaffID.BorderRadius = 17;
             this.txtstaffID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtstaffID.DefaultText = "";
@@ -441,6 +192,8 @@ namespace Tiệm_nét
             this.txtstaffID.ShadowDecoration.Parent = this.txtstaffID;
             this.txtstaffID.Size = new System.Drawing.Size(162, 36);
             this.txtstaffID.TabIndex = 126;
+            this.txtstaffID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtstaffID_KeyDown);
+            this.txtstaffID.Leave += new System.EventHandler(this.txtstaffID_Leave);
             // 
             // txtName
             // 
@@ -581,6 +334,257 @@ namespace Tiệm_nét
             this.txtBranch.Size = new System.Drawing.Size(336, 31);
             this.txtBranch.TabIndex = 131;
             // 
+            // guna2PictureBox7
+            // 
+            this.guna2PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.Image")));
+            this.guna2PictureBox7.Location = new System.Drawing.Point(788, 581);
+            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox7.Name = "guna2PictureBox7";
+            this.guna2PictureBox7.ShadowDecoration.Parent = this.guna2PictureBox7;
+            this.guna2PictureBox7.Size = new System.Drawing.Size(52, 37);
+            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox7.TabIndex = 124;
+            this.guna2PictureBox7.TabStop = false;
+            // 
+            // guna2PictureBox6
+            // 
+            this.guna2PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox6.Image")));
+            this.guna2PictureBox6.Location = new System.Drawing.Point(688, 573);
+            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox6.Name = "guna2PictureBox6";
+            this.guna2PictureBox6.ShadowDecoration.Parent = this.guna2PictureBox6;
+            this.guna2PictureBox6.Size = new System.Drawing.Size(63, 51);
+            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox6.TabIndex = 123;
+            this.guna2PictureBox6.TabStop = false;
+            // 
+            // guna2PictureBox5
+            // 
+            this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
+            this.guna2PictureBox5.Location = new System.Drawing.Point(567, 573);
+            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox5.Name = "guna2PictureBox5";
+            this.guna2PictureBox5.ShadowDecoration.Parent = this.guna2PictureBox5;
+            this.guna2PictureBox5.Size = new System.Drawing.Size(75, 51);
+            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox5.TabIndex = 122;
+            this.guna2PictureBox5.TabStop = false;
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
+            this.guna2PictureBox3.Location = new System.Drawing.Point(467, 566);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
+            this.guna2PictureBox3.Size = new System.Drawing.Size(62, 51);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox3.TabIndex = 121;
+            this.guna2PictureBox3.TabStop = false;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.Location = new System.Drawing.Point(348, 566);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(72, 51);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 120;
+            this.guna2PictureBox2.TabStop = false;
+            // 
+            // guna2PictureBox8
+            // 
+            this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
+            this.guna2PictureBox8.Location = new System.Drawing.Point(212, 553);
+            this.guna2PictureBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox8.Name = "guna2PictureBox8";
+            this.guna2PictureBox8.ShadowDecoration.Parent = this.guna2PictureBox8;
+            this.guna2PictureBox8.Size = new System.Drawing.Size(79, 65);
+            this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox8.TabIndex = 119;
+            this.guna2PictureBox8.TabStop = false;
+            // 
+            // btDelete
+            // 
+            this.btDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btDelete.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btDelete.CheckedState.Parent = this.btDelete;
+            this.btDelete.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btDelete.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btDelete.HoverState.Image")));
+            this.btDelete.HoverState.ImageSize = new System.Drawing.Size(50, 50);
+            this.btDelete.HoverState.Parent = this.btDelete;
+            this.btDelete.Image = ((System.Drawing.Image)(resources.GetObject("btDelete.Image")));
+            this.btDelete.ImageRotate = 0F;
+            this.btDelete.ImageSize = new System.Drawing.Size(68, 68);
+            this.btDelete.Location = new System.Drawing.Point(669, 454);
+            this.btDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.btDelete.Name = "btDelete";
+            this.btDelete.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btDelete.PressedState.Parent = this.btDelete;
+            this.btDelete.Size = new System.Drawing.Size(122, 97);
+            this.btDelete.TabIndex = 76;
+            this.btDelete.UseTransparentBackground = true;
+            this.btDelete.Click += new System.EventHandler(this.btDelete_Click);
+            // 
+            // btEdit
+            // 
+            this.btEdit.BackColor = System.Drawing.Color.Transparent;
+            this.btEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btEdit.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btEdit.CheckedState.Parent = this.btEdit;
+            this.btEdit.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btEdit.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btEdit.HoverState.Image")));
+            this.btEdit.HoverState.ImageSize = new System.Drawing.Size(50, 50);
+            this.btEdit.HoverState.Parent = this.btEdit;
+            this.btEdit.Image = ((System.Drawing.Image)(resources.GetObject("btEdit.Image")));
+            this.btEdit.ImageRotate = 0F;
+            this.btEdit.ImageSize = new System.Drawing.Size(68, 68);
+            this.btEdit.Location = new System.Drawing.Point(409, 454);
+            this.btEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.btEdit.Name = "btEdit";
+            this.btEdit.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btEdit.PressedState.Parent = this.btEdit;
+            this.btEdit.Size = new System.Drawing.Size(122, 97);
+            this.btEdit.TabIndex = 75;
+            this.btEdit.UseTransparentBackground = true;
+            this.btEdit.Click += new System.EventHandler(this.btEdit_Click);
+            // 
+            // btReload
+            // 
+            this.btReload.BackColor = System.Drawing.Color.Transparent;
+            this.btReload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btReload.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btReload.CheckedState.Parent = this.btReload;
+            this.btReload.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btReload.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btReload.HoverState.Image")));
+            this.btReload.HoverState.ImageSize = new System.Drawing.Size(50, 50);
+            this.btReload.HoverState.Parent = this.btReload;
+            this.btReload.Image = ((System.Drawing.Image)(resources.GetObject("btReload.Image")));
+            this.btReload.ImageRotate = 0F;
+            this.btReload.ImageSize = new System.Drawing.Size(56, 56);
+            this.btReload.Location = new System.Drawing.Point(539, 454);
+            this.btReload.Margin = new System.Windows.Forms.Padding(4);
+            this.btReload.Name = "btReload";
+            this.btReload.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btReload.PressedState.Parent = this.btReload;
+            this.btReload.Size = new System.Drawing.Size(122, 97);
+            this.btReload.TabIndex = 74;
+            this.btReload.UseTransparentBackground = true;
+            this.btReload.Click += new System.EventHandler(this.btReload_Click);
+            // 
+            // btCancel
+            // 
+            this.btCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btCancel.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btCancel.CheckedState.Parent = this.btCancel;
+            this.btCancel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btCancel.HoverState.ImageSize = new System.Drawing.Size(50, 50);
+            this.btCancel.HoverState.Parent = this.btCancel;
+            this.btCancel.Image = global::Tiệm_nét.Properties.Resources.buttoncancael;
+            this.btCancel.ImageRotate = 0F;
+            this.btCancel.Location = new System.Drawing.Point(684, 124);
+            this.btCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btCancel.Name = "btCancel";
+            this.btCancel.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btCancel.PressedState.Parent = this.btCancel;
+            this.btCancel.Size = new System.Drawing.Size(67, 58);
+            this.btCancel.TabIndex = 73;
+            this.btCancel.UseTransparentBackground = true;
+            this.btCancel.Click += new System.EventHandler(this.btcancel_Click);
+            // 
+            // btConfirm
+            // 
+            this.btConfirm.BackColor = System.Drawing.Color.Transparent;
+            this.btConfirm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btConfirm.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btConfirm.CheckedState.Parent = this.btConfirm;
+            this.btConfirm.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btConfirm.HoverState.ImageSize = new System.Drawing.Size(50, 50);
+            this.btConfirm.HoverState.Parent = this.btConfirm;
+            this.btConfirm.Image = global::Tiệm_nét.Properties.Resources.buttoncomfirm;
+            this.btConfirm.ImageRotate = 0F;
+            this.btConfirm.Location = new System.Drawing.Point(591, 124);
+            this.btConfirm.Margin = new System.Windows.Forms.Padding(4);
+            this.btConfirm.Name = "btConfirm";
+            this.btConfirm.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btConfirm.PressedState.Parent = this.btConfirm;
+            this.btConfirm.Size = new System.Drawing.Size(67, 58);
+            this.btConfirm.TabIndex = 72;
+            this.btConfirm.UseTransparentBackground = true;
+            this.btConfirm.Click += new System.EventHandler(this.btconfirm_Click);
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(50, 50);
+            this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.Location = new System.Drawing.Point(962, 535);
+            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Size = new System.Drawing.Size(105, 89);
+            this.guna2ImageButton1.TabIndex = 47;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            // 
+            // btAdd
+            // 
+            this.btAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btAdd.CheckedState.Parent = this.btAdd;
+            this.btAdd.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btAdd.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btAdd.HoverState.Image")));
+            this.btAdd.HoverState.ImageSize = new System.Drawing.Size(50, 50);
+            this.btAdd.HoverState.Parent = this.btAdd;
+            this.btAdd.Image = ((System.Drawing.Image)(resources.GetObject("btAdd.Image")));
+            this.btAdd.ImageRotate = 0F;
+            this.btAdd.ImageSize = new System.Drawing.Size(68, 68);
+            this.btAdd.Location = new System.Drawing.Point(279, 454);
+            this.btAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btAdd.Name = "btAdd";
+            this.btAdd.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btAdd.PressedState.Parent = this.btAdd;
+            this.btAdd.Size = new System.Drawing.Size(122, 97);
+            this.btAdd.TabIndex = 46;
+            this.btAdd.UseTransparentBackground = true;
+            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.Location = new System.Drawing.Point(13, 15);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(196, 158);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 19;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            // 
+            // Avatar
+            // 
+            this.Avatar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Avatar.Location = new System.Drawing.Point(820, 230);
+            this.Avatar.Margin = new System.Windows.Forms.Padding(4);
+            this.Avatar.Name = "Avatar";
+            this.Avatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.Avatar.ShadowDecoration.Parent = this.Avatar;
+            this.Avatar.Size = new System.Drawing.Size(206, 178);
+            this.Avatar.TabIndex = 8;
+            this.Avatar.TabStop = false;
+            // 
             // Staff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -621,14 +625,14 @@ namespace Tiệm_nét
             this.Name = "Staff";
             this.Text = "Staff";
             this.Load += new System.EventHandler(this.Staff_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Avatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Avatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

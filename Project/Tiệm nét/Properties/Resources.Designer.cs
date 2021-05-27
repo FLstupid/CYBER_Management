@@ -63,6 +63,26 @@ namespace Tiệm_nét.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap buttoncancael {
+            get {
+                object obj = ResourceManager.GetObject("buttoncancael", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttoncomfirm {
+            get {
+                object obj = ResourceManager.GetObject("buttoncomfirm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap buttonsevicehovert {
             get {
                 object obj = ResourceManager.GetObject("buttonsevicehovert", resourceCulture);
