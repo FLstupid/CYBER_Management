@@ -59,6 +59,7 @@ namespace Tiệm_nét
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btMinize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btExit = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.Panel_show = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientPanel1.SuspendLayout();
             this.Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -93,7 +94,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel12.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel12.Location = new System.Drawing.Point(16, 583);
             this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            this.guna2HtmlLabel12.Size = new System.Drawing.Size(62, 18);
+            this.guna2HtmlLabel12.Size = new System.Drawing.Size(77, 21);
             this.guna2HtmlLabel12.TabIndex = 25;
             this.guna2HtmlLabel12.Text = "Categories";
             // 
@@ -125,7 +126,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.Location = new System.Drawing.Point(14, 484);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(57, 18);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(71, 21);
             this.guna2HtmlLabel7.TabIndex = 23;
             this.guna2HtmlLabel7.Text = "Customer";
             // 
@@ -156,7 +157,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(16, 385);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(45, 18);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(52, 21);
             this.guna2HtmlLabel4.TabIndex = 21;
             this.guna2HtmlLabel4.Text = "Service";
             // 
@@ -187,7 +188,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(21, 287);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(42, 18);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(52, 21);
             this.guna2HtmlLabel3.TabIndex = 19;
             this.guna2HtmlLabel3.Text = "Branch";
             // 
@@ -218,7 +219,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(14, 177);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(59, 18);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(73, 21);
             this.guna2HtmlLabel2.TabIndex = 17;
             this.guna2HtmlLabel2.Text = "Computer";
             // 
@@ -249,7 +250,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(24, 79);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(31, 18);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(37, 21);
             this.guna2HtmlLabel1.TabIndex = 15;
             this.guna2HtmlLabel1.Text = "Staff";
             // 
@@ -280,7 +281,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel8.Location = new System.Drawing.Point(302, 38);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(316, 57);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(394, 72);
             this.guna2HtmlLabel8.TabIndex = 15;
             this.guna2HtmlLabel8.Text = "MegaZ Cyber";
             // 
@@ -295,7 +296,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Tai Le", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.Location = new System.Drawing.Point(176, 353);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(111, 39);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(137, 48);
             this.guna2HtmlLabel5.TabIndex = 22;
             this.guna2HtmlLabel5.Text = "Statistic";
             // 
@@ -305,7 +306,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Tai Le", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(527, 339);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(186, 39);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(227, 48);
             this.guna2HtmlLabel6.TabIndex = 23;
             this.guna2HtmlLabel6.Text = "Bill Merchant";
             // 
@@ -314,7 +315,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(0, 0);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(86, 15);
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(108, 18);
             this.guna2HtmlLabel9.TabIndex = 77;
             this.guna2HtmlLabel9.Text = "guna2HtmlLabel9";
             // 
@@ -332,7 +333,6 @@ namespace Tiệm_nét
             this.Panel.ShadowDecoration.Parent = this.Panel;
             this.Panel.Size = new System.Drawing.Size(800, 501);
             this.Panel.TabIndex = 75;
-            this.Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Paint);
             // 
             // guna2HtmlLabel10
             // 
@@ -340,7 +340,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel10.Font = new System.Drawing.Font("Microsoft Tai Le", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel10.Location = new System.Drawing.Point(465, 295);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(186, 39);
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(227, 48);
             this.guna2HtmlLabel10.TabIndex = 80;
             this.guna2HtmlLabel10.Text = "Bill Merchant";
             // 
@@ -350,7 +350,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel11.Font = new System.Drawing.Font("Microsoft Tai Le", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel11.Location = new System.Drawing.Point(153, 295);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            this.guna2HtmlLabel11.Size = new System.Drawing.Size(111, 39);
+            this.guna2HtmlLabel11.Size = new System.Drawing.Size(137, 48);
             this.guna2HtmlLabel11.TabIndex = 79;
             this.guna2HtmlLabel11.Text = "Statistic";
             // 
@@ -475,12 +475,22 @@ namespace Tiệm_nét
             this.btExit.UseTransparentBackground = true;
             this.btExit.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
+            // Panel_show
+            // 
+            this.Panel_show.Location = new System.Drawing.Point(92, 115);
+            this.Panel_show.Name = "Panel_show";
+            this.Panel_show.ShadowDecoration.Parent = this.Panel_show;
+            this.Panel_show.Size = new System.Drawing.Size(800, 498);
+            this.Panel_show.TabIndex = 83;
+            this.Panel_show.Visible = false;
+            // 
             // Menu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(894, 616);
+            this.Controls.Add(this.Panel_show);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.Panel);
             this.Controls.Add(this.guna2PictureBox4);
@@ -531,5 +541,6 @@ namespace Tiệm_nét
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private Guna.UI2.WinForms.Guna2ImageButton btCategories;
+        private Guna.UI2.WinForms.Guna2Panel Panel_show;
     }
 }

@@ -27,95 +27,94 @@ namespace Tiệm_nét
 
         private void btStaff_Click(object sender, EventArgs e)
         {
-            Panel.Controls.Clear();
             Staff s = new Staff();
             s.TopLevel = false;
-            Panel.Controls.Add(s);
+            Panel_show.Controls.Add(s);
+            Panel_show.Visible = true;
             s.Show();
             s.FormClosed += Closed_event;
         }
 
         private void Closed_event(object sender, FormClosedEventArgs e)
         {
-            Resoce r = new Resoce();
-            r.TopLevel = false;
-            Panel.Controls.Add(r);
-            r.Show();
-        }
-
-        private void Panel_Paint(object sender, PaintEventArgs e)
-        {
-
+            Panel_show.Visible = false;
         }
 
         private void btComputer_Click(object sender, EventArgs e)
         {
-            Panel.Controls.Clear();
+            Panel_show.Controls.Clear();
             Computer c = new Computer();
             c.TopLevel = false;
-            Panel.Controls.Add(c);
+            Panel_show.Controls.Add(c);
             c.Show();
+            Panel_show.Visible = true;
             c.FormClosed += Closed_event;
         }
 
         private void btBranch_Click(object sender, EventArgs e)
         {
-            Panel.Controls.Clear();
+            Panel_show.Controls.Clear();
             branch b = new branch();
             b.TopLevel = false;
-            Panel.Controls.Add(b);
+            Panel_show.Controls.Add(b);
             b.Show();
+            Panel_show.Visible = true;
             b.FormClosed += Closed_event;
         }
 
         private void btService_Click(object sender, EventArgs e)
         {
-            Panel.Controls.Clear();
+            Panel_show.Controls.Clear();
             Service s = new Service();
             s.TopLevel = false;
-            Panel.Controls.Add(s);
+            Panel_show.Controls.Add(s);
             s.Show();
+            Panel_show.Visible = true;
             s.FormClosed += Closed_event;
         }
 
         private void btCustomer_Click(object sender, EventArgs e)
         {
-            Panel.Controls.Clear();
+            Panel_show.Controls.Clear();
             Customer s = new Customer();
             s.TopLevel = false;
-            Panel.Controls.Add(s);
+            Panel_show.Controls.Add(s);
             s.Show();
+            Panel_show.Visible = true;
             s.FormClosed += Closed_event;
         }
 
         private void guna2ImageButton1_Click_1(object sender, EventArgs e)
         {
 
-            Panel.Controls.Clear();
+            Panel_show.Controls.Clear();
             FoodCategries s = new FoodCategries();
             s.TopLevel = false;
-            Panel.Controls.Add(s);
+            Panel_show.Controls.Add(s);
             s.Show();
+            Panel_show.Visible = true;
             s.FormClosed += Closed_event;
         }
 
         private void btBillmerchant_Click(object sender, EventArgs e)
         {
-            Panel.Controls.Clear();
+            Panel_show.Controls.Clear();
             InfoBill s = new InfoBill();
             s.TopLevel = false;
-            Panel.Controls.Add(s);
+            Panel_show.Controls.Add(s);
             s.Show();
+            Panel_show.Visible = true;
             s.FormClosed += Closed_event;
         }
 
         private void btStatistic_Click(object sender, EventArgs e)
         {
-            Panel.Controls.Clear();
+            Panel_show.Controls.Clear();
             Statistic s = new Statistic();
             s.TopLevel = false;
-            Panel.Controls.Add(s);
+            Panel_show.Controls.Add(s);
             s.Show();
+            Panel_show.Visible = true;
             s.FormClosed += Closed_event;
         }
     }
