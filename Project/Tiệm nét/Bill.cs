@@ -55,6 +55,9 @@ namespace Tiệm_nét
             }
         }
 
+        private void txtCID_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

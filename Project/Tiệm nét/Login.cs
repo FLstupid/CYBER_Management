@@ -16,13 +16,23 @@ namespace Tiệm_nét
         {
             InitializeComponent();
         }
-        Cyber_netEntities db = new Cyber_netEntities();
+
+     
+
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             DialogResult CheckExit = MessageBox.Show("Có muốn Exit không?", "Exit confirm!",
 
             MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (CheckExit == DialogResult.Yes) this.Close();
+        }
+
+        private void btEnter_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Loading l = new Loading();
+            l.Show();
+
         }
     }
 }

@@ -31,5 +31,10 @@ namespace Tiệm_nét
         {
 
         }
+
+        private void guna2PictureBox8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

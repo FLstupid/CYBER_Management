@@ -16,5 +16,19 @@ namespace Tiệm_nét
         {
             InitializeComponent();
         }
+       
+        int time = 0;
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            time++;
+            if (time == 30)
+            
+                {
+                timer.Stop();
+                Hide();
+                Menu m = new Menu();
+                m.Show();
+                } 
+        }
     }
 }

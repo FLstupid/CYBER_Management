@@ -22,5 +22,15 @@ namespace Tiệm_nét
             FoodBill f = new FoodBill();
             f.Show();
         }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

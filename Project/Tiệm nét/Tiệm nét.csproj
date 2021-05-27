@@ -72,10 +72,10 @@
       <DependentUpon>branch.cs</DependentUpon>
     </Compile>
     <Compile Include="Chinhanh.cs">
-      <DependentUpon>Cyber.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Chitiet_hoadon.cs">
-      <DependentUpon>Cyber.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Customer.cs">
       <SubType>Form</SubType>
@@ -83,23 +83,8 @@
     <Compile Include="Customer.Designer.cs">
       <DependentUpon>Customer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cyber.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Cyber.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Cyber.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Cyber.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Cyber.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Cyber.edmx</DependentUpon>
-    </Compile>
     <Compile Include="District.cs">
-      <DependentUpon>Cyber.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="FoodBill.cs">
       <SubType>Form</SubType>
@@ -108,10 +93,10 @@
       <DependentUpon>FoodBill.cs</DependentUpon>
     </Compile>
     <Compile Include="Hoadon.cs">
-      <DependentUpon>Cyber.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Hoadon_thucan.cs">
-      <DependentUpon>Cyber.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="InfoBill.cs">
       <SubType>Form</SubType>
@@ -120,7 +105,7 @@
       <DependentUpon>InfoBill.cs</DependentUpon>
     </Compile>
     <Compile Include="Khachhang.cs">
-      <DependentUpon>Cyber.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Loading.cs">
       <SubType>Form</SubType>
@@ -141,7 +126,7 @@
       <DependentUpon>Computer.cs</DependentUpon>
     </Compile>
     <Compile Include="Maytinh.cs">
-      <DependentUpon>Cyber.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -149,11 +134,26 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Nhanvien.cs">
-      <DependentUpon>Cyber.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Phongmay.cs">
-      <DependentUpon>Cyber.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -188,10 +188,10 @@
       <DependentUpon>Statistic.cs</DependentUpon>
     </Compile>
     <Compile Include="sysdiagram.cs">
-      <DependentUpon>Cyber.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Thucan.cs">
-      <DependentUpon>Cyber.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Bill.resx">
       <DependentUpon>Bill.cs</DependentUpon>
@@ -245,12 +245,12 @@
     <EmbeddedResource Include="Statistic.resx">
       <DependentUpon>Statistic.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="Cyber.edmx">
+    <EntityDeploy Include="Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Cyber.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Cyber.edmx.diagram">
-      <DependentUpon>Cyber.edmx</DependentUpon>
+    <None Include="Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -285,15 +285,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Cyber.Context.tt">
+    <Content Include="Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Cyber.Context.cs</LastGenOutput>
-      <DependentUpon>Cyber.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
+      <DependentUpon>Model.edmx</DependentUpon>
     </Content>
-    <Content Include="Cyber.tt">
+    <Content Include="Model.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Cyber.edmx</DependentUpon>
-      <LastGenOutput>Cyber.cs</LastGenOutput>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

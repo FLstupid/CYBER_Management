@@ -32,6 +32,8 @@ namespace Tiệm_nét
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btCategories = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btCustomer = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -55,10 +57,8 @@ namespace Tiệm_nét
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.Minize = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.Logout = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btMinize = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btExit = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GradientPanel1.SuspendLayout();
             this.Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -70,7 +70,7 @@ namespace Tiệm_nét
             // 
             this.guna2GradientPanel1.AutoScroll = true;
             this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel12);
-            this.guna2GradientPanel1.Controls.Add(this.guna2ImageButton1);
+            this.guna2GradientPanel1.Controls.Add(this.btCategories);
             this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel7);
             this.guna2GradientPanel1.Controls.Add(this.btCustomer);
             this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel4);
@@ -86,6 +86,38 @@ namespace Tiệm_nét
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
             this.guna2GradientPanel1.Size = new System.Drawing.Size(89, 604);
             this.guna2GradientPanel1.TabIndex = 14;
+            // 
+            // guna2HtmlLabel12
+            // 
+            this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel12.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel12.Location = new System.Drawing.Point(16, 583);
+            this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
+            this.guna2HtmlLabel12.Size = new System.Drawing.Size(62, 18);
+            this.guna2HtmlLabel12.TabIndex = 25;
+            this.guna2HtmlLabel12.Text = "Categories";
+            // 
+            // btCategories
+            // 
+            this.btCategories.AnimatedGIF = true;
+            this.btCategories.BackColor = System.Drawing.Color.Transparent;
+            this.btCategories.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btCategories.CheckedState.Parent = this.btCategories;
+            this.btCategories.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btCategories.HoverState.Image")));
+            this.btCategories.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btCategories.HoverState.Parent = this.btCategories;
+            this.btCategories.Image = ((System.Drawing.Image)(resources.GetObject("btCategories.Image")));
+            this.btCategories.ImageRotate = 0F;
+            this.btCategories.ImageSize = new System.Drawing.Size(90, 90);
+            this.btCategories.Location = new System.Drawing.Point(7, 508);
+            this.btCategories.Name = "btCategories";
+            this.btCategories.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btCategories.PressedState.Image")));
+            this.btCategories.PressedState.ImageSize = new System.Drawing.Size(50, 50);
+            this.btCategories.PressedState.Parent = this.btCategories;
+            this.btCategories.Size = new System.Drawing.Size(79, 80);
+            this.btCategories.TabIndex = 24;
+            this.btCategories.UseTransparentBackground = true;
+            this.btCategories.Click += new System.EventHandler(this.guna2ImageButton1_Click_1);
             // 
             // guna2HtmlLabel7
             // 
@@ -406,74 +438,42 @@ namespace Tiệm_nét
             this.guna2PictureBox4.TabStop = false;
             this.guna2PictureBox4.UseTransparentBackground = true;
             // 
-            // Minize
+            // btMinize
             // 
-            this.Minize.BackColor = System.Drawing.Color.Transparent;
-            this.Minize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.Minize.CheckedState.Parent = this.Minize;
-            this.Minize.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.Minize.HoverState.Parent = this.Minize;
-            this.Minize.Image = ((System.Drawing.Image)(resources.GetObject("Minize.Image")));
-            this.Minize.ImageRotate = 0F;
-            this.Minize.ImageSize = new System.Drawing.Size(40, 40);
-            this.Minize.Location = new System.Drawing.Point(761, -4);
-            this.Minize.Name = "Minize";
-            this.Minize.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.Minize.PressedState.Parent = this.Minize;
-            this.Minize.Size = new System.Drawing.Size(79, 76);
-            this.Minize.TabIndex = 13;
-            this.Minize.UseTransparentBackground = true;
+            this.btMinize.BackColor = System.Drawing.Color.Transparent;
+            this.btMinize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btMinize.CheckedState.Parent = this.btMinize;
+            this.btMinize.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btMinize.HoverState.Parent = this.btMinize;
+            this.btMinize.Image = ((System.Drawing.Image)(resources.GetObject("btMinize.Image")));
+            this.btMinize.ImageRotate = 0F;
+            this.btMinize.ImageSize = new System.Drawing.Size(40, 40);
+            this.btMinize.Location = new System.Drawing.Point(761, -4);
+            this.btMinize.Name = "btMinize";
+            this.btMinize.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btMinize.PressedState.Parent = this.btMinize;
+            this.btMinize.Size = new System.Drawing.Size(79, 76);
+            this.btMinize.TabIndex = 13;
+            this.btMinize.UseTransparentBackground = true;
             // 
-            // Logout
+            // btExit
             // 
-            this.Logout.BackColor = System.Drawing.Color.Transparent;
-            this.Logout.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.Logout.CheckedState.Parent = this.Logout;
-            this.Logout.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.Logout.HoverState.Parent = this.Logout;
-            this.Logout.Image = ((System.Drawing.Image)(resources.GetObject("Logout.Image")));
-            this.Logout.ImageRotate = 0F;
-            this.Logout.ImageSize = new System.Drawing.Size(40, 40);
-            this.Logout.Location = new System.Drawing.Point(813, -4);
-            this.Logout.Name = "Logout";
-            this.Logout.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.Logout.PressedState.Parent = this.Logout;
-            this.Logout.Size = new System.Drawing.Size(79, 76);
-            this.Logout.TabIndex = 12;
-            this.Logout.UseTransparentBackground = true;
-            this.Logout.Click += new System.EventHandler(this.guna2ImageButton1_Click);
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.AnimatedGIF = true;
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(90, 90);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(7, 508);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(79, 80);
-            this.guna2ImageButton1.TabIndex = 24;
-            this.guna2ImageButton1.UseTransparentBackground = true;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click_1);
-            // 
-            // guna2HtmlLabel12
-            // 
-            this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel12.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(16, 583);
-            this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            this.guna2HtmlLabel12.Size = new System.Drawing.Size(62, 18);
-            this.guna2HtmlLabel12.TabIndex = 25;
-            this.guna2HtmlLabel12.Text = "Categories";
+            this.btExit.BackColor = System.Drawing.Color.Transparent;
+            this.btExit.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btExit.CheckedState.Parent = this.btExit;
+            this.btExit.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btExit.HoverState.Parent = this.btExit;
+            this.btExit.Image = ((System.Drawing.Image)(resources.GetObject("btExit.Image")));
+            this.btExit.ImageRotate = 0F;
+            this.btExit.ImageSize = new System.Drawing.Size(40, 40);
+            this.btExit.Location = new System.Drawing.Point(813, -4);
+            this.btExit.Name = "btExit";
+            this.btExit.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btExit.PressedState.Parent = this.btExit;
+            this.btExit.Size = new System.Drawing.Size(79, 76);
+            this.btExit.TabIndex = 12;
+            this.btExit.UseTransparentBackground = true;
+            this.btExit.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // Menu
             // 
@@ -485,8 +485,8 @@ namespace Tiệm_nét
             this.Controls.Add(this.Panel);
             this.Controls.Add(this.guna2PictureBox4);
             this.Controls.Add(this.guna2HtmlLabel8);
-            this.Controls.Add(this.Minize);
-            this.Controls.Add(this.Logout);
+            this.Controls.Add(this.btMinize);
+            this.Controls.Add(this.btExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Menu";
             this.Text = "Menu";
@@ -503,8 +503,8 @@ namespace Tiệm_nét
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2ImageButton Logout;
-        private Guna.UI2.WinForms.Guna2ImageButton Minize;
+        private Guna.UI2.WinForms.Guna2ImageButton btExit;
+        private Guna.UI2.WinForms.Guna2ImageButton btMinize;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2ImageButton btStaff;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
@@ -530,6 +530,6 @@ namespace Tiệm_nét
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private Guna.UI2.WinForms.Guna2ImageButton btCategories;
     }
 }

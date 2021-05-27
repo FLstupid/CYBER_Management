@@ -31,28 +31,28 @@ namespace Tiệm_nét
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FoodBill));
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.txtOK = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtCount = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtFoodOrder = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtSName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtCName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtSID = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtCID = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtBrandName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtFID = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -70,23 +70,23 @@ namespace Tiệm_nét
             this.label1.Text = "MegaZ Cyber";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // guna2Button1
+            // txtOK
             // 
-            this.guna2Button1.AllowDrop = true;
-            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Gray;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(172, 517);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(70, 32);
-            this.guna2Button1.TabIndex = 95;
-            this.guna2Button1.Text = "OK";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            this.txtOK.AllowDrop = true;
+            this.txtOK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.txtOK.CheckedState.Parent = this.txtOK;
+            this.txtOK.CustomImages.Parent = this.txtOK;
+            this.txtOK.FillColor = System.Drawing.Color.Gray;
+            this.txtOK.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtOK.ForeColor = System.Drawing.Color.Black;
+            this.txtOK.HoverState.Parent = this.txtOK;
+            this.txtOK.Location = new System.Drawing.Point(172, 517);
+            this.txtOK.Name = "txtOK";
+            this.txtOK.ShadowDecoration.Parent = this.txtOK;
+            this.txtOK.Size = new System.Drawing.Size(70, 32);
+            this.txtOK.TabIndex = 95;
+            this.txtOK.Text = "OK";
+            this.txtOK.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // guna2PictureBox2
             // 
@@ -108,23 +108,23 @@ namespace Tiệm_nét
             this.guna2CustomGradientPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.guna2CustomGradientPanel1.BorderRadius = 20;
             this.guna2CustomGradientPanel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel19);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtCount);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel18);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel17);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtFoodOrder);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel16);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox2);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2Button1);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtOK);
             this.guna2CustomGradientPanel1.Controls.Add(this.label1);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel14);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtSName);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel15);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel7);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtCName);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel8);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel5);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtSID);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel6);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel13);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel12);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel11);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel10);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtCID);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtBrandName);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtDate);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtFID);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel9);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel4);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel3);
@@ -138,175 +138,15 @@ namespace Tiệm_nét
             this.guna2CustomGradientPanel1.TabIndex = 0;
             this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
             // 
-            // guna2HtmlLabel1
+            // txtCount
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("OCR A Extended", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(105, 6);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(203, 37);
-            this.guna2HtmlLabel1.TabIndex = 79;
-            this.guna2HtmlLabel1.Text = "Food Order";
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(94, 49);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(55, 25);
-            this.guna2HtmlLabel2.TabIndex = 80;
-            this.guna2HtmlLabel2.Text = "ID :";
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(30, 172);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(159, 25);
-            this.guna2HtmlLabel3.TabIndex = 81;
-            this.guna2HtmlLabel3.Text = "Costumer ID:";
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(94, 80);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(68, 25);
-            this.guna2HtmlLabel4.TabIndex = 82;
-            this.guna2HtmlLabel4.Text = "Date:";
-            // 
-            // guna2HtmlLabel9
-            // 
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(83, 111);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(94, 25);
-            this.guna2HtmlLabel9.TabIndex = 83;
-            this.guna2HtmlLabel9.Text = "Branch:";
-            // 
-            // guna2HtmlLabel10
-            // 
-            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel10.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(188, 49);
-            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(120, 25);
-            this.guna2HtmlLabel10.TabIndex = 84;
-            this.guna2HtmlLabel10.Text = "#########";
-            // 
-            // guna2HtmlLabel11
-            // 
-            this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel11.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(188, 80);
-            this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            this.guna2HtmlLabel11.Size = new System.Drawing.Size(133, 25);
-            this.guna2HtmlLabel11.TabIndex = 85;
-            this.guna2HtmlLabel11.Text = "##/##/####";
-            // 
-            // guna2HtmlLabel12
-            // 
-            this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel12.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(188, 111);
-            this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            this.guna2HtmlLabel12.Size = new System.Drawing.Size(120, 25);
-            this.guna2HtmlLabel12.TabIndex = 86;
-            this.guna2HtmlLabel12.Text = "No Branch";
-            // 
-            // guna2HtmlLabel13
-            // 
-            this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel13.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(264, 172);
-            this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            this.guna2HtmlLabel13.Size = new System.Drawing.Size(120, 25);
-            this.guna2HtmlLabel13.TabIndex = 87;
-            this.guna2HtmlLabel13.Text = "#########";
-            // 
-            // guna2HtmlLabel6
-            // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(38, 256);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(120, 25);
-            this.guna2HtmlLabel6.TabIndex = 88;
-            this.guna2HtmlLabel6.Text = "Staff ID:";
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(264, 256);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(120, 25);
-            this.guna2HtmlLabel5.TabIndex = 89;
-            this.guna2HtmlLabel5.Text = "#########";
-            // 
-            // guna2HtmlLabel8
-            // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(64, 212);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(81, 25);
-            this.guna2HtmlLabel8.TabIndex = 90;
-            this.guna2HtmlLabel8.Text = "User :";
-            // 
-            // guna2HtmlLabel7
-            // 
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(264, 212);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(120, 25);
-            this.guna2HtmlLabel7.TabIndex = 91;
-            this.guna2HtmlLabel7.Text = "#########";
-            // 
-            // guna2HtmlLabel15
-            // 
-            this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel15.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel15.Location = new System.Drawing.Point(30, 302);
-            this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
-            this.guna2HtmlLabel15.Size = new System.Drawing.Size(159, 25);
-            this.guna2HtmlLabel15.TabIndex = 92;
-            this.guna2HtmlLabel15.Text = "Staff name :";
-            // 
-            // guna2HtmlLabel14
-            // 
-            this.guna2HtmlLabel14.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel14.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel14.Location = new System.Drawing.Point(264, 302);
-            this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
-            this.guna2HtmlLabel14.Size = new System.Drawing.Size(120, 25);
-            this.guna2HtmlLabel14.TabIndex = 93;
-            this.guna2HtmlLabel14.Text = "#########";
-            // 
-            // guna2HtmlLabel16
-            // 
-            this.guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel16.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel16.Location = new System.Drawing.Point(30, 351);
-            this.guna2HtmlLabel16.Name = "guna2HtmlLabel16";
-            this.guna2HtmlLabel16.Size = new System.Drawing.Size(159, 25);
-            this.guna2HtmlLabel16.TabIndex = 97;
-            this.guna2HtmlLabel16.Text = "Food Order :";
-            // 
-            // guna2HtmlLabel17
-            // 
-            this.guna2HtmlLabel17.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel17.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel17.Location = new System.Drawing.Point(264, 351);
-            this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
-            this.guna2HtmlLabel17.Size = new System.Drawing.Size(120, 25);
-            this.guna2HtmlLabel17.TabIndex = 98;
-            this.guna2HtmlLabel17.Text = "#########";
+            this.txtCount.BackColor = System.Drawing.Color.Transparent;
+            this.txtCount.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCount.Location = new System.Drawing.Point(264, 401);
+            this.txtCount.Name = "txtCount";
+            this.txtCount.Size = new System.Drawing.Size(120, 25);
+            this.txtCount.TabIndex = 100;
+            this.txtCount.Text = "#########";
             // 
             // guna2HtmlLabel18
             // 
@@ -318,15 +158,175 @@ namespace Tiệm_nét
             this.guna2HtmlLabel18.TabIndex = 99;
             this.guna2HtmlLabel18.Text = "Count :";
             // 
-            // guna2HtmlLabel19
+            // txtFoodOrder
             // 
-            this.guna2HtmlLabel19.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel19.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel19.Location = new System.Drawing.Point(264, 401);
-            this.guna2HtmlLabel19.Name = "guna2HtmlLabel19";
-            this.guna2HtmlLabel19.Size = new System.Drawing.Size(120, 25);
-            this.guna2HtmlLabel19.TabIndex = 100;
-            this.guna2HtmlLabel19.Text = "#########";
+            this.txtFoodOrder.BackColor = System.Drawing.Color.Transparent;
+            this.txtFoodOrder.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFoodOrder.Location = new System.Drawing.Point(264, 351);
+            this.txtFoodOrder.Name = "txtFoodOrder";
+            this.txtFoodOrder.Size = new System.Drawing.Size(120, 25);
+            this.txtFoodOrder.TabIndex = 98;
+            this.txtFoodOrder.Text = "#########";
+            // 
+            // guna2HtmlLabel16
+            // 
+            this.guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel16.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel16.Location = new System.Drawing.Point(30, 351);
+            this.guna2HtmlLabel16.Name = "guna2HtmlLabel16";
+            this.guna2HtmlLabel16.Size = new System.Drawing.Size(159, 25);
+            this.guna2HtmlLabel16.TabIndex = 97;
+            this.guna2HtmlLabel16.Text = "Food Order :";
+            // 
+            // txtSName
+            // 
+            this.txtSName.BackColor = System.Drawing.Color.Transparent;
+            this.txtSName.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSName.Location = new System.Drawing.Point(264, 302);
+            this.txtSName.Name = "txtSName";
+            this.txtSName.Size = new System.Drawing.Size(120, 25);
+            this.txtSName.TabIndex = 93;
+            this.txtSName.Text = "#########";
+            // 
+            // guna2HtmlLabel15
+            // 
+            this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel15.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel15.Location = new System.Drawing.Point(30, 302);
+            this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
+            this.guna2HtmlLabel15.Size = new System.Drawing.Size(159, 25);
+            this.guna2HtmlLabel15.TabIndex = 92;
+            this.guna2HtmlLabel15.Text = "Staff name :";
+            // 
+            // txtCName
+            // 
+            this.txtCName.BackColor = System.Drawing.Color.Transparent;
+            this.txtCName.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCName.Location = new System.Drawing.Point(264, 212);
+            this.txtCName.Name = "txtCName";
+            this.txtCName.Size = new System.Drawing.Size(120, 25);
+            this.txtCName.TabIndex = 91;
+            this.txtCName.Text = "#########";
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(64, 212);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(81, 25);
+            this.guna2HtmlLabel8.TabIndex = 90;
+            this.guna2HtmlLabel8.Text = "User :";
+            // 
+            // txtSID
+            // 
+            this.txtSID.BackColor = System.Drawing.Color.Transparent;
+            this.txtSID.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSID.Location = new System.Drawing.Point(264, 256);
+            this.txtSID.Name = "txtSID";
+            this.txtSID.Size = new System.Drawing.Size(120, 25);
+            this.txtSID.TabIndex = 89;
+            this.txtSID.Text = "#########";
+            // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(38, 256);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(120, 25);
+            this.guna2HtmlLabel6.TabIndex = 88;
+            this.guna2HtmlLabel6.Text = "Staff ID:";
+            // 
+            // txtCID
+            // 
+            this.txtCID.BackColor = System.Drawing.Color.Transparent;
+            this.txtCID.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCID.Location = new System.Drawing.Point(264, 172);
+            this.txtCID.Name = "txtCID";
+            this.txtCID.Size = new System.Drawing.Size(120, 25);
+            this.txtCID.TabIndex = 87;
+            this.txtCID.Text = "#########";
+            // 
+            // txtBrandName
+            // 
+            this.txtBrandName.BackColor = System.Drawing.Color.Transparent;
+            this.txtBrandName.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBrandName.Location = new System.Drawing.Point(188, 111);
+            this.txtBrandName.Name = "txtBrandName";
+            this.txtBrandName.Size = new System.Drawing.Size(120, 25);
+            this.txtBrandName.TabIndex = 86;
+            this.txtBrandName.Text = "No Branch";
+            // 
+            // txtDate
+            // 
+            this.txtDate.BackColor = System.Drawing.Color.Transparent;
+            this.txtDate.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDate.Location = new System.Drawing.Point(188, 80);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(133, 25);
+            this.txtDate.TabIndex = 85;
+            this.txtDate.Text = "##/##/####";
+            // 
+            // txtFID
+            // 
+            this.txtFID.BackColor = System.Drawing.Color.Transparent;
+            this.txtFID.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFID.Location = new System.Drawing.Point(188, 49);
+            this.txtFID.Name = "txtFID";
+            this.txtFID.Size = new System.Drawing.Size(120, 25);
+            this.txtFID.TabIndex = 84;
+            this.txtFID.Text = "#########";
+            // 
+            // guna2HtmlLabel9
+            // 
+            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel9.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(83, 111);
+            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(94, 25);
+            this.guna2HtmlLabel9.TabIndex = 83;
+            this.guna2HtmlLabel9.Text = "Branch:";
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(94, 80);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(68, 25);
+            this.guna2HtmlLabel4.TabIndex = 82;
+            this.guna2HtmlLabel4.Text = "Date:";
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(30, 172);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(159, 25);
+            this.guna2HtmlLabel3.TabIndex = 81;
+            this.guna2HtmlLabel3.Text = "Costumer ID:";
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(94, 49);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(55, 25);
+            this.guna2HtmlLabel2.TabIndex = 80;
+            this.guna2HtmlLabel2.Text = "ID :";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("OCR A Extended", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(105, 6);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(203, 37);
+            this.guna2HtmlLabel1.TabIndex = 79;
+            this.guna2HtmlLabel1.Text = "Food Order";
             // 
             // FoodBill
             // 
@@ -352,23 +352,23 @@ namespace Tiệm_nét
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button txtOK;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel19;
+        private Guna.UI2.WinForms.Guna2HtmlLabel txtCount;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel18;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
+        private Guna.UI2.WinForms.Guna2HtmlLabel txtFoodOrder;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel16;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
+        private Guna.UI2.WinForms.Guna2HtmlLabel txtSName;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2HtmlLabel txtCName;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel txtSID;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
+        private Guna.UI2.WinForms.Guna2HtmlLabel txtCID;
+        private Guna.UI2.WinForms.Guna2HtmlLabel txtBrandName;
+        private Guna.UI2.WinForms.Guna2HtmlLabel txtDate;
+        private Guna.UI2.WinForms.Guna2HtmlLabel txtFID;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;

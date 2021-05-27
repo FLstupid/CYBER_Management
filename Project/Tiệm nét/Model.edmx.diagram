@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="ec4cf79e78af44e8997dfe3211eef30a" Name="Diagram1">
+      <Diagram DiagramId="551bcaab91b547bc8749e1cf94495e25" Name="Diagram1">
         <EntityTypeShape EntityType="Cyber_netModel.Chinhanh" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
         <EntityTypeShape EntityType="Cyber_netModel.Chitiet_hoadon" Width="1.5" PointX="17.25" PointY="5.25" IsExpanded="true" />
         <EntityTypeShape EntityType="Cyber_netModel.District" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
