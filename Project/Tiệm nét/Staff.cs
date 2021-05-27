@@ -70,7 +70,7 @@ namespace Tiệm_nét
         private void Loadinfo()
         {
             if (txtstaffID.Text.Equals("")) txtstaffID.Text = "1";
-            else if (db.Nhanviens.ToList().Where(x => x.Id == int.Parse(txtstaffID.Text.Trim())).Count() == 0) {
+            if (db.Nhanviens.ToList().Where(x => x.Id == int.Parse(txtstaffID.Text.Trim())).Count() == 0) {
                 MessageBox.Show("Staff id not exist"); txtstaffID.Focus();
             }
             else
