@@ -40,7 +40,6 @@ namespace Tiệm_nét
             this.name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtstaffID = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtGender = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtManager = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBranch = new Guna.UI2.WinForms.Guna2TextBox();
@@ -59,6 +58,7 @@ namespace Tiệm_nét
             this.btAdd = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Avatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.txtGender = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
@@ -86,7 +86,7 @@ namespace Tiệm_nét
             // 
             this.Label_staffid.BackColor = System.Drawing.Color.Transparent;
             this.Label_staffid.Font = new System.Drawing.Font("OCR A Extended", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_staffid.Location = new System.Drawing.Point(234, 142);
+            this.Label_staffid.Location = new System.Drawing.Point(24, 142);
             this.Label_staffid.Margin = new System.Windows.Forms.Padding(4);
             this.Label_staffid.Name = "Label_staffid";
             this.Label_staffid.Size = new System.Drawing.Size(131, 31);
@@ -184,7 +184,7 @@ namespace Tiệm_nét
             this.txtstaffID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtstaffID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtstaffID.HoverState.Parent = this.txtstaffID;
-            this.txtstaffID.Location = new System.Drawing.Point(401, 137);
+            this.txtstaffID.Location = new System.Drawing.Point(235, 137);
             this.txtstaffID.Name = "txtstaffID";
             this.txtstaffID.PasswordChar = '\0';
             this.txtstaffID.PlaceholderText = "";
@@ -193,6 +193,7 @@ namespace Tiệm_nét
             this.txtstaffID.Size = new System.Drawing.Size(162, 36);
             this.txtstaffID.TabIndex = 126;
             this.txtstaffID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtstaffID_KeyDown);
+            this.txtstaffID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtstaffID_KeyPress);
             this.txtstaffID.Leave += new System.EventHandler(this.txtstaffID_Leave);
             // 
             // txtName
@@ -222,33 +223,6 @@ namespace Tiệm_nét
             this.txtName.Size = new System.Drawing.Size(278, 31);
             this.txtName.TabIndex = 127;
             // 
-            // txtGender
-            // 
-            this.txtGender.AutoRoundedCorners = true;
-            this.txtGender.BorderRadius = 14;
-            this.txtGender.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtGender.DefaultText = "";
-            this.txtGender.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtGender.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtGender.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtGender.DisabledState.Parent = this.txtGender;
-            this.txtGender.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGender.FocusedState.Parent = this.txtGender;
-            this.txtGender.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.txtGender.ForeColor = System.Drawing.Color.Black;
-            this.txtGender.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGender.HoverState.Parent = this.txtGender;
-            this.txtGender.Location = new System.Drawing.Point(235, 260);
-            this.txtGender.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtGender.Name = "txtGender";
-            this.txtGender.PasswordChar = '\0';
-            this.txtGender.PlaceholderText = "";
-            this.txtGender.SelectedText = "";
-            this.txtGender.ShadowDecoration.Parent = this.txtGender;
-            this.txtGender.Size = new System.Drawing.Size(96, 31);
-            this.txtGender.TabIndex = 128;
-            // 
             // txtAddress
             // 
             this.txtAddress.AutoRoundedCorners = true;
@@ -273,7 +247,7 @@ namespace Tiệm_nét
             this.txtAddress.PlaceholderText = "";
             this.txtAddress.SelectedText = "";
             this.txtAddress.ShadowDecoration.Parent = this.txtAddress;
-            this.txtAddress.Size = new System.Drawing.Size(480, 31);
+            this.txtAddress.Size = new System.Drawing.Size(388, 31);
             this.txtAddress.TabIndex = 129;
             // 
             // txtManager
@@ -486,7 +460,7 @@ namespace Tiệm_nét
             this.btCancel.HoverState.Parent = this.btCancel;
             this.btCancel.Image = global::Tiệm_nét.Properties.Resources.buttoncancael;
             this.btCancel.ImageRotate = 0F;
-            this.btCancel.Location = new System.Drawing.Point(684, 124);
+            this.btCancel.Location = new System.Drawing.Point(503, 124);
             this.btCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btCancel.Name = "btCancel";
             this.btCancel.PressedState.ImageSize = new System.Drawing.Size(64, 64);
@@ -507,7 +481,7 @@ namespace Tiệm_nét
             this.btConfirm.HoverState.Parent = this.btConfirm;
             this.btConfirm.Image = global::Tiệm_nét.Properties.Resources.buttoncomfirm;
             this.btConfirm.ImageRotate = 0F;
-            this.btConfirm.Location = new System.Drawing.Point(591, 124);
+            this.btConfirm.Location = new System.Drawing.Point(409, 124);
             this.btConfirm.Margin = new System.Windows.Forms.Padding(4);
             this.btConfirm.Name = "btConfirm";
             this.btConfirm.PressedState.ImageSize = new System.Drawing.Size(64, 64);
@@ -563,11 +537,11 @@ namespace Tiệm_nét
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(13, 15);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(13, 1);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(196, 158);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(108, 107);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 19;
             this.guna2PictureBox1.TabStop = false;
@@ -576,24 +550,53 @@ namespace Tiệm_nét
             // Avatar
             // 
             this.Avatar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Avatar.Location = new System.Drawing.Point(820, 230);
+            this.Avatar.Location = new System.Drawing.Point(823, 113);
             this.Avatar.Margin = new System.Windows.Forms.Padding(4);
             this.Avatar.Name = "Avatar";
             this.Avatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.Avatar.ShadowDecoration.Parent = this.Avatar;
-            this.Avatar.Size = new System.Drawing.Size(206, 178);
+            this.Avatar.Size = new System.Drawing.Size(219, 206);
             this.Avatar.TabIndex = 8;
             this.Avatar.TabStop = false;
+            // 
+            // txtGender
+            // 
+            this.txtGender.AutoRoundedCorners = true;
+            this.txtGender.BackColor = System.Drawing.Color.Transparent;
+            this.txtGender.BorderColor = System.Drawing.Color.White;
+            this.txtGender.BorderRadius = 17;
+            this.txtGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtGender.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGender.FocusedState.Parent = this.txtGender;
+            this.txtGender.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGender.ForeColor = System.Drawing.Color.Black;
+            this.txtGender.FormattingEnabled = true;
+            this.txtGender.HoverState.Parent = this.txtGender;
+            this.txtGender.ItemHeight = 30;
+            this.txtGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.txtGender.ItemsAppearance.BackColor = System.Drawing.Color.Black;
+            this.txtGender.ItemsAppearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGender.ItemsAppearance.Parent = this.txtGender;
+            this.txtGender.Location = new System.Drawing.Point(235, 255);
+            this.txtGender.Name = "txtGender";
+            this.txtGender.ShadowDecoration.Parent = this.txtGender;
+            this.txtGender.Size = new System.Drawing.Size(166, 36);
+            this.txtGender.TabIndex = 132;
+            this.txtGender.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Staff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 622);
+            this.Controls.Add(this.txtGender);
             this.Controls.Add(this.txtBranch);
             this.Controls.Add(this.txtManager);
             this.Controls.Add(this.txtAddress);
-            this.Controls.Add(this.txtGender);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtstaffID);
             this.Controls.Add(this.guna2PictureBox7);
@@ -665,9 +668,9 @@ namespace Tiệm_nét
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
         private Guna.UI2.WinForms.Guna2TextBox txtstaffID;
         private Guna.UI2.WinForms.Guna2TextBox txtName;
-        private Guna.UI2.WinForms.Guna2TextBox txtGender;
         private Guna.UI2.WinForms.Guna2TextBox txtAddress;
         private Guna.UI2.WinForms.Guna2TextBox txtManager;
         private Guna.UI2.WinForms.Guna2TextBox txtBranch;
+        private Guna.UI2.WinForms.Guna2ComboBox txtGender;
     }
 }

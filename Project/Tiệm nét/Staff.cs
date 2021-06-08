@@ -21,26 +21,14 @@ namespace Tiệm_nét
         bool Add = false;
         void btEditOff()
         {
-            btConfirm.Visible = false;
-            btCancel.Visible = false;
-            txtName.Enabled = false;
-            txtAddress.Enabled = false;
-            txtGender.Enabled = false;
-            txtManager.Enabled = false;
-            txtBranch.Enabled = false;
+            btConfirm.Visible = btCancel.Visible = txtName.Enabled = txtAddress.Enabled = txtGender.Enabled = txtManager.Enabled = txtBranch.Enabled = false;
             btAdd.Enabled = true;
             btEdit.Enabled = true;
             btDelete.Enabled = true;
         }
         void btEditOn()
         {
-            btConfirm.Visible = true;
-            btCancel.Visible = true;
-            txtName.Enabled = true;
-            txtAddress.Enabled = true;
-            txtGender.Enabled = true;
-            txtManager.Enabled = true;
-            txtBranch.Enabled = true;
+            btConfirm.Visible = btCancel.Visible = txtName.Enabled = txtAddress.Enabled = txtGender.Enabled = txtManager.Enabled = txtBranch.Enabled = true;
         }
 
         void Reset()
@@ -64,26 +52,30 @@ namespace Tiệm_nét
                     txtManager.AutoCompleteCustomSource.Add(Item.Nhanvien2.Name);
                     txtBranch.AutoCompleteCustomSource.Add(Item.Chinhanh.Chinhanh1);
                 }
+                txtGender.DropDownStyle = ComboBoxStyle.DropDownList;
                 Loadinfo();
             }catch(Exception ex) { MessageBox.Show(ex.Message); }
         }
         private void Loadinfo()
         {
             if (txtstaffID.Text.Equals("")) txtstaffID.Text = "1";
-            if (db.Nhanviens.ToList().Where(x => x.Id == int.Parse(txtstaffID.Text.Trim())).Count() == 0) {
-                MessageBox.Show("Staff id not exist"); txtstaffID.Focus();
-            }
-            else
-            {
-                var data = db.Nhanviens.ToList();
-                int StaffID = int.Parse(txtstaffID.Text.Trim());
-                Nhanvien Staff = data.Where(x => x.Id == StaffID).SingleOrDefault();
-                txtName.Text = Staff.Name;
-                txtAddress.Text = Staff.Address;
-                txtBranch.Text = Staff.Chinhanh.Chinhanh1;
-                txtGender.Text = Staff.Gender.Trim();
-                txtManager.Text = Staff.Nhanvien2.Name;
-            }
+            int result;
+            if (int.TryParse(txtstaffID.Text.Trim(), out result))
+                if (db.Nhanviens.ToList().Where(x => x.Id == result).Count() == 0)
+                {
+                    MessageBox.Show("Staff id not exist");
+                    txtstaffID.Focus();
+                }
+                else
+                {
+                    var data = db.Nhanviens.ToList();
+                    Nhanvien Staff = data.Where(x => x.Id == result).SingleOrDefault();
+                    txtName.Text = Staff.Name;
+                    txtAddress.Text = Staff.Address;
+                    txtGender.Text = Staff.Gender.Trim();
+                    txtBranch.Text = Staff.Chinhanh.Chinhanh1;
+                    txtManager.Text = Staff.Nhanvien2.Name;
+                }
         }
         private void btconfirm_Click(object sender, EventArgs e)
         {
@@ -96,8 +88,21 @@ namespace Tiệm_nét
                 btEditOff();
                 if (Add)
                 {
-                    try
+                    if (txtstaffID.Text == "") MessageBox.Show(@"Chưa nhập id nhân viên ! Vui lòng nhập id.", @"Message", MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    else if (txtName.Text == "") MessageBox.Show("Chưa nhập tên nhân viên! Vui lòng nhập tên nhân viên", @"Message", MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    else if (txtAddress.Text =="") MessageBox.Show("Chưa nhập địa chỉ nhân viên! Vui lòng nhập địa chỉ nhân viên", @"Message", MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    else if (txtBranch.Text == "") MessageBox.Show("Chưa nhập chi nhánh quản lý nhân viên! Vui lòng nhập chi nhánh", @"Message", MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    else if (txtGender.Text == "") MessageBox.Show("Chưa nhập hoặc nhập sai giới tính! Vui lòng nhập giới tính", @"Message", MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    else if (txtManager.Text == "") MessageBox.Show("Chưa nhập tên quản lý! Vui lòng nhập tên quản lý phụ trách", @"Message", MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    else 
                     {
+                    try {
                         db.Nhanviens.Add(new Nhanvien
                         {
                             Id = int.Parse(txtstaffID.Text.Trim()),
@@ -112,33 +117,49 @@ namespace Tiệm_nét
                         MessageBox.Show("Đã thêm dữ liệu thành công!");
                     }
                     catch (Exception) { MessageBox.Show("Error Save"); }
+                    }
                 }
                 else
                 {
-                    try
+                    if (txtstaffID.Text == "") MessageBox.Show("Chưa nhập id nhân viên! Vui lòng nhập ID", @"Message", MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    else if (txtName.Text == "") MessageBox.Show("Chưa nhập tên nhân viên! Vui lòng nhập tên nhân viên", @"Message", MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    else if (txtAddress.Text == "") MessageBox.Show("Chưa nhập địa chỉ nhân viên! Vui lòng nhập địa chỉ nhân viên", @"Message", MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    else if (txtBranch.Text == "") MessageBox.Show("Chưa nhập chi nhánh quản lý nhân viên! Vui lòng nhập chi nhánh", @"Message", MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    else if (txtGender.Text == "") MessageBox.Show("Chưa nhập hoặc nhập sai giới tính! Vui lòng nhập nam hoặc nữ", @"Message", MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    else if (txtManager.Text == "") MessageBox.Show("Chưa nhập tên quản lý! Vui lòng nhập tên quản lý phụ trách", @"Message", MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    else 
                     {
-                        Nhanvien staff = db.Nhanviens.ToList().SingleOrDefault(x => x.Id == int.Parse(txtstaffID.Text.Trim()));
-                        staff.Address = txtAddress.Text;
-                        staff.Gender = txtGender.Text.Trim();
-                        if (txtManager.Text.Equals(txtName.Text)) staff.Id_Manager = int.Parse(txtstaffID.Text.Trim());
-                        else
-                            staff.Id_Manager = db.Nhanviens.ToList().SingleOrDefault(x => x.Name == txtManager.Text).Id;
-                        staff.Id_chinhanh = db.Chinhanhs.ToList().SingleOrDefault(x => x.Chinhanh1 == txtBranch.Text).Id;
-                        staff.Name = txtName.Text;
-                        db.SaveChanges();
-
-                        LoadData();
-                        MessageBox.Show("Đã sửa xong!");
-                    }
-                    catch (Exception)
-                    {
-                        MessageBox.Show("Error Edit");
+                        try
+                        {
+                            Nhanvien staff = db.Nhanviens.ToList().SingleOrDefault(x => x.Id == int.Parse(txtstaffID.Text.Trim()));
+                            staff.Address = txtAddress.Text;
+                            staff.Gender = txtGender.Text.Trim();
+                            if (txtManager.Text.Equals(txtName.Text)) staff.Id_Manager = int.Parse(txtstaffID.Text.Trim());
+                            else
+                                staff.Id_Manager = db.Nhanviens.ToList().SingleOrDefault(x => x.Name == txtManager.Text).Id;
+                            staff.Id_chinhanh = db.Chinhanhs.ToList().SingleOrDefault(x => x.Chinhanh1 == txtBranch.Text).Id;
+                            staff.Name = txtName.Text;
+                            db.SaveChanges();
+                            LoadData();
+                            MessageBox.Show("Đã sửa xong!");
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("Error Edit");
+                        }
                     }
                 }
             }
         }
         private void btcancel_Click(object sender, EventArgs e)
         {
+            Add = false;
             Reset();
             btEditOff();
         }
@@ -174,6 +195,7 @@ namespace Tiệm_nét
                 btEditOn();
                 btAdd.Enabled = false;
                 btDelete.Enabled = false;
+                txtstaffID.Enabled = false;
             }
         }
 
@@ -215,12 +237,22 @@ namespace Tiệm_nét
 
         private void txtstaffID_Leave(object sender, EventArgs e)
         {
-            var checkexit = db.Nhanviens.ToList().Where(x => x.Id == int.Parse(txtstaffID.Text.Trim())).Count();
-            if (checkexit != 0)
+            int result;
+            if (int.TryParse(txtstaffID.Text.Trim(), out result))
             {
+                var checkexit = db.Nhanviens.ToList().Where(x => x.Id == result).Count();
                 if (Add)
-                    MessageBox.Show("Staff id has exist");
+                {
+                    if (checkexit != 0)
+                        MessageBox.Show("Nhân viên đã tồn tại");
+                }
             }
+        }
+
+        private void txtstaffID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.') e.Handled = true;
+            if (e.KeyChar == '.' && ((TextBox)sender).Text.IndexOf('.') > -1) e.Handled = true;
         }
     }
 }

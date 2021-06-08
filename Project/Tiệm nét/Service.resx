@@ -657,7 +657,7 @@
         9Cm7r1CFKlShClWoQhWaJfTII/8P1zOv0MIpngwAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btcancel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btCancel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAABs9JREFUeF7t
         nVls3FQUhod9EbvYhMTyAEjQF9BgO0tVHNtpSaWIB4h4oCBFQBdaAQKkPvDSN0AsYhGLhHiANxASEvQB
@@ -692,7 +692,7 @@
         ZaDnrgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btconfirm.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btConfirm.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAABxZJREFUeF7t
         nVtsFFUYx+v9Eu/xFhMvL5qoj775oFUx2t3O7o648dJSqdRSAqkGTXzwpYkPtpQaWrzGGCNvNji7BWIE

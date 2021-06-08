@@ -277,11 +277,12 @@ namespace Tiệm_nét
             // 
             // guna2HtmlLabel8
             // 
+            this.guna2HtmlLabel8.AutoSize = false;
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(302, 38);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(305, 23);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(394, 72);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(429, 72);
             this.guna2HtmlLabel8.TabIndex = 15;
             this.guna2HtmlLabel8.Text = "MegaZ Cyber";
             // 
@@ -429,7 +430,7 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
-            this.guna2PictureBox4.Location = new System.Drawing.Point(233, 25);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(222, 22);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
             this.guna2PictureBox4.ShadowDecoration.Parent = this.guna2PictureBox4;
             this.guna2PictureBox4.Size = new System.Drawing.Size(77, 73);
@@ -448,11 +449,11 @@ namespace Tiệm_nét
             this.btMinize.Image = ((System.Drawing.Image)(resources.GetObject("btMinize.Image")));
             this.btMinize.ImageRotate = 0F;
             this.btMinize.ImageSize = new System.Drawing.Size(40, 40);
-            this.btMinize.Location = new System.Drawing.Point(761, -4);
+            this.btMinize.Location = new System.Drawing.Point(740, 12);
             this.btMinize.Name = "btMinize";
             this.btMinize.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btMinize.PressedState.Parent = this.btMinize;
-            this.btMinize.Size = new System.Drawing.Size(79, 76);
+            this.btMinize.Size = new System.Drawing.Size(70, 61);
             this.btMinize.TabIndex = 13;
             this.btMinize.UseTransparentBackground = true;
             // 
@@ -466,11 +467,11 @@ namespace Tiệm_nét
             this.btExit.Image = ((System.Drawing.Image)(resources.GetObject("btExit.Image")));
             this.btExit.ImageRotate = 0F;
             this.btExit.ImageSize = new System.Drawing.Size(40, 40);
-            this.btExit.Location = new System.Drawing.Point(813, -4);
+            this.btExit.Location = new System.Drawing.Point(790, 1);
             this.btExit.Name = "btExit";
             this.btExit.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btExit.PressedState.Parent = this.btExit;
-            this.btExit.Size = new System.Drawing.Size(79, 76);
+            this.btExit.Size = new System.Drawing.Size(92, 83);
             this.btExit.TabIndex = 12;
             this.btExit.UseTransparentBackground = true;
             this.btExit.Click += new System.EventHandler(this.guna2ImageButton1_Click);
@@ -499,6 +500,7 @@ namespace Tiệm_nét
             this.Controls.Add(this.btExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
@@ -508,7 +510,6 @@ namespace Tiệm_nét
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

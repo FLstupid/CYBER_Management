@@ -31,13 +31,16 @@ namespace Tiệm_nét
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(branch));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.branchname = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btDelete = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btEdit = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btReload = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btcancel = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btconfirm = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btCancel = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btConfirm = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btAdd = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btExit = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -47,16 +50,16 @@ namespace Tiệm_nét
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.PictureBranch = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.txtBName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtDID = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBID = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtBName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Dataview = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
@@ -64,21 +67,22 @@ namespace Tiệm_nét
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBranch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             this.guna2GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dataview)).BeginInit();
             this.SuspendLayout();
             // 
             // branchname
             // 
+            this.branchname.AutoSize = false;
             this.branchname.BackColor = System.Drawing.Color.Transparent;
             this.branchname.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.branchname.Location = new System.Drawing.Point(625, 285);
+            this.branchname.Location = new System.Drawing.Point(770, 329);
+            this.branchname.Margin = new System.Windows.Forms.Padding(4);
             this.branchname.Name = "branchname";
-            this.branchname.Size = new System.Drawing.Size(94, 25);
+            this.branchname.Size = new System.Drawing.Size(207, 31);
             this.branchname.TabIndex = 27;
-            this.branchname.Text = "#######";
-            this.branchname.Click += new System.EventHandler(this.branchname_Click);
+            this.branchname.Text = "List Branch";
             // 
             // imageList1
             // 
@@ -101,13 +105,15 @@ namespace Tiệm_nét
             this.btDelete.Image = ((System.Drawing.Image)(resources.GetObject("btDelete.Image")));
             this.btDelete.ImageRotate = 0F;
             this.btDelete.ImageSize = new System.Drawing.Size(68, 68);
-            this.btDelete.Location = new System.Drawing.Point(724, 317);
+            this.btDelete.Location = new System.Drawing.Point(955, 443);
+            this.btDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btDelete.Name = "btDelete";
             this.btDelete.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btDelete.PressedState.Parent = this.btDelete;
-            this.btDelete.Size = new System.Drawing.Size(64, 66);
+            this.btDelete.Size = new System.Drawing.Size(85, 81);
             this.btDelete.TabIndex = 81;
             this.btDelete.UseTransparentBackground = true;
+            this.btDelete.Click += new System.EventHandler(this.btDelete_Click);
             // 
             // btEdit
             // 
@@ -122,13 +128,15 @@ namespace Tiệm_nét
             this.btEdit.Image = ((System.Drawing.Image)(resources.GetObject("btEdit.Image")));
             this.btEdit.ImageRotate = 0F;
             this.btEdit.ImageSize = new System.Drawing.Size(68, 68);
-            this.btEdit.Location = new System.Drawing.Point(585, 317);
+            this.btEdit.Location = new System.Drawing.Point(770, 443);
+            this.btEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btEdit.Name = "btEdit";
             this.btEdit.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btEdit.PressedState.Parent = this.btEdit;
-            this.btEdit.Size = new System.Drawing.Size(64, 66);
+            this.btEdit.Size = new System.Drawing.Size(85, 81);
             this.btEdit.TabIndex = 80;
             this.btEdit.UseTransparentBackground = true;
+            this.btEdit.Click += new System.EventHandler(this.btEdit_Click);
             // 
             // btReload
             // 
@@ -143,51 +151,57 @@ namespace Tiệm_nét
             this.btReload.Image = ((System.Drawing.Image)(resources.GetObject("btReload.Image")));
             this.btReload.ImageRotate = 0F;
             this.btReload.ImageSize = new System.Drawing.Size(56, 56);
-            this.btReload.Location = new System.Drawing.Point(655, 317);
+            this.btReload.Location = new System.Drawing.Point(863, 443);
+            this.btReload.Margin = new System.Windows.Forms.Padding(4);
             this.btReload.Name = "btReload";
             this.btReload.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btReload.PressedState.Parent = this.btReload;
-            this.btReload.Size = new System.Drawing.Size(64, 66);
+            this.btReload.Size = new System.Drawing.Size(85, 81);
             this.btReload.TabIndex = 79;
             this.btReload.UseTransparentBackground = true;
+            this.btReload.Click += new System.EventHandler(this.btReload_Click);
             // 
-            // btcancel
+            // btCancel
             // 
-            this.btcancel.BackColor = System.Drawing.Color.Transparent;
-            this.btcancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btcancel.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btcancel.CheckedState.Parent = this.btcancel;
-            this.btcancel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btcancel.HoverState.ImageSize = new System.Drawing.Size(50, 50);
-            this.btcancel.HoverState.Parent = this.btcancel;
-            this.btcancel.Image = ((System.Drawing.Image)(resources.GetObject("btcancel.Image")));
-            this.btcancel.ImageRotate = 0F;
-            this.btcancel.Location = new System.Drawing.Point(545, 122);
-            this.btcancel.Name = "btcancel";
-            this.btcancel.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btcancel.PressedState.Parent = this.btcancel;
-            this.btcancel.Size = new System.Drawing.Size(64, 54);
-            this.btcancel.TabIndex = 78;
-            this.btcancel.UseTransparentBackground = true;
+            this.btCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btCancel.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btCancel.CheckedState.Parent = this.btCancel;
+            this.btCancel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btCancel.HoverState.ImageSize = new System.Drawing.Size(50, 50);
+            this.btCancel.HoverState.Parent = this.btCancel;
+            this.btCancel.Image = ((System.Drawing.Image)(resources.GetObject("btCancel.Image")));
+            this.btCancel.ImageRotate = 0F;
+            this.btCancel.Location = new System.Drawing.Point(892, 369);
+            this.btCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btCancel.Name = "btCancel";
+            this.btCancel.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btCancel.PressedState.Parent = this.btCancel;
+            this.btCancel.Size = new System.Drawing.Size(85, 66);
+            this.btCancel.TabIndex = 78;
+            this.btCancel.UseTransparentBackground = true;
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
-            // btconfirm
+            // btConfirm
             // 
-            this.btconfirm.BackColor = System.Drawing.Color.Transparent;
-            this.btconfirm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btconfirm.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btconfirm.CheckedState.Parent = this.btconfirm;
-            this.btconfirm.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btconfirm.HoverState.ImageSize = new System.Drawing.Size(50, 50);
-            this.btconfirm.HoverState.Parent = this.btconfirm;
-            this.btconfirm.Image = ((System.Drawing.Image)(resources.GetObject("btconfirm.Image")));
-            this.btconfirm.ImageRotate = 0F;
-            this.btconfirm.Location = new System.Drawing.Point(545, 59);
-            this.btconfirm.Name = "btconfirm";
-            this.btconfirm.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btconfirm.PressedState.Parent = this.btconfirm;
-            this.btconfirm.Size = new System.Drawing.Size(64, 54);
-            this.btconfirm.TabIndex = 77;
-            this.btconfirm.UseTransparentBackground = true;
+            this.btConfirm.BackColor = System.Drawing.Color.Transparent;
+            this.btConfirm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btConfirm.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btConfirm.CheckedState.Parent = this.btConfirm;
+            this.btConfirm.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btConfirm.HoverState.ImageSize = new System.Drawing.Size(50, 50);
+            this.btConfirm.HoverState.Parent = this.btConfirm;
+            this.btConfirm.Image = ((System.Drawing.Image)(resources.GetObject("btConfirm.Image")));
+            this.btConfirm.ImageRotate = 0F;
+            this.btConfirm.Location = new System.Drawing.Point(770, 368);
+            this.btConfirm.Margin = new System.Windows.Forms.Padding(4);
+            this.btConfirm.Name = "btConfirm";
+            this.btConfirm.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btConfirm.PressedState.Parent = this.btConfirm;
+            this.btConfirm.Size = new System.Drawing.Size(85, 66);
+            this.btConfirm.TabIndex = 77;
+            this.btConfirm.UseTransparentBackground = true;
+            this.btConfirm.Click += new System.EventHandler(this.btConfirm_Click);
             // 
             // btAdd
             // 
@@ -202,13 +216,15 @@ namespace Tiệm_nét
             this.btAdd.Image = ((System.Drawing.Image)(resources.GetObject("btAdd.Image")));
             this.btAdd.ImageRotate = 0F;
             this.btAdd.ImageSize = new System.Drawing.Size(68, 68);
-            this.btAdd.Location = new System.Drawing.Point(515, 317);
+            this.btAdd.Location = new System.Drawing.Point(677, 443);
+            this.btAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btAdd.Name = "btAdd";
             this.btAdd.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btAdd.PressedState.Parent = this.btAdd;
-            this.btAdd.Size = new System.Drawing.Size(64, 66);
+            this.btAdd.Size = new System.Drawing.Size(85, 81);
             this.btAdd.TabIndex = 76;
             this.btAdd.UseTransparentBackground = true;
+            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
             // btExit
             // 
@@ -219,33 +235,35 @@ namespace Tiệm_nét
             this.btExit.HoverState.Parent = this.btExit;
             this.btExit.Image = ((System.Drawing.Image)(resources.GetObject("btExit.Image")));
             this.btExit.ImageRotate = 0F;
-            this.btExit.Location = new System.Drawing.Point(739, 451);
+            this.btExit.Location = new System.Drawing.Point(978, 546);
+            this.btExit.Margin = new System.Windows.Forms.Padding(4);
             this.btExit.Name = "btExit";
             this.btExit.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btExit.PressedState.Parent = this.btExit;
-            this.btExit.Size = new System.Drawing.Size(64, 54);
+            this.btExit.Size = new System.Drawing.Size(85, 66);
             this.btExit.TabIndex = 48;
-            this.btExit.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 
             // guna2PictureBox8
             // 
             this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
-            this.guna2PictureBox8.Location = new System.Drawing.Point(625, -2);
+            this.guna2PictureBox8.Location = new System.Drawing.Point(833, -2);
+            this.guna2PictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox8.Name = "guna2PictureBox8";
             this.guna2PictureBox8.ShadowDecoration.Parent = this.guna2PictureBox8;
-            this.guna2PictureBox8.Size = new System.Drawing.Size(105, 84);
+            this.guna2PictureBox8.Size = new System.Drawing.Size(140, 103);
             this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox8.TabIndex = 40;
             this.guna2PictureBox8.TabStop = false;
-            this.guna2PictureBox8.Click += new System.EventHandler(this.guna2PictureBox8_Click);
             // 
             // guna2PictureBox7
             // 
             this.guna2PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.Image")));
-            this.guna2PictureBox7.Location = new System.Drawing.Point(640, 455);
+            this.guna2PictureBox7.Location = new System.Drawing.Point(871, 580);
+            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox7.Name = "guna2PictureBox7";
             this.guna2PictureBox7.ShadowDecoration.Parent = this.guna2PictureBox7;
-            this.guna2PictureBox7.Size = new System.Drawing.Size(52, 42);
+            this.guna2PictureBox7.Size = new System.Drawing.Size(48, 32);
             this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox7.TabIndex = 39;
             this.guna2PictureBox7.TabStop = false;
@@ -253,10 +271,11 @@ namespace Tiệm_nét
             // guna2PictureBox6
             // 
             this.guna2PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox6.Image")));
-            this.guna2PictureBox6.Location = new System.Drawing.Point(573, 451);
+            this.guna2PictureBox6.Location = new System.Drawing.Point(782, 575);
+            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
             this.guna2PictureBox6.ShadowDecoration.Parent = this.guna2PictureBox6;
-            this.guna2PictureBox6.Size = new System.Drawing.Size(60, 54);
+            this.guna2PictureBox6.Size = new System.Drawing.Size(59, 46);
             this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox6.TabIndex = 38;
             this.guna2PictureBox6.TabStop = false;
@@ -264,10 +283,11 @@ namespace Tiệm_nét
             // guna2PictureBox5
             // 
             this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
-            this.guna2PictureBox5.Location = new System.Drawing.Point(498, 451);
+            this.guna2PictureBox5.Location = new System.Drawing.Point(682, 575);
+            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox5.Name = "guna2PictureBox5";
             this.guna2PictureBox5.ShadowDecoration.Parent = this.guna2PictureBox5;
-            this.guna2PictureBox5.Size = new System.Drawing.Size(69, 54);
+            this.guna2PictureBox5.Size = new System.Drawing.Size(71, 46);
             this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox5.TabIndex = 37;
             this.guna2PictureBox5.TabStop = false;
@@ -275,22 +295,23 @@ namespace Tiệm_nét
             // guna2PictureBox3
             // 
             this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
-            this.guna2PictureBox3.Location = new System.Drawing.Point(433, 443);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(595, 565);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
-            this.guna2PictureBox3.Size = new System.Drawing.Size(59, 54);
+            this.guna2PictureBox3.Size = new System.Drawing.Size(58, 46);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox3.TabIndex = 36;
             this.guna2PictureBox3.TabStop = false;
-            this.guna2PictureBox3.Click += new System.EventHandler(this.guna2PictureBox3_Click);
             // 
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
-            this.guna2PictureBox2.Location = new System.Drawing.Point(360, 446);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(498, 569);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(67, 54);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(68, 46);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 35;
             this.guna2PictureBox2.TabStop = false;
@@ -298,32 +319,23 @@ namespace Tiệm_nét
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(282, 439);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(394, 560);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(72, 65);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(75, 60);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 34;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // PictureBranch
-            // 
-            this.PictureBranch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.PictureBranch.Location = new System.Drawing.Point(573, 79);
-            this.PictureBranch.Name = "PictureBranch";
-            this.PictureBranch.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.PictureBranch.ShadowDecoration.Parent = this.PictureBranch;
-            this.PictureBranch.Size = new System.Drawing.Size(200, 200);
-            this.PictureBranch.TabIndex = 26;
-            this.PictureBranch.TabStop = false;
-            // 
             // guna2PictureBox4
             // 
             this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
-            this.guna2PictureBox4.Location = new System.Drawing.Point(22, 322);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(29, 396);
+            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
             this.guna2PictureBox4.ShadowDecoration.Parent = this.guna2PictureBox4;
-            this.guna2PictureBox4.Size = new System.Drawing.Size(254, 183);
+            this.guna2PictureBox4.Size = new System.Drawing.Size(339, 225);
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox4.TabIndex = 82;
             this.guna2PictureBox4.TabStop = false;
@@ -340,13 +352,46 @@ namespace Tiệm_nét
             this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.guna2GroupBox1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 60, 0, 0);
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2GroupBox1.Location = new System.Drawing.Point(12, 41);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(13, 33);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(508, 275);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(623, 349);
             this.guna2GroupBox1.TabIndex = 83;
+            // 
+            // txtBName
+            // 
+            this.txtBName.BorderColor = System.Drawing.Color.Silver;
+            this.txtBName.BorderRadius = 10;
+            this.txtBName.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.txtBName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBName.DefaultText = "";
+            this.txtBName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBName.DisabledState.Parent = this.txtBName;
+            this.txtBName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBName.FocusedState.Parent = this.txtBName;
+            this.txtBName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtBName.ForeColor = System.Drawing.Color.Black;
+            this.txtBName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBName.HoverState.Parent = this.txtBName;
+            this.txtBName.Location = new System.Drawing.Point(317, 105);
+            this.txtBName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBName.Name = "txtBName";
+            this.txtBName.PasswordChar = '\0';
+            this.txtBName.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtBName.PlaceholderText = "xxx";
+            this.txtBName.SelectedText = "";
+            this.txtBName.ShadowDecoration.Parent = this.txtBName;
+            this.txtBName.Size = new System.Drawing.Size(239, 44);
+            this.txtBName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtBName.TabIndex = 157;
+            this.txtBName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtDID
             // 
@@ -366,14 +411,15 @@ namespace Tiệm_nét
             this.txtDID.ForeColor = System.Drawing.Color.Black;
             this.txtDID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDID.HoverState.Parent = this.txtDID;
-            this.txtDID.Location = new System.Drawing.Point(270, 208);
+            this.txtDID.Location = new System.Drawing.Point(317, 275);
+            this.txtDID.Margin = new System.Windows.Forms.Padding(4);
             this.txtDID.Name = "txtDID";
             this.txtDID.PasswordChar = '\0';
             this.txtDID.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txtDID.PlaceholderText = "xxx";
             this.txtDID.SelectedText = "";
             this.txtDID.ShadowDecoration.Parent = this.txtDID;
-            this.txtDID.Size = new System.Drawing.Size(179, 36);
+            this.txtDID.Size = new System.Drawing.Size(239, 44);
             this.txtDID.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtDID.TabIndex = 156;
             this.txtDID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -396,101 +442,146 @@ namespace Tiệm_nét
             this.txtBID.ForeColor = System.Drawing.Color.Black;
             this.txtBID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBID.HoverState.Parent = this.txtBID;
-            this.txtBID.Location = new System.Drawing.Point(270, 137);
+            this.txtBID.Location = new System.Drawing.Point(317, 187);
+            this.txtBID.Margin = new System.Windows.Forms.Padding(4);
             this.txtBID.Name = "txtBID";
             this.txtBID.PasswordChar = '\0';
             this.txtBID.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txtBID.PlaceholderText = "xxx";
             this.txtBID.SelectedText = "";
             this.txtBID.ShadowDecoration.Parent = this.txtBID;
-            this.txtBID.Size = new System.Drawing.Size(179, 36);
+            this.txtBID.Size = new System.Drawing.Size(239, 44);
             this.txtBID.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtBID.TabIndex = 155;
             this.txtBID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel4
             // 
+            this.guna2HtmlLabel4.AutoSize = false;
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(46, 219);
+            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(39, 288);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(172, 25);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(220, 31);
             this.guna2HtmlLabel4.TabIndex = 30;
-            this.guna2HtmlLabel4.Text = "District ID :";
+            this.guna2HtmlLabel4.Text = "Location";
             // 
             // guna2HtmlLabel3
             // 
+            this.guna2HtmlLabel3.AutoSize = false;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(46, 81);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(36, 118);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(172, 25);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(188, 31);
             this.guna2HtmlLabel3.TabIndex = 28;
-            this.guna2HtmlLabel3.Text = "Branch Name :";
+            this.guna2HtmlLabel3.Text = "Branch";
             // 
             // guna2HtmlLabel2
             // 
+            this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(46, 148);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(39, 200);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(146, 25);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(73, 31);
             this.guna2HtmlLabel2.TabIndex = 27;
-            this.guna2HtmlLabel2.Text = "Branch ID :";
+            this.guna2HtmlLabel2.Text = "ID";
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("OCR A Extended", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(46, 0);
+            this.guna2HtmlLabel1.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel1.IsSelectionEnabled = false;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(-263, 10);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(0);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(417, 41);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(1126, 49);
             this.guna2HtmlLabel1.TabIndex = 26;
             this.guna2HtmlLabel1.Text = "Branch Information";
+            this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
+            this.guna2HtmlLabel1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
-            // txtBName
+            // Dataview
             // 
-            this.txtBName.BorderColor = System.Drawing.Color.Silver;
-            this.txtBName.BorderRadius = 10;
-            this.txtBName.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.txtBName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBName.DefaultText = "";
-            this.txtBName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBName.DisabledState.Parent = this.txtBName;
-            this.txtBName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBName.FocusedState.Parent = this.txtBName;
-            this.txtBName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBName.ForeColor = System.Drawing.Color.Black;
-            this.txtBName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBName.HoverState.Parent = this.txtBName;
-            this.txtBName.Location = new System.Drawing.Point(270, 70);
-            this.txtBName.Name = "txtBName";
-            this.txtBName.PasswordChar = '\0';
-            this.txtBName.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtBName.PlaceholderText = "xxx";
-            this.txtBName.SelectedText = "";
-            this.txtBName.ShadowDecoration.Parent = this.txtBName;
-            this.txtBName.Size = new System.Drawing.Size(179, 36);
-            this.txtBName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txtBName.TabIndex = 157;
-            this.txtBName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.Dataview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.Dataview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Dataview.BackgroundColor = System.Drawing.Color.White;
+            this.Dataview.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Dataview.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Dataview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dataview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.Dataview.ColumnHeadersHeight = 30;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Dataview.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Dataview.EnableHeadersVisualStyles = false;
+            this.Dataview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Dataview.Location = new System.Drawing.Point(677, 95);
+            this.Dataview.Name = "Dataview";
+            this.Dataview.RowHeadersVisible = false;
+            this.Dataview.RowHeadersWidth = 51;
+            this.Dataview.RowTemplate.Height = 24;
+            this.Dataview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Dataview.Size = new System.Drawing.Size(378, 227);
+            this.Dataview.TabIndex = 84;
+            this.Dataview.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.Dataview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.Dataview.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.Dataview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.Dataview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.Dataview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.Dataview.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.Dataview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Dataview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dataview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Dataview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.Dataview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.Dataview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.Dataview.ThemeStyle.HeaderStyle.Height = 30;
+            this.Dataview.ThemeStyle.ReadOnly = false;
+            this.Dataview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.Dataview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Dataview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.Dataview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Dataview.ThemeStyle.RowsStyle.Height = 24;
+            this.Dataview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Dataview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Dataview.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dataview_CellClick);
             // 
             // branch
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 505);
+            this.ClientSize = new System.Drawing.Size(1067, 622);
+            this.Controls.Add(this.Dataview);
             this.Controls.Add(this.guna2PictureBox4);
             this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.btDelete);
             this.Controls.Add(this.btEdit);
             this.Controls.Add(this.btReload);
-            this.Controls.Add(this.btcancel);
-            this.Controls.Add(this.btconfirm);
+            this.Controls.Add(this.btCancel);
+            this.Controls.Add(this.btConfirm);
             this.Controls.Add(this.btAdd);
             this.Controls.Add(this.btExit);
             this.Controls.Add(this.guna2PictureBox7);
@@ -500,11 +591,12 @@ namespace Tiệm_nét
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.branchname);
-            this.Controls.Add(this.PictureBranch);
             this.Controls.Add(this.guna2PictureBox8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "branch";
             this.Text = "branch";
+            this.Load += new System.EventHandler(this.branch_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
@@ -512,17 +604,14 @@ namespace Tiệm_nét
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBranch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             this.guna2GroupBox1.ResumeLayout(false);
-            this.guna2GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dataview)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2CirclePictureBox PictureBranch;
         private Guna.UI2.WinForms.Guna2HtmlLabel branchname;
         private System.Windows.Forms.ImageList imageList1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
@@ -535,8 +624,8 @@ namespace Tiệm_nét
         private Guna.UI2.WinForms.Guna2ImageButton btExit;
         private Guna.UI2.WinForms.Guna2ImageButton btEdit;
         private Guna.UI2.WinForms.Guna2ImageButton btReload;
-        private Guna.UI2.WinForms.Guna2ImageButton btcancel;
-        private Guna.UI2.WinForms.Guna2ImageButton btconfirm;
+        private Guna.UI2.WinForms.Guna2ImageButton btCancel;
+        private Guna.UI2.WinForms.Guna2ImageButton btConfirm;
         private Guna.UI2.WinForms.Guna2ImageButton btAdd;
         private Guna.UI2.WinForms.Guna2ImageButton btDelete;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
@@ -548,5 +637,6 @@ namespace Tiệm_nét
         private Guna.UI2.WinForms.Guna2TextBox txtDID;
         private Guna.UI2.WinForms.Guna2TextBox txtBID;
         private Guna.UI2.WinForms.Guna2TextBox txtBName;
+        private Guna.UI2.WinForms.Guna2DataGridView Dataview;
     }
 }
