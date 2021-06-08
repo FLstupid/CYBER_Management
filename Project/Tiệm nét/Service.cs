@@ -34,8 +34,8 @@ namespace Tiệm_nét
         }
         private void Detail_Click(object sender, EventArgs e)
         {
-            FoodBill f = new FoodBill();
-            f.Show();
+            BillFood fReport = new BillFood();
+            fReport.Show();
         }
 
         private void btExit_Click(object sender, EventArgs e)

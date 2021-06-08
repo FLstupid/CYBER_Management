@@ -95,13 +95,13 @@ namespace Tiệm_nét
             this.btDetail.Font = new System.Drawing.Font("OCR A Extended", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btDetail.ForeColor = System.Drawing.Color.White;
             this.btDetail.HoverState.Parent = this.btDetail;
-            this.btDetail.Location = new System.Drawing.Point(560, 194);
+            this.btDetail.Location = new System.Drawing.Point(13, 298);
             this.btDetail.Margin = new System.Windows.Forms.Padding(4);
             this.btDetail.Name = "btDetail";
             this.btDetail.ShadowDecoration.Parent = this.btDetail;
-            this.btDetail.Size = new System.Drawing.Size(144, 55);
+            this.btDetail.Size = new System.Drawing.Size(206, 67);
             this.btDetail.TabIndex = 112;
-            this.btDetail.Text = "Detail";
+            this.btDetail.Text = "All Detail";
             this.btDetail.Click += new System.EventHandler(this.Detail_Click);
             // 
             // btDelete
@@ -326,7 +326,7 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(-4, 312);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(22, 22);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
@@ -352,7 +352,7 @@ namespace Tiệm_nét
             this.guna2GroupBox1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 50, 0, 0);
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2GroupBox1.Location = new System.Drawing.Point(23, 13);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(328, 13);
             this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
@@ -559,7 +559,7 @@ namespace Tiệm_nét
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Transparent;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -567,7 +567,7 @@ namespace Tiệm_nét
             this.Dataview.EnableHeadersVisualStyles = false;
             this.Dataview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.Dataview.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.Dataview.Location = new System.Drawing.Point(264, 312);
+            this.Dataview.Location = new System.Drawing.Point(246, 312);
             this.Dataview.Name = "Dataview";
             this.Dataview.RowHeadersVisible = false;
             this.Dataview.RowHeadersWidth = 51;
@@ -578,7 +578,7 @@ namespace Tiệm_nét
             this.Dataview.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.Dataview.RowTemplate.Height = 24;
             this.Dataview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dataview.Size = new System.Drawing.Size(670, 233);
+            this.Dataview.Size = new System.Drawing.Size(665, 233);
             this.Dataview.TabIndex = 130;
             this.Dataview.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.Dataview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
