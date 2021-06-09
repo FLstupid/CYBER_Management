@@ -35,8 +35,8 @@ namespace Tiệm_nét
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Statistic));
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtChoose = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.dtGridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.cbChoose = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.dataview = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btExit = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox10 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -48,7 +48,7 @@ namespace Tiệm_nét
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dtGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
@@ -84,37 +84,45 @@ namespace Tiệm_nét
             this.guna2HtmlLabel3.TabIndex = 26;
             this.guna2HtmlLabel3.Text = "Table choose :";
             // 
-            // txtChoose
+            // cbChoose
             // 
-            this.txtChoose.BackColor = System.Drawing.Color.Transparent;
-            this.txtChoose.BorderRadius = 10;
-            this.txtChoose.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtChoose.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtChoose.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtChoose.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtChoose.FocusedState.Parent = this.txtChoose;
-            this.txtChoose.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtChoose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txtChoose.HoverState.Parent = this.txtChoose;
-            this.txtChoose.ItemHeight = 30;
-            this.txtChoose.ItemsAppearance.Parent = this.txtChoose;
-            this.txtChoose.Location = new System.Drawing.Point(382, 89);
-            this.txtChoose.Margin = new System.Windows.Forms.Padding(4);
-            this.txtChoose.Name = "txtChoose";
-            this.txtChoose.ShadowDecoration.Parent = this.txtChoose;
-            this.txtChoose.Size = new System.Drawing.Size(420, 36);
-            this.txtChoose.TabIndex = 27;
-            this.txtChoose.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
+            this.cbChoose.BackColor = System.Drawing.Color.Transparent;
+            this.cbChoose.BorderRadius = 10;
+            this.cbChoose.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbChoose.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbChoose.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbChoose.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbChoose.FocusedState.Parent = this.cbChoose;
+            this.cbChoose.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbChoose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbChoose.HoverState.Parent = this.cbChoose;
+            this.cbChoose.ItemHeight = 30;
+            this.cbChoose.Items.AddRange(new object[] {
+            "Branch",
+            "Staff",
+            "Computer",
+            "Customer",
+            "Bill",
+            "Bill Food"});
+            this.cbChoose.ItemsAppearance.Parent = this.cbChoose;
+            this.cbChoose.Location = new System.Drawing.Point(382, 89);
+            this.cbChoose.Margin = new System.Windows.Forms.Padding(4);
+            this.cbChoose.Name = "cbChoose";
+            this.cbChoose.ShadowDecoration.Parent = this.cbChoose;
+            this.cbChoose.Size = new System.Drawing.Size(420, 36);
+            this.cbChoose.TabIndex = 27;
+            this.cbChoose.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
-            // dtGridView
+            // dataview
             // 
+            this.dataview.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtGridView.BackgroundColor = System.Drawing.Color.White;
-            this.dtGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataview.BackgroundColor = System.Drawing.Color.White;
+            this.dataview.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataview.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -122,8 +130,9 @@ namespace Tiệm_nét
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtGridView.ColumnHeadersHeight = 4;
+            this.dataview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataview.ColumnHeadersHeight = 30;
+            this.dataview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -131,39 +140,39 @@ namespace Tiệm_nét
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dtGridView.EnableHeadersVisualStyles = false;
-            this.dtGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtGridView.Location = new System.Drawing.Point(16, 133);
-            this.dtGridView.Margin = new System.Windows.Forms.Padding(4);
-            this.dtGridView.Name = "dtGridView";
-            this.dtGridView.RowHeadersVisible = false;
-            this.dtGridView.RowHeadersWidth = 51;
-            this.dtGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtGridView.Size = new System.Drawing.Size(1035, 399);
-            this.dtGridView.TabIndex = 28;
-            this.dtGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dtGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dtGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dtGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dtGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dtGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dtGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dtGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dtGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtGridView.ThemeStyle.HeaderStyle.Height = 4;
-            this.dtGridView.ThemeStyle.ReadOnly = false;
-            this.dtGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dtGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dtGridView.ThemeStyle.RowsStyle.Height = 22;
-            this.dtGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataview.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataview.EnableHeadersVisualStyles = false;
+            this.dataview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataview.Location = new System.Drawing.Point(13, 144);
+            this.dataview.Margin = new System.Windows.Forms.Padding(4);
+            this.dataview.Name = "dataview";
+            this.dataview.RowHeadersVisible = false;
+            this.dataview.RowHeadersWidth = 51;
+            this.dataview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataview.Size = new System.Drawing.Size(1041, 403);
+            this.dataview.TabIndex = 28;
+            this.dataview.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dataview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataview.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dataview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dataview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dataview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dataview.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dataview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dataview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dataview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dataview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataview.ThemeStyle.HeaderStyle.Height = 30;
+            this.dataview.ThemeStyle.ReadOnly = false;
+            this.dataview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dataview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataview.ThemeStyle.RowsStyle.Height = 22;
+            this.dataview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // btExit
             // 
@@ -186,7 +195,7 @@ namespace Tiệm_nét
             // guna2PictureBox11
             // 
             this.guna2PictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox11.Image")));
-            this.guna2PictureBox11.Location = new System.Drawing.Point(831, 18);
+            this.guna2PictureBox11.Location = new System.Drawing.Point(859, 19);
             this.guna2PictureBox11.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox11.Name = "guna2PictureBox11";
             this.guna2PictureBox11.ShadowDecoration.Parent = this.guna2PictureBox11;
@@ -238,11 +247,11 @@ namespace Tiệm_nét
             // guna2PictureBox7
             // 
             this.guna2PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.Image")));
-            this.guna2PictureBox7.Location = new System.Drawing.Point(781, 567);
+            this.guna2PictureBox7.Location = new System.Drawing.Point(781, 583);
             this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox7.Name = "guna2PictureBox7";
             this.guna2PictureBox7.ShadowDecoration.Parent = this.guna2PictureBox7;
-            this.guna2PictureBox7.Size = new System.Drawing.Size(69, 52);
+            this.guna2PictureBox7.Size = new System.Drawing.Size(52, 36);
             this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox7.TabIndex = 124;
             this.guna2PictureBox7.TabStop = false;
@@ -250,11 +259,11 @@ namespace Tiệm_nét
             // guna2PictureBox6
             // 
             this.guna2PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox6.Image")));
-            this.guna2PictureBox6.Location = new System.Drawing.Point(681, 559);
+            this.guna2PictureBox6.Location = new System.Drawing.Point(681, 575);
             this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
             this.guna2PictureBox6.ShadowDecoration.Parent = this.guna2PictureBox6;
-            this.guna2PictureBox6.Size = new System.Drawing.Size(80, 66);
+            this.guna2PictureBox6.Size = new System.Drawing.Size(63, 50);
             this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox6.TabIndex = 123;
             this.guna2PictureBox6.TabStop = false;
@@ -262,11 +271,11 @@ namespace Tiệm_nét
             // guna2PictureBox5
             // 
             this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
-            this.guna2PictureBox5.Location = new System.Drawing.Point(560, 559);
+            this.guna2PictureBox5.Location = new System.Drawing.Point(560, 575);
             this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox5.Name = "guna2PictureBox5";
             this.guna2PictureBox5.ShadowDecoration.Parent = this.guna2PictureBox5;
-            this.guna2PictureBox5.Size = new System.Drawing.Size(92, 66);
+            this.guna2PictureBox5.Size = new System.Drawing.Size(75, 50);
             this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox5.TabIndex = 122;
             this.guna2PictureBox5.TabStop = false;
@@ -274,11 +283,11 @@ namespace Tiệm_nét
             // guna2PictureBox3
             // 
             this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
-            this.guna2PictureBox3.Location = new System.Drawing.Point(460, 553);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(460, 569);
             this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
-            this.guna2PictureBox3.Size = new System.Drawing.Size(79, 66);
+            this.guna2PictureBox3.Size = new System.Drawing.Size(62, 50);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox3.TabIndex = 121;
             this.guna2PictureBox3.TabStop = false;
@@ -286,11 +295,11 @@ namespace Tiệm_nét
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
-            this.guna2PictureBox2.Location = new System.Drawing.Point(341, 553);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(341, 569);
             this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(89, 66);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(72, 50);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 120;
             this.guna2PictureBox2.TabStop = false;
@@ -298,11 +307,11 @@ namespace Tiệm_nét
             // guna2PictureBox8
             // 
             this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
-            this.guna2PictureBox8.Location = new System.Drawing.Point(205, 539);
+            this.guna2PictureBox8.Location = new System.Drawing.Point(205, 555);
             this.guna2PictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox8.Name = "guna2PictureBox8";
             this.guna2PictureBox8.ShadowDecoration.Parent = this.guna2PictureBox8;
-            this.guna2PictureBox8.Size = new System.Drawing.Size(96, 80);
+            this.guna2PictureBox8.Size = new System.Drawing.Size(79, 64);
             this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox8.TabIndex = 119;
             this.guna2PictureBox8.TabStop = false;
@@ -323,8 +332,8 @@ namespace Tiệm_nét
             this.Controls.Add(this.guna2PictureBox10);
             this.Controls.Add(this.guna2PictureBox9);
             this.Controls.Add(this.guna2PictureBox1);
-            this.Controls.Add(this.dtGridView);
-            this.Controls.Add(this.txtChoose);
+            this.Controls.Add(this.dataview);
+            this.Controls.Add(this.cbChoose);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -332,7 +341,7 @@ namespace Tiệm_nét
             this.Name = "Statistic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ThongKe";
-            ((System.ComponentModel.ISupportInitialize)(this.dtGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
@@ -352,8 +361,8 @@ namespace Tiệm_nét
 
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2ComboBox txtChoose;
-        private Guna.UI2.WinForms.Guna2DataGridView dtGridView;
+        private Guna.UI2.WinForms.Guna2ComboBox cbChoose;
+        private Guna.UI2.WinForms.Guna2DataGridView dataview;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox10;
