@@ -60,9 +60,9 @@ namespace Tiệm_nét
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
             var dt = db.Khachhangs;
-            var datas = from i in dt select new { i.Id,i.Name,i.Password,i.Phone,i.Id_maytinh,i.Id_phongmay };
+            var datas = from i in dt select new { i.Id, i.Name, i.Password, i.Phone, i.Id_maytinh, i.Id_phongmay };
             Dataview.DataSource = datas.ToList();
-     
+
         }
         private void Loadinfo()
         {
@@ -232,7 +232,7 @@ namespace Tiệm_nét
                 }
             }
         }
-         
+
         private void txtCID_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter) { Loadinfo(); }
@@ -250,4 +250,4 @@ namespace Tiệm_nét
             setEditOff();
         }
     }
-    }
+}

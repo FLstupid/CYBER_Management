@@ -16,9 +16,7 @@ namespace Tiệm_nét
         {
             InitializeComponent();
         }
-
-     
-
+        private int count = 0;
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             DialogResult CheckExit = MessageBox.Show("Có muốn Exit không?", "Exit confirm!",
@@ -29,10 +27,31 @@ namespace Tiệm_nét
 
         private void btEnter_Click(object sender, EventArgs e)
         {
-            Hide();
-            Loading l = new Loading();
-            l.Show();
-
+            try
+            {
+                count += 1;
+                Cyber_netEntities db = new Cyber_netEntities();
+                int uid = int.Parse(txtUser.Text);
+                var us = db.Nhanviens.ToList().Select(x => x.Id == uid && x.Name == txtPassword.Text).Count();
+                if (us > 0)
+                {
+                    MessageBox.Show("Đăng nhập thành công !");
+                    Hide();
+                    Loading l = new Loading();
+                    l.Show();
+                }
+                else
+                {
+                    MessageBox.Show($"Wrong name or password ! {count} Times");
+                    if (count > 3) Application.Exit();
+                }
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+        }
+        private void txtID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.') e.Handled = true;
+            if (e.KeyChar == '.' && ((TextBox)sender).Text.IndexOf('.') > -1) e.Handled = true;
         }
     }
 }

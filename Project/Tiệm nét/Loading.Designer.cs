@@ -40,10 +40,11 @@ namespace Tiệm_nét
             // PictureLoading
             // 
             this.PictureLoading.Image = ((System.Drawing.Image)(resources.GetObject("PictureLoading.Image")));
-            this.PictureLoading.Location = new System.Drawing.Point(-96, 12);
+            this.PictureLoading.Location = new System.Drawing.Point(-128, 15);
+            this.PictureLoading.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PictureLoading.Name = "PictureLoading";
             this.PictureLoading.ShadowDecoration.Parent = this.PictureLoading;
-            this.PictureLoading.Size = new System.Drawing.Size(373, 200);
+            this.PictureLoading.Size = new System.Drawing.Size(497, 246);
             this.PictureLoading.TabIndex = 0;
             this.PictureLoading.TabStop = false;
             // 
@@ -59,13 +60,15 @@ namespace Tiệm_nét
             // 
             // Loading
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(326, 270);
+            this.ClientSize = new System.Drawing.Size(435, 332);
             this.Controls.Add(this.PictureLoading);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Loading";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loading";
             ((System.ComponentModel.ISupportInitialize)(this.PictureLoading)).EndInit();
             this.ResumeLayout(false);

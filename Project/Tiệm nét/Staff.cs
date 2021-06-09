@@ -52,9 +52,12 @@ namespace Tiệm_nét
                     txtManager.AutoCompleteCustomSource.Add(Item.Nhanvien2.Name);
                     txtBranch.AutoCompleteCustomSource.Add(Item.Chinhanh.Chinhanh1);
                 }
-                txtGender.DropDownStyle = ComboBoxStyle.DropDownList;
                 Loadinfo();
-            }catch(Exception ex) { MessageBox.Show(ex.Message); }
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+            var dt = db.Nhanviens.ToList();
+            var datas = from i in dt select new { i.Id, i.Name, i.Gender, i.Address, i.Id_Manager, i.Id_chinhanh };
+            Dataview.DataSource = datas.ToList();
         }
         private void Loadinfo()
         {
@@ -92,31 +95,32 @@ namespace Tiệm_nét
                         MessageBoxIcon.Warning);
                     else if (txtName.Text == "") MessageBox.Show("Chưa nhập tên nhân viên! Vui lòng nhập tên nhân viên", @"Message", MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
-                    else if (txtAddress.Text =="") MessageBox.Show("Chưa nhập địa chỉ nhân viên! Vui lòng nhập địa chỉ nhân viên", @"Message", MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
+                    else if (txtAddress.Text == "") MessageBox.Show("Chưa nhập địa chỉ nhân viên! Vui lòng nhập địa chỉ nhân viên", @"Message", MessageBoxButtons.OK,
+                         MessageBoxIcon.Warning);
                     else if (txtBranch.Text == "") MessageBox.Show("Chưa nhập chi nhánh quản lý nhân viên! Vui lòng nhập chi nhánh", @"Message", MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
                     else if (txtGender.Text == "") MessageBox.Show("Chưa nhập hoặc nhập sai giới tính! Vui lòng nhập giới tính", @"Message", MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
                     else if (txtManager.Text == "") MessageBox.Show("Chưa nhập tên quản lý! Vui lòng nhập tên quản lý phụ trách", @"Message", MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
-                    else 
+                    else
                     {
-                    try {
-                        db.Nhanviens.Add(new Nhanvien
+                        try
                         {
-                            Id = int.Parse(txtstaffID.Text.Trim()),
-                            Address = txtAddress.Text,
-                            Gender = txtGender.Text.Trim(),
-                            Name = txtName.Text,
-                            Id_Manager = db.Nhanviens.ToList().SingleOrDefault(x => x.Name == txtManager.Text).Id,
-                            Id_chinhanh = db.Chinhanhs.ToList().SingleOrDefault(x => x.Chinhanh1 == txtBranch.Text).Id
-                        });
-                        db.SaveChanges();
-                        LoadData();
-                        MessageBox.Show("Đã thêm dữ liệu thành công!");
-                    }
-                    catch (Exception) { MessageBox.Show("Error Save"); }
+                            db.Nhanviens.Add(new Nhanvien
+                            {
+                                Id = int.Parse(txtstaffID.Text.Trim()),
+                                Address = txtAddress.Text,
+                                Gender = txtGender.Text.Trim(),
+                                Name = txtName.Text,
+                                Id_Manager = db.Nhanviens.ToList().SingleOrDefault(x => x.Name == txtManager.Text).Id,
+                                Id_chinhanh = db.Chinhanhs.ToList().SingleOrDefault(x => x.Chinhanh1 == txtBranch.Text).Id
+                            });
+                            db.SaveChanges();
+                            LoadData();
+                            MessageBox.Show("Đã thêm dữ liệu thành công!");
+                        }
+                        catch (Exception) { MessageBox.Show("Error Save"); }
                     }
                 }
                 else
@@ -133,7 +137,7 @@ namespace Tiệm_nét
                         MessageBoxIcon.Warning);
                     else if (txtManager.Text == "") MessageBox.Show("Chưa nhập tên quản lý! Vui lòng nhập tên quản lý phụ trách", @"Message", MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
-                    else 
+                    else
                     {
                         try
                         {
@@ -254,5 +258,26 @@ namespace Tiệm_nét
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.') e.Handled = true;
             if (e.KeyChar == '.' && ((TextBox)sender).Text.IndexOf('.') > -1) e.Handled = true;
         }
+
+        private void Dataview_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = Dataview.CurrentCell.RowIndex;
+            txtstaffID.Text = Dataview.Rows[index].Cells[0].Value.ToString().Trim();
+            txtName.Text = Dataview.Rows[index].Cells[1].Value.ToString().Trim();
+            txtGender.Text = Dataview.Rows[index].Cells[2].Value.ToString().Trim();
+            txtAddress.Text = Dataview.Rows[index].Cells[3].Value.ToString().Trim();
+            txtManager.Text = Dataview.Rows[index].Cells[4].Value.ToString().Trim();
+            txtBranch.Text = Dataview.Rows[index].Cells[5].Value.ToString().Trim();
+        }
+
+        private void txtGender_Leave(object sender, EventArgs e)
+        {
+            if(txtGender.Text!="Male"|| txtGender.Text != "Female")
+            {
+                MessageBox.Show("Sai format(Male or Female) hoặc nội duung vui lòng thử lại", "Message", MessageBoxButtons.OK);
+                txtGender.Focus();
+            }
+        }
     }
 }
+
