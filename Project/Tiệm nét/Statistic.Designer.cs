@@ -67,7 +67,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("OCR A Extended", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(373, 15);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(264, 50);
             this.guna2HtmlLabel1.TabIndex = 2;
@@ -78,7 +78,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(147, 95);
-            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(227, 31);
             this.guna2HtmlLabel3.TabIndex = 26;
@@ -98,8 +98,8 @@ namespace Tiệm_nét
             this.txtChoose.HoverState.Parent = this.txtChoose;
             this.txtChoose.ItemHeight = 30;
             this.txtChoose.ItemsAppearance.Parent = this.txtChoose;
-            this.txtChoose.Location = new System.Drawing.Point(401, 81);
-            this.txtChoose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtChoose.Location = new System.Drawing.Point(382, 89);
+            this.txtChoose.Margin = new System.Windows.Forms.Padding(4);
             this.txtChoose.Name = "txtChoose";
             this.txtChoose.ShadowDecoration.Parent = this.txtChoose;
             this.txtChoose.Size = new System.Drawing.Size(420, 36);
@@ -135,7 +135,7 @@ namespace Tiệm_nét
             this.dtGridView.EnableHeadersVisualStyles = false;
             this.dtGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtGridView.Location = new System.Drawing.Point(16, 133);
-            this.dtGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtGridView.Margin = new System.Windows.Forms.Padding(4);
             this.dtGridView.Name = "dtGridView";
             this.dtGridView.RowHeadersVisible = false;
             this.dtGridView.RowHeadersWidth = 51;
@@ -175,7 +175,7 @@ namespace Tiệm_nét
             this.btExit.Image = ((System.Drawing.Image)(resources.GetObject("btExit.Image")));
             this.btExit.ImageRotate = 0F;
             this.btExit.Location = new System.Drawing.Point(988, 553);
-            this.btExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btExit.Margin = new System.Windows.Forms.Padding(4);
             this.btExit.Name = "btExit";
             this.btExit.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btExit.PressedState.Parent = this.btExit;
@@ -187,7 +187,7 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox11.Image")));
             this.guna2PictureBox11.Location = new System.Drawing.Point(831, 18);
-            this.guna2PictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox11.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox11.Name = "guna2PictureBox11";
             this.guna2PictureBox11.ShadowDecoration.Parent = this.guna2PictureBox11;
             this.guna2PictureBox11.Size = new System.Drawing.Size(129, 107);
@@ -199,7 +199,7 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox10.Image")));
             this.guna2PictureBox10.Location = new System.Drawing.Point(215, -2);
-            this.guna2PictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox10.Name = "guna2PictureBox10";
             this.guna2PictureBox10.ShadowDecoration.Parent = this.guna2PictureBox10;
             this.guna2PictureBox10.Size = new System.Drawing.Size(103, 98);
@@ -213,7 +213,7 @@ namespace Tiệm_nét
             this.guna2PictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.guna2PictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox9.Image")));
             this.guna2PictureBox9.Location = new System.Drawing.Point(111, -2);
-            this.guna2PictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox9.Name = "guna2PictureBox9";
             this.guna2PictureBox9.ShadowDecoration.Parent = this.guna2PictureBox9;
             this.guna2PictureBox9.Size = new System.Drawing.Size(136, 90);
@@ -227,7 +227,7 @@ namespace Tiệm_nét
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.Location = new System.Drawing.Point(16, -6);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(117, 102);
@@ -239,7 +239,7 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.Image")));
             this.guna2PictureBox7.Location = new System.Drawing.Point(781, 567);
-            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox7.Name = "guna2PictureBox7";
             this.guna2PictureBox7.ShadowDecoration.Parent = this.guna2PictureBox7;
             this.guna2PictureBox7.Size = new System.Drawing.Size(69, 52);
@@ -251,7 +251,7 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox6.Image")));
             this.guna2PictureBox6.Location = new System.Drawing.Point(681, 559);
-            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
             this.guna2PictureBox6.ShadowDecoration.Parent = this.guna2PictureBox6;
             this.guna2PictureBox6.Size = new System.Drawing.Size(80, 66);
@@ -263,7 +263,7 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
             this.guna2PictureBox5.Location = new System.Drawing.Point(560, 559);
-            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox5.Name = "guna2PictureBox5";
             this.guna2PictureBox5.ShadowDecoration.Parent = this.guna2PictureBox5;
             this.guna2PictureBox5.Size = new System.Drawing.Size(92, 66);
@@ -275,7 +275,7 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
             this.guna2PictureBox3.Location = new System.Drawing.Point(460, 553);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
             this.guna2PictureBox3.Size = new System.Drawing.Size(79, 66);
@@ -287,7 +287,7 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.Location = new System.Drawing.Point(341, 553);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
             this.guna2PictureBox2.Size = new System.Drawing.Size(89, 66);
@@ -299,7 +299,7 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
             this.guna2PictureBox8.Location = new System.Drawing.Point(205, 539);
-            this.guna2PictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox8.Name = "guna2PictureBox8";
             this.guna2PictureBox8.ShadowDecoration.Parent = this.guna2PictureBox8;
             this.guna2PictureBox8.Size = new System.Drawing.Size(96, 80);
@@ -328,7 +328,7 @@ namespace Tiệm_nét
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Statistic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ThongKe";
