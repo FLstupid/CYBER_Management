@@ -33,17 +33,11 @@ namespace Tiệm_nét
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btCategories = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btCustomer = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btService = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btBranch = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btComputer = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btStaff = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -52,6 +46,13 @@ namespace Tiệm_nét
             this.Panel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.Panel_show = new Guna.UI2.WinForms.Guna2Panel();
+            this.btCategories = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btCustomer = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btService = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btBranch = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btComputer = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btStaff = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btBillmerchant = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btStatistic = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -59,7 +60,6 @@ namespace Tiệm_nét
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btMinize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btExit = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.Panel_show = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientPanel1.SuspendLayout();
             this.Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -98,28 +98,6 @@ namespace Tiệm_nét
             this.guna2HtmlLabel12.TabIndex = 25;
             this.guna2HtmlLabel12.Text = "Categories";
             // 
-            // btCategories
-            // 
-            this.btCategories.AnimatedGIF = true;
-            this.btCategories.BackColor = System.Drawing.Color.Transparent;
-            this.btCategories.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btCategories.CheckedState.Parent = this.btCategories;
-            this.btCategories.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btCategories.HoverState.Image")));
-            this.btCategories.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btCategories.HoverState.Parent = this.btCategories;
-            this.btCategories.Image = ((System.Drawing.Image)(resources.GetObject("btCategories.Image")));
-            this.btCategories.ImageRotate = 0F;
-            this.btCategories.ImageSize = new System.Drawing.Size(90, 90);
-            this.btCategories.Location = new System.Drawing.Point(7, 508);
-            this.btCategories.Name = "btCategories";
-            this.btCategories.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btCategories.PressedState.Image")));
-            this.btCategories.PressedState.ImageSize = new System.Drawing.Size(50, 50);
-            this.btCategories.PressedState.Parent = this.btCategories;
-            this.btCategories.Size = new System.Drawing.Size(79, 80);
-            this.btCategories.TabIndex = 24;
-            this.btCategories.UseTransparentBackground = true;
-            this.btCategories.Click += new System.EventHandler(this.guna2ImageButton1_Click_1);
-            // 
             // guna2HtmlLabel7
             // 
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
@@ -129,27 +107,6 @@ namespace Tiệm_nét
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(71, 21);
             this.guna2HtmlLabel7.TabIndex = 23;
             this.guna2HtmlLabel7.Text = "Customer";
-            // 
-            // btCustomer
-            // 
-            this.btCustomer.AnimatedGIF = true;
-            this.btCustomer.BackColor = System.Drawing.Color.Transparent;
-            this.btCustomer.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btCustomer.CheckedState.Parent = this.btCustomer;
-            this.btCustomer.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btCustomer.HoverState.Image")));
-            this.btCustomer.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btCustomer.HoverState.Parent = this.btCustomer;
-            this.btCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btCustomer.Image")));
-            this.btCustomer.ImageRotate = 0F;
-            this.btCustomer.ImageSize = new System.Drawing.Size(90, 90);
-            this.btCustomer.Location = new System.Drawing.Point(0, 409);
-            this.btCustomer.Name = "btCustomer";
-            this.btCustomer.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btCustomer.PressedState.Parent = this.btCustomer;
-            this.btCustomer.Size = new System.Drawing.Size(79, 80);
-            this.btCustomer.TabIndex = 22;
-            this.btCustomer.UseTransparentBackground = true;
-            this.btCustomer.Click += new System.EventHandler(this.btCustomer_Click);
             // 
             // guna2HtmlLabel4
             // 
@@ -161,27 +118,6 @@ namespace Tiệm_nét
             this.guna2HtmlLabel4.TabIndex = 21;
             this.guna2HtmlLabel4.Text = "Service";
             // 
-            // btService
-            // 
-            this.btService.AnimatedGIF = true;
-            this.btService.BackColor = System.Drawing.Color.Transparent;
-            this.btService.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btService.CheckedState.Parent = this.btService;
-            this.btService.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btService.HoverState.Image")));
-            this.btService.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btService.HoverState.Parent = this.btService;
-            this.btService.Image = ((System.Drawing.Image)(resources.GetObject("btService.Image")));
-            this.btService.ImageRotate = 0F;
-            this.btService.ImageSize = new System.Drawing.Size(90, 90);
-            this.btService.Location = new System.Drawing.Point(3, 311);
-            this.btService.Name = "btService";
-            this.btService.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btService.PressedState.Parent = this.btService;
-            this.btService.Size = new System.Drawing.Size(79, 80);
-            this.btService.TabIndex = 20;
-            this.btService.UseTransparentBackground = true;
-            this.btService.Click += new System.EventHandler(this.btService_Click);
-            // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
@@ -191,27 +127,6 @@ namespace Tiệm_nét
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(52, 21);
             this.guna2HtmlLabel3.TabIndex = 19;
             this.guna2HtmlLabel3.Text = "Branch";
-            // 
-            // btBranch
-            // 
-            this.btBranch.AnimatedGIF = true;
-            this.btBranch.BackColor = System.Drawing.Color.Transparent;
-            this.btBranch.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btBranch.CheckedState.Parent = this.btBranch;
-            this.btBranch.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btBranch.HoverState.Image")));
-            this.btBranch.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btBranch.HoverState.Parent = this.btBranch;
-            this.btBranch.Image = ((System.Drawing.Image)(resources.GetObject("btBranch.Image")));
-            this.btBranch.ImageRotate = 0F;
-            this.btBranch.ImageSize = new System.Drawing.Size(90, 90);
-            this.btBranch.Location = new System.Drawing.Point(3, 212);
-            this.btBranch.Name = "btBranch";
-            this.btBranch.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btBranch.PressedState.Parent = this.btBranch;
-            this.btBranch.Size = new System.Drawing.Size(79, 80);
-            this.btBranch.TabIndex = 18;
-            this.btBranch.UseTransparentBackground = true;
-            this.btBranch.Click += new System.EventHandler(this.btBranch_Click);
             // 
             // guna2HtmlLabel2
             // 
@@ -223,27 +138,6 @@ namespace Tiệm_nét
             this.guna2HtmlLabel2.TabIndex = 17;
             this.guna2HtmlLabel2.Text = "Computer";
             // 
-            // btComputer
-            // 
-            this.btComputer.AnimatedGIF = true;
-            this.btComputer.BackColor = System.Drawing.Color.Transparent;
-            this.btComputer.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btComputer.CheckedState.Parent = this.btComputer;
-            this.btComputer.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btComputer.HoverState.Image")));
-            this.btComputer.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btComputer.HoverState.Parent = this.btComputer;
-            this.btComputer.Image = ((System.Drawing.Image)(resources.GetObject("btComputer.Image")));
-            this.btComputer.ImageRotate = 0F;
-            this.btComputer.ImageSize = new System.Drawing.Size(90, 90);
-            this.btComputer.Location = new System.Drawing.Point(3, 103);
-            this.btComputer.Name = "btComputer";
-            this.btComputer.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btComputer.PressedState.Parent = this.btComputer;
-            this.btComputer.Size = new System.Drawing.Size(79, 80);
-            this.btComputer.TabIndex = 16;
-            this.btComputer.UseTransparentBackground = true;
-            this.btComputer.Click += new System.EventHandler(this.btComputer_Click);
-            // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
@@ -253,27 +147,6 @@ namespace Tiệm_nét
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(37, 21);
             this.guna2HtmlLabel1.TabIndex = 15;
             this.guna2HtmlLabel1.Text = "Staff";
-            // 
-            // btStaff
-            // 
-            this.btStaff.AnimatedGIF = true;
-            this.btStaff.BackColor = System.Drawing.Color.Transparent;
-            this.btStaff.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btStaff.CheckedState.Parent = this.btStaff;
-            this.btStaff.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btStaff.HoverState.Image")));
-            this.btStaff.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btStaff.HoverState.Parent = this.btStaff;
-            this.btStaff.Image = ((System.Drawing.Image)(resources.GetObject("btStaff.Image")));
-            this.btStaff.ImageRotate = 0F;
-            this.btStaff.ImageSize = new System.Drawing.Size(90, 90);
-            this.btStaff.Location = new System.Drawing.Point(3, 3);
-            this.btStaff.Name = "btStaff";
-            this.btStaff.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btStaff.PressedState.Parent = this.btStaff;
-            this.btStaff.Size = new System.Drawing.Size(79, 80);
-            this.btStaff.TabIndex = 15;
-            this.btStaff.UseTransparentBackground = true;
-            this.btStaff.Click += new System.EventHandler(this.btStaff_Click);
             // 
             // guna2HtmlLabel8
             // 
@@ -354,6 +227,142 @@ namespace Tiệm_nét
             this.guna2HtmlLabel11.Size = new System.Drawing.Size(137, 48);
             this.guna2HtmlLabel11.TabIndex = 79;
             this.guna2HtmlLabel11.Text = "Statistic";
+            // 
+            // Panel_show
+            // 
+            this.Panel_show.Location = new System.Drawing.Point(92, 115);
+            this.Panel_show.Name = "Panel_show";
+            this.Panel_show.ShadowDecoration.Parent = this.Panel_show;
+            this.Panel_show.Size = new System.Drawing.Size(800, 498);
+            this.Panel_show.TabIndex = 83;
+            this.Panel_show.Visible = false;
+            // 
+            // btCategories
+            // 
+            this.btCategories.AnimatedGIF = true;
+            this.btCategories.BackColor = System.Drawing.Color.Transparent;
+            this.btCategories.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btCategories.CheckedState.Parent = this.btCategories;
+            this.btCategories.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btCategories.HoverState.Image")));
+            this.btCategories.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btCategories.HoverState.Parent = this.btCategories;
+            this.btCategories.Image = ((System.Drawing.Image)(resources.GetObject("btCategories.Image")));
+            this.btCategories.ImageRotate = 0F;
+            this.btCategories.ImageSize = new System.Drawing.Size(90, 90);
+            this.btCategories.Location = new System.Drawing.Point(7, 508);
+            this.btCategories.Name = "btCategories";
+            this.btCategories.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btCategories.PressedState.Image")));
+            this.btCategories.PressedState.ImageSize = new System.Drawing.Size(50, 50);
+            this.btCategories.PressedState.Parent = this.btCategories;
+            this.btCategories.Size = new System.Drawing.Size(79, 80);
+            this.btCategories.TabIndex = 24;
+            this.btCategories.UseTransparentBackground = true;
+            this.btCategories.Click += new System.EventHandler(this.guna2ImageButton1_Click_1);
+            // 
+            // btCustomer
+            // 
+            this.btCustomer.AnimatedGIF = true;
+            this.btCustomer.BackColor = System.Drawing.Color.Transparent;
+            this.btCustomer.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btCustomer.CheckedState.Parent = this.btCustomer;
+            this.btCustomer.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btCustomer.HoverState.Image")));
+            this.btCustomer.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btCustomer.HoverState.Parent = this.btCustomer;
+            this.btCustomer.Image = global::Tiệm_nét.Properties.Resources.btcustomer;
+            this.btCustomer.ImageRotate = 0F;
+            this.btCustomer.ImageSize = new System.Drawing.Size(90, 90);
+            this.btCustomer.Location = new System.Drawing.Point(0, 409);
+            this.btCustomer.Name = "btCustomer";
+            this.btCustomer.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btCustomer.PressedState.Parent = this.btCustomer;
+            this.btCustomer.Size = new System.Drawing.Size(79, 80);
+            this.btCustomer.TabIndex = 22;
+            this.btCustomer.UseTransparentBackground = true;
+            this.btCustomer.Click += new System.EventHandler(this.btCustomer_Click);
+            // 
+            // btService
+            // 
+            this.btService.AnimatedGIF = true;
+            this.btService.BackColor = System.Drawing.Color.Transparent;
+            this.btService.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btService.CheckedState.Parent = this.btService;
+            this.btService.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btService.HoverState.Image")));
+            this.btService.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btService.HoverState.Parent = this.btService;
+            this.btService.Image = global::Tiệm_nét.Properties.Resources.buttonsevice;
+            this.btService.ImageRotate = 0F;
+            this.btService.ImageSize = new System.Drawing.Size(90, 90);
+            this.btService.Location = new System.Drawing.Point(3, 311);
+            this.btService.Name = "btService";
+            this.btService.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btService.PressedState.Parent = this.btService;
+            this.btService.Size = new System.Drawing.Size(79, 80);
+            this.btService.TabIndex = 20;
+            this.btService.UseTransparentBackground = true;
+            this.btService.Click += new System.EventHandler(this.btService_Click);
+            // 
+            // btBranch
+            // 
+            this.btBranch.AnimatedGIF = true;
+            this.btBranch.BackColor = System.Drawing.Color.Transparent;
+            this.btBranch.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btBranch.CheckedState.Parent = this.btBranch;
+            this.btBranch.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btBranch.HoverState.Image")));
+            this.btBranch.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btBranch.HoverState.Parent = this.btBranch;
+            this.btBranch.Image = global::Tiệm_nét.Properties.Resources.buttonbranch;
+            this.btBranch.ImageRotate = 0F;
+            this.btBranch.ImageSize = new System.Drawing.Size(90, 90);
+            this.btBranch.Location = new System.Drawing.Point(3, 212);
+            this.btBranch.Name = "btBranch";
+            this.btBranch.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btBranch.PressedState.Parent = this.btBranch;
+            this.btBranch.Size = new System.Drawing.Size(79, 80);
+            this.btBranch.TabIndex = 18;
+            this.btBranch.UseTransparentBackground = true;
+            this.btBranch.Click += new System.EventHandler(this.btBranch_Click);
+            // 
+            // btComputer
+            // 
+            this.btComputer.AnimatedGIF = true;
+            this.btComputer.BackColor = System.Drawing.Color.Transparent;
+            this.btComputer.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btComputer.CheckedState.Parent = this.btComputer;
+            this.btComputer.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btComputer.HoverState.Image")));
+            this.btComputer.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btComputer.HoverState.Parent = this.btComputer;
+            this.btComputer.Image = global::Tiệm_nét.Properties.Resources.icon_máy_tính;
+            this.btComputer.ImageRotate = 0F;
+            this.btComputer.ImageSize = new System.Drawing.Size(90, 90);
+            this.btComputer.Location = new System.Drawing.Point(3, 103);
+            this.btComputer.Name = "btComputer";
+            this.btComputer.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btComputer.PressedState.Parent = this.btComputer;
+            this.btComputer.Size = new System.Drawing.Size(79, 80);
+            this.btComputer.TabIndex = 16;
+            this.btComputer.UseTransparentBackground = true;
+            this.btComputer.Click += new System.EventHandler(this.btComputer_Click);
+            // 
+            // btStaff
+            // 
+            this.btStaff.AnimatedGIF = true;
+            this.btStaff.BackColor = System.Drawing.Color.Transparent;
+            this.btStaff.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btStaff.CheckedState.Parent = this.btStaff;
+            this.btStaff.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btStaff.HoverState.Image")));
+            this.btStaff.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btStaff.HoverState.Parent = this.btStaff;
+            this.btStaff.Image = global::Tiệm_nét.Properties.Resources.buttonstaff;
+            this.btStaff.ImageRotate = 0F;
+            this.btStaff.ImageSize = new System.Drawing.Size(90, 90);
+            this.btStaff.Location = new System.Drawing.Point(3, 3);
+            this.btStaff.Name = "btStaff";
+            this.btStaff.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btStaff.PressedState.Parent = this.btStaff;
+            this.btStaff.Size = new System.Drawing.Size(79, 80);
+            this.btStaff.TabIndex = 15;
+            this.btStaff.UseTransparentBackground = true;
+            this.btStaff.Click += new System.EventHandler(this.btStaff_Click);
             // 
             // btBillmerchant
             // 
@@ -475,15 +484,6 @@ namespace Tiệm_nét
             this.btExit.TabIndex = 12;
             this.btExit.UseTransparentBackground = true;
             this.btExit.Click += new System.EventHandler(this.guna2ImageButton1_Click);
-            // 
-            // Panel_show
-            // 
-            this.Panel_show.Location = new System.Drawing.Point(92, 115);
-            this.Panel_show.Name = "Panel_show";
-            this.Panel_show.ShadowDecoration.Parent = this.Panel_show;
-            this.Panel_show.Size = new System.Drawing.Size(800, 498);
-            this.Panel_show.TabIndex = 83;
-            this.Panel_show.Visible = false;
             // 
             // Menu
             // 

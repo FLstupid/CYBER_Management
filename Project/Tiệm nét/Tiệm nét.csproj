@@ -326,6 +326,11 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\buttonstaff.png" />
+    <None Include="Resources\icon máy tính.png" />
+    <None Include="Resources\buttonbranch.png" />
+    <None Include="Resources\buttonsevice.png" />
+    <None Include="Resources\btcustomer.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -63,6 +63,26 @@ namespace Tiệm_nét.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btcustomer {
+            get {
+                object obj = ResourceManager.GetObject("btcustomer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonbranch {
+            get {
+                object obj = ResourceManager.GetObject("buttonbranch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap buttoncancael {
             get {
                 object obj = ResourceManager.GetObject("buttoncancael", resourceCulture);
@@ -83,9 +103,29 @@ namespace Tiệm_nét.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap buttonsevice {
+            get {
+                object obj = ResourceManager.GetObject("buttonsevice", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap buttonsevicehovert {
             get {
                 object obj = ResourceManager.GetObject("buttonsevicehovert", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonstaff {
+            get {
+                object obj = ResourceManager.GetObject("buttonstaff", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -107,6 +147,16 @@ namespace Tiệm_nét.Properties {
             get {
                 object obj = ResourceManager.GetObject("download__2_", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_máy_tính {
+            get {
+                object obj = ResourceManager.GetObject("icon máy tính", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
