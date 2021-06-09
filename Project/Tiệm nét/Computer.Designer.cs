@@ -390,12 +390,13 @@ namespace Tiệm_nét
             this.txtBID.ForeColor = System.Drawing.Color.Black;
             this.txtBID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBID.HoverState.Parent = this.txtBID;
-            this.txtBID.Location = new System.Drawing.Point(956, 92);
+            this.txtBID.Location = new System.Drawing.Point(960, 92);
             this.txtBID.Margin = new System.Windows.Forms.Padding(4);
             this.txtBID.Name = "txtBID";
             this.txtBID.PasswordChar = '\0';
             this.txtBID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtBID.PlaceholderText = "xxx";
+            this.txtBID.ReadOnly = true;
             this.txtBID.SelectedText = "";
             this.txtBID.ShadowDecoration.Parent = this.txtBID;
             this.txtBID.Size = new System.Drawing.Size(81, 44);
@@ -427,6 +428,7 @@ namespace Tiệm_nét
             this.cbBName.Size = new System.Drawing.Size(237, 36);
             this.cbBName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cbBName.TabIndex = 26;
+            this.cbBName.SelectedIndexChanged += new System.EventHandler(this.cbBName_SelectedIndexChanged);
             // 
             // cbRoomID
             // 
@@ -450,6 +452,7 @@ namespace Tiệm_nét
             this.cbRoomID.Size = new System.Drawing.Size(127, 36);
             this.cbRoomID.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cbRoomID.TabIndex = 155;
+            this.cbRoomID.SelectedIndexChanged += new System.EventHandler(this.cbRoomID_SelectedIndexChanged);
             // 
             // cbType
             // 
@@ -465,6 +468,10 @@ namespace Tiệm_nét
             this.cbType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbType.HoverState.Parent = this.cbType;
             this.cbType.ItemHeight = 30;
+            this.cbType.Items.AddRange(new object[] {
+            "Diamond",
+            "Gold",
+            "Normal"});
             this.cbType.ItemsAppearance.Parent = this.cbType;
             this.cbType.Location = new System.Drawing.Point(347, 158);
             this.cbType.Margin = new System.Windows.Forms.Padding(4);
@@ -473,6 +480,7 @@ namespace Tiệm_nét
             this.cbType.Size = new System.Drawing.Size(287, 36);
             this.cbType.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cbType.TabIndex = 156;
+            this.cbType.SelectedIndexChanged += new System.EventHandler(this.cbType_SelectedIndexChanged);
             // 
             // Data
             // 
@@ -501,13 +509,13 @@ namespace Tiệm_nét
             this.Data.DefaultCellStyle = dataGridViewCellStyle3;
             this.Data.EnableHeadersVisualStyles = false;
             this.Data.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.Data.Location = new System.Drawing.Point(33, 225);
+            this.Data.Location = new System.Drawing.Point(12, 225);
             this.Data.Name = "Data";
             this.Data.RowHeadersVisible = false;
             this.Data.RowHeadersWidth = 51;
             this.Data.RowTemplate.Height = 24;
             this.Data.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Data.Size = new System.Drawing.Size(526, 305);
+            this.Data.Size = new System.Drawing.Size(550, 305);
             this.Data.TabIndex = 157;
             this.Data.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.Data.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;

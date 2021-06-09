@@ -19,45 +19,50 @@ namespace Tiệm_nét
             cbBName.DropDownStyle = ComboBoxStyle.DropDownList;
             cbRoomID.DropDownStyle = ComboBoxStyle.DropDownList;
             cbType.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbRoomID.Enabled = false;
+            cbType.Enabled = false;
         }
         Cyber_netEntities db = new Cyber_netEntities();
         bool Add = false;
         void btEditOff()
         {
-            btConfirm.Visible = btCancel.Visible = cbBName.Enabled = txtBID.Enabled = cbRoomID.Enabled = cbType.Enabled = false;
+            btConfirm.Visible = btCancel.Visible = txtCID.Enabled = txtStatus.Enabled = txtTimeused.Enabled = false;
             btAdd.Enabled = btEdit.Enabled = btDelete.Enabled = true;
         }
         void btEditOn()
         {
-            btConfirm.Visible = btCancel.Visible = cbBName.Enabled = txtBID.Enabled = cbRoomID.Enabled = cbType.Enabled = true;
+            btConfirm.Visible = btCancel.Visible = txtCID.Enabled = txtStatus.Enabled = txtTimeused.Enabled = true;
         }
         private void LoadData()
         {
             try
             {
                 var dt = db.Maytinhs;
-                if (cbBName.Text != "") {
-                    var info = from d in dt 
-                               where d.Phongmay.Chinhanh.Chinhanh1 == cbBName.Text 
-                               select new { d.Id, d.Status, d.Time_use };
+                if (cbRoomID.Text != "")
+                {
+                    int i = int.Parse(cbRoomID.Text.Trim());
+                    var info = from d in dt
+                               where d.Phongmay.Chinhanh.Chinhanh1 == cbBName.Text
+                               && d.Phongmay.Typed == cbType.Text
+                               && d.Id_Phongmay == i
+                               select new { d.Id, d.Status, d.Time_use, Type = d.Phongmay.Typed, Room = d.Phongmay.Id };
                     Data.DataSource = info.ToList();
                 }
                 else if (cbType.Text != "") {
                     var info = from d in dt 
                                where d.Phongmay.Chinhanh.Chinhanh1 == cbBName.Text && d.Phongmay.Typed == cbType.Text
-                               select new { d.Id, d.Status, d.Time_use };
+                               select new { d.Id, d.Status, d.Time_use, Type = d.Phongmay.Typed, Room = d.Phongmay.Id };
                     Data.DataSource = info.ToList();
                 }
-                else if (cbRoomID.Text != "") {
+                else if (cbBName.Text != "")
+                {
                     var info = from d in dt
-                               where d.Phongmay.Chinhanh.Chinhanh1 == cbBName.Text 
-                               && d.Phongmay.Typed == cbType.Text 
-                               && d.Id_Phongmay.ToString() == cbRoomID.Text
-                               select new { d.Id, d.Status, d.Time_use };
+                               where d.Phongmay.Chinhanh.Chinhanh1 == cbBName.Text
+                               select new { d.Id, d.Status, d.Time_use, Type = d.Phongmay.Typed, Room = d.Phongmay.Id };
                     Data.DataSource = info.ToList();
                 }
                 else {
-                    var info = from d in dt select new { d.Id, d.Status, d.Time_use };
+                    var info = from d in dt select new { d.Id, d.Status, d.Time_use, Type = d.Phongmay.Typed, Room = d.Phongmay.Id };
                     Data.DataSource = info.ToList();
                 }
             }
@@ -122,8 +127,10 @@ namespace Tiệm_nét
         private void btReload_Click(object sender, EventArgs e)
         {
             btEditOff();
-            btAdd.Enabled = false;
-            btDelete.Enabled = false;
+            cbBName.SelectedIndex = -1;
+            cbType.SelectedIndex = -1;
+            cbRoomID.SelectedIndex = -1;
+            LoadData();
         }
 
         private void btEdit_Click(object sender, EventArgs e)
@@ -160,6 +167,42 @@ namespace Tiệm_nét
         }
 
         private void Computer_Load(object sender, EventArgs e)
+        {
+            LoadData();
+            LoadCombobox();
+        }
+        private void LoadCombobox()
+        {
+            var cn = db.Chinhanhs;
+            foreach(var i in cn)
+            {
+                cbBName.Items.Add(i.Chinhanh1);
+            }
+        }
+        private void cbBName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadData();
+            txtBID.Text = cbBName.SelectedText;
+            cbType.Enabled = true;
+            cbType.SelectedIndex = -1;
+            cbRoomID.SelectedIndex = -1;
+        }
+
+        private void cbType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadData();
+            cbRoomID.Enabled = true;
+            cbRoomID.SelectedIndex = -1;
+            var room = from x in db.Phongmays
+                       where x.Chinhanh.Chinhanh1 == cbBName.SelectedText && x.Typed == cbType.SelectedText
+                       select x.Id;
+            foreach (var i in room)
+            {
+                cbRoomID.Items.Add(i);
+            }
+        }
+
+        private void cbRoomID_SelectedIndexChanged(object sender, EventArgs e)
         {
             LoadData();
         }
