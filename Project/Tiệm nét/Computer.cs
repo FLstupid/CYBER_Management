@@ -206,5 +206,13 @@ namespace Tiệm_nét
         {
             LoadData();
         }
+
+        private void Data_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = Data.CurrentCell.RowIndex;
+            txtCID.Text = Data.Rows[index].Cells[0].Value.ToString().Trim();
+            txtStatus.Text = Data.Rows[index].Cells[1].Value.ToString().Trim();
+            txtTimeused.Text = Data.Rows[index].Cells[2].Value.ToString().Trim();
+        }
     }
 }
