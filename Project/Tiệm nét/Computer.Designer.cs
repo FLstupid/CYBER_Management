@@ -30,9 +30,9 @@ namespace Tiệm_nét
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Computer));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -91,7 +91,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel3.AutoSize = false;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(247, 105);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(248, 106);
             this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(195, 31);
@@ -103,7 +103,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(695, 168);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(636, 164);
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(147, 31);
@@ -115,7 +115,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel4.AutoSize = false;
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(713, 105);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(671, 106);
             this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(163, 31);
@@ -127,7 +127,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel6.AutoSize = false;
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(234, 163);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(248, 164);
             this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(83, 31);
@@ -383,6 +383,7 @@ namespace Tiệm_nét
             this.txtBID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtBID.DisabledState.Parent = this.txtBID;
             this.txtBID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBID.Enabled = false;
             this.txtBID.FillColor = System.Drawing.SystemColors.Control;
             this.txtBID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBID.FocusedState.Parent = this.txtBID;
@@ -390,16 +391,15 @@ namespace Tiệm_nét
             this.txtBID.ForeColor = System.Drawing.Color.Black;
             this.txtBID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBID.HoverState.Parent = this.txtBID;
-            this.txtBID.Location = new System.Drawing.Point(960, 92);
+            this.txtBID.Location = new System.Drawing.Point(842, 93);
             this.txtBID.Margin = new System.Windows.Forms.Padding(4);
             this.txtBID.Name = "txtBID";
             this.txtBID.PasswordChar = '\0';
             this.txtBID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtBID.PlaceholderText = "xxx";
-            this.txtBID.ReadOnly = true;
             this.txtBID.SelectedText = "";
             this.txtBID.ShadowDecoration.Parent = this.txtBID;
-            this.txtBID.Size = new System.Drawing.Size(81, 44);
+            this.txtBID.Size = new System.Drawing.Size(190, 44);
             this.txtBID.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtBID.TabIndex = 154;
             this.txtBID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -409,7 +409,7 @@ namespace Tiệm_nét
             this.cbBName.BackColor = System.Drawing.Color.Transparent;
             this.cbBName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.cbBName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbBName.DropDownHeight = 50;
+            this.cbBName.DropDownHeight = 70;
             this.cbBName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbBName.FillColor = System.Drawing.SystemColors.Control;
             this.cbBName.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -421,11 +421,11 @@ namespace Tiệm_nét
             this.cbBName.IntegralHeight = false;
             this.cbBName.ItemHeight = 30;
             this.cbBName.ItemsAppearance.Parent = this.cbBName;
-            this.cbBName.Location = new System.Drawing.Point(467, 91);
+            this.cbBName.Location = new System.Drawing.Point(431, 101);
             this.cbBName.Margin = new System.Windows.Forms.Padding(4);
             this.cbBName.Name = "cbBName";
             this.cbBName.ShadowDecoration.Parent = this.cbBName;
-            this.cbBName.Size = new System.Drawing.Size(237, 36);
+            this.cbBName.Size = new System.Drawing.Size(220, 36);
             this.cbBName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cbBName.TabIndex = 26;
             this.cbBName.SelectedIndexChanged += new System.EventHandler(this.cbBName_SelectedIndexChanged);
@@ -445,7 +445,7 @@ namespace Tiệm_nét
             this.cbRoomID.HoverState.Parent = this.cbRoomID;
             this.cbRoomID.ItemHeight = 30;
             this.cbRoomID.ItemsAppearance.Parent = this.cbRoomID;
-            this.cbRoomID.Location = new System.Drawing.Point(872, 163);
+            this.cbRoomID.Location = new System.Drawing.Point(803, 159);
             this.cbRoomID.Margin = new System.Windows.Forms.Padding(4);
             this.cbRoomID.Name = "cbRoomID";
             this.cbRoomID.ShadowDecoration.Parent = this.cbRoomID;
@@ -473,40 +473,40 @@ namespace Tiệm_nét
             "Gold",
             "Normal"});
             this.cbType.ItemsAppearance.Parent = this.cbType;
-            this.cbType.Location = new System.Drawing.Point(347, 158);
+            this.cbType.Location = new System.Drawing.Point(349, 159);
             this.cbType.Margin = new System.Windows.Forms.Padding(4);
             this.cbType.Name = "cbType";
             this.cbType.ShadowDecoration.Parent = this.cbType;
-            this.cbType.Size = new System.Drawing.Size(287, 36);
+            this.cbType.Size = new System.Drawing.Size(210, 36);
             this.cbType.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cbType.TabIndex = 156;
             this.cbType.SelectedIndexChanged += new System.EventHandler(this.cbType_SelectedIndexChanged);
             // 
             // Data
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.Data.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.Data.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.Data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Data.BackgroundColor = System.Drawing.Color.White;
             this.Data.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Data.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Data.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Data.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.Data.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Data.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Data.DefaultCellStyle = dataGridViewCellStyle18;
             this.Data.EnableHeadersVisualStyles = false;
             this.Data.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.Data.Location = new System.Drawing.Point(12, 225);

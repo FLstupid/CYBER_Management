@@ -182,7 +182,7 @@ namespace Tiệm_nét
         private void cbBName_SelectedIndexChanged(object sender, EventArgs e)
         {
             LoadData();
-            txtBID.Text = cbBName.SelectedText;
+            txtBID.Text = cbBName.Text;
             cbType.Enabled = true;
             cbType.SelectedIndex = -1;
             cbRoomID.SelectedIndex = -1;
@@ -193,12 +193,11 @@ namespace Tiệm_nét
             LoadData();
             cbRoomID.Enabled = true;
             cbRoomID.SelectedIndex = -1;
-            var room = from x in db.Phongmays
-                       where x.Chinhanh.Chinhanh1 == cbBName.SelectedText && x.Typed == cbType.SelectedText
-                       select x.Id;
+            var room = db.Phongmays;
             foreach (var i in room)
             {
-                cbRoomID.Items.Add(i);
+               if(i.Chinhanh.Chinhanh1 == cbBName.Text && i.Typed == cbType.Text)
+                    cbRoomID.Items.Add(i.Id);
             }
         }
 

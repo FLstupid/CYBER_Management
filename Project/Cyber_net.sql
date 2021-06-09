@@ -1,6 +1,6 @@
 CREATE DATABASE Cyber_net
 GO
-USE CYBER
+USE Cyber_net
 
 GO
 --DROP DATABASE Cyber_net
