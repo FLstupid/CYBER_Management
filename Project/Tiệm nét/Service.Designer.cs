@@ -125,6 +125,7 @@ namespace Tiệm_nét
             this.btDelete.Size = new System.Drawing.Size(85, 81);
             this.btDelete.TabIndex = 125;
             this.btDelete.UseTransparentBackground = true;
+            this.btDelete.Click += new System.EventHandler(this.btDelete_Click);
             // 
             // btEdit
             // 
@@ -147,6 +148,7 @@ namespace Tiệm_nét
             this.btEdit.Size = new System.Drawing.Size(85, 81);
             this.btEdit.TabIndex = 124;
             this.btEdit.UseTransparentBackground = true;
+            this.btEdit.Click += new System.EventHandler(this.btEdit_Click);
             // 
             // btReload
             // 
@@ -169,6 +171,7 @@ namespace Tiệm_nét
             this.btReload.Size = new System.Drawing.Size(85, 81);
             this.btReload.TabIndex = 123;
             this.btReload.UseTransparentBackground = true;
+            this.btReload.Click += new System.EventHandler(this.btReload_Click);
             // 
             // btCancel
             // 
@@ -189,6 +192,7 @@ namespace Tiệm_nét
             this.btCancel.Size = new System.Drawing.Size(85, 66);
             this.btCancel.TabIndex = 122;
             this.btCancel.UseTransparentBackground = true;
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
             // btConfirm
             // 
@@ -209,6 +213,7 @@ namespace Tiệm_nét
             this.btConfirm.Size = new System.Drawing.Size(85, 66);
             this.btConfirm.TabIndex = 121;
             this.btConfirm.UseTransparentBackground = true;
+            this.btConfirm.Click += new System.EventHandler(this.btConfirm_Click);
             // 
             // btAdd
             // 
@@ -231,6 +236,7 @@ namespace Tiệm_nét
             this.btAdd.Size = new System.Drawing.Size(85, 81);
             this.btAdd.TabIndex = 120;
             this.btAdd.UseTransparentBackground = true;
+            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
             // btExit
             // 
@@ -534,7 +540,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(33, 125);
             this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(177, 31);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(234, 31);
             this.guna2HtmlLabel3.TabIndex = 141;
             this.guna2HtmlLabel3.Text = "Costumer";
             // 
@@ -567,7 +573,7 @@ namespace Tiệm_nét
             this.Dataview.EnableHeadersVisualStyles = false;
             this.Dataview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.Dataview.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.Dataview.Location = new System.Drawing.Point(246, 312);
+            this.Dataview.Location = new System.Drawing.Point(239, 312);
             this.Dataview.Name = "Dataview";
             this.Dataview.RowHeadersVisible = false;
             this.Dataview.RowHeadersWidth = 51;
@@ -578,7 +584,7 @@ namespace Tiệm_nét
             this.Dataview.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.Dataview.RowTemplate.Height = 24;
             this.Dataview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dataview.Size = new System.Drawing.Size(665, 233);
+            this.Dataview.Size = new System.Drawing.Size(695, 245);
             this.Dataview.TabIndex = 130;
             this.Dataview.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.Dataview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;

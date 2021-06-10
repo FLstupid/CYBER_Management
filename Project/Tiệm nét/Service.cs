@@ -21,6 +21,7 @@ namespace Tiệm_nét
         private void setEditOff()
         {
             btConfirm.Visible = btCancel.Visible = txtOID.Enabled = txtCName.Enabled = txtSName.Enabled = txtCount.Enabled = false;
+            btAdd.Enabled = btDelete.Enabled = btEdit.Enabled = true;
         }
         private void setEditOn()
         {
@@ -114,6 +115,7 @@ namespace Tiệm_nét
                     });
                     db.SaveChanges();
                     Load_data();
+                    setEditOff();
                     MessageBox.Show("Lưu thành công !", @"Message", MessageBoxButtons.OK);
                 }
                 catch
@@ -125,13 +127,14 @@ namespace Tiệm_nét
             {
                 try
                 {
-                    Hoadon_thucan hdta = db.Hoadon_thucan.SingleOrDefault(x => x.Id == int.Parse(txtOID.Text.Trim()));
-                    hdta.Id = int.Parse(txtOID.Text.Trim());
+                    int tmpid = int.Parse(txtOID.Text.Trim());
+                    Hoadon_thucan hdta = db.Hoadon_thucan.SingleOrDefault(x => x.Id == tmpid);
                     hdta.Id_khachhang = db.Khachhangs.ToList().SingleOrDefault(x => x.Name == txtCName.Text).Id;
                     hdta.Id_nhanvien = db.Nhanviens.ToList().SingleOrDefault(x => x.Name == txtSName.Text).Id;
                     hdta.Total = int.Parse(txtCount.Text);
                     db.SaveChanges();
                     Load_data();
+                    setEditOff();
                     MessageBox.Show("Sửa thành công !", @"Message", MessageBoxButtons.OK);
                 }
                 catch

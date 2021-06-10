@@ -248,7 +248,11 @@ namespace Tiệm_nét
                 if (Add)
                 {
                     if (checkexit != 0)
+                    {
                         MessageBox.Show("Nhân viên đã tồn tại");
+                        txtstaffID.ResetText();
+                        txtstaffID.Focus();
+                    }
                 }
             }
         }
@@ -272,9 +276,9 @@ namespace Tiệm_nét
 
         private void txtGender_Leave(object sender, EventArgs e)
         {
-            if(txtGender.Text!="Male"|| txtGender.Text != "Female")
+            if(txtGender.Text != "Male" && txtGender.Text != "Female")
             {
-                MessageBox.Show("Sai format(Male or Female) hoặc nội duung vui lòng thử lại", "Message", MessageBoxButtons.OK);
+                MessageBox.Show("Sai format (Male or Female) hoặc nội duung vui lòng thử lại", "Message", MessageBoxButtons.OK);
                 txtGender.Focus();
             }
         }

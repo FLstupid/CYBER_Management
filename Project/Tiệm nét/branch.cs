@@ -26,6 +26,7 @@ namespace Tiệm_nét
         private void setEditOff()
         {
             btConfirm.Visible = btCancel.Visible = txtBID.Enabled = txtBName.Enabled = txtDID.Enabled = false;
+            btAdd.Enabled = btEdit.Enabled = btDelete.Enabled = true;
         }
         private void setEditOn()
         {
@@ -109,6 +110,7 @@ namespace Tiệm_nét
                     });
                     db.SaveChanges();
                     Load_data();
+                    setEditOff();
                     MessageBox.Show("Lưu thành công !", @"Message", MessageBoxButtons.OK);
                 }
                 catch
@@ -120,11 +122,13 @@ namespace Tiệm_nét
             {
                 try
                 {
-                    Chinhanh cn = db.Chinhanhs.SingleOrDefault(x => x.Id == int.Parse(txtBID.Text.Trim()));
+                    int tmpid = int.Parse(txtBID.Text.Trim());
+                    Chinhanh cn = db.Chinhanhs.SingleOrDefault(x => x.Id == tmpid);
                     cn.Chinhanh1 = txtBName.Text;
                     cn.Id_district = db.Districts.ToList().SingleOrDefault(x => x.District1 == txtDID.Text).Id;
                     db.SaveChanges();
                     Load_data();
+                    setEditOff();
                     MessageBox.Show("Sửa thành công !", @"Message", MessageBoxButtons.OK);
                 }
                 catch

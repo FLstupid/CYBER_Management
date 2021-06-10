@@ -22,7 +22,7 @@ namespace Tiệm_nét
             DialogResult CheckExit = MessageBox.Show("Có muốn Exit không?", "Exit confirm!",
 
             MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (CheckExit == DialogResult.Yes) this.Close();
+            if (CheckExit == DialogResult.Yes) Application.Exit();
         }
 
         private void btEnter_Click(object sender, EventArgs e)

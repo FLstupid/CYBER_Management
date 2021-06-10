@@ -47,15 +47,6 @@ namespace Tiệm_nét
             var datas = from i in dt select new { i.Id, Customer = i.Name,i.Price };
             Dataview.DataSource = datas.ToList();
         }
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PanelCategories_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void btExit_Click(object sender, EventArgs e)
         {
@@ -98,7 +89,8 @@ namespace Tiệm_nét
                 {
                     int index = Dataview.CurrentCell.RowIndex;
                     string Food = Dataview.Rows[index].Cells[0].Value.ToString().Trim();
-                    Thucan B = db.Thucans.ToList().SingleOrDefault(x => x.Id == int.Parse(Food));
+                    int tmpid = int.Parse(Food);
+                    Thucan B = db.Thucans.ToList().SingleOrDefault(x => x.Id == tmpid);
                     db.Thucans.Remove(B);
                     db.SaveChanges();
                     Load_data();
@@ -145,8 +137,8 @@ namespace Tiệm_nét
             {
                 try
                 {
-                    Thucan ta = db.Thucans.SingleOrDefault(x => x.Id == int.Parse(txtFID.Text.Trim()));
-                    ta.Id = int.Parse(txtFID.Text.Trim());
+                    int tmpid = int.Parse(txtFID.Text.Trim());
+                    Thucan ta = db.Thucans.SingleOrDefault(x => x.Id == tmpid);
                     ta.Name = txtFName.Text;
                     ta.Price = int.Parse(txtPrice.Text);
                     db.SaveChanges();

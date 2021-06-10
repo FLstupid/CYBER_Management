@@ -258,7 +258,6 @@ namespace Tiệm_nét
             this.PanelCategories.ShadowDecoration.Parent = this.PanelCategories;
             this.PanelCategories.Size = new System.Drawing.Size(733, 316);
             this.PanelCategories.TabIndex = 125;
-            this.PanelCategories.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelCategories_Paint);
             // 
             // txtFName
             // 

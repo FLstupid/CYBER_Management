@@ -79,7 +79,7 @@ namespace Tiệm_nét
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("OCR A Extended", 29.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(235, 31);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(609, 52);
             this.guna2HtmlLabel1.TabIndex = 0;
@@ -90,7 +90,7 @@ namespace Tiệm_nét
             this.Label_staffid.BackColor = System.Drawing.Color.Transparent;
             this.Label_staffid.Font = new System.Drawing.Font("OCR A Extended", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_staffid.Location = new System.Drawing.Point(24, 142);
-            this.Label_staffid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Label_staffid.Margin = new System.Windows.Forms.Padding(4);
             this.Label_staffid.Name = "Label_staffid";
             this.Label_staffid.Size = new System.Drawing.Size(131, 31);
             this.Label_staffid.TabIndex = 1;
@@ -102,7 +102,7 @@ namespace Tiệm_nét
             this.Label_name.BackColor = System.Drawing.Color.Transparent;
             this.Label_name.Font = new System.Drawing.Font("OCR A Extended", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_name.Location = new System.Drawing.Point(24, 207);
-            this.Label_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Label_name.Margin = new System.Windows.Forms.Padding(4);
             this.Label_name.Name = "Label_name";
             this.Label_name.Size = new System.Drawing.Size(157, 31);
             this.Label_name.TabIndex = 3;
@@ -114,7 +114,7 @@ namespace Tiệm_nét
             this.Label_gender.BackColor = System.Drawing.Color.Transparent;
             this.Label_gender.Font = new System.Drawing.Font("OCR A Extended", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_gender.Location = new System.Drawing.Point(24, 260);
-            this.Label_gender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Label_gender.Margin = new System.Windows.Forms.Padding(4);
             this.Label_gender.Name = "Label_gender";
             this.Label_gender.Size = new System.Drawing.Size(189, 31);
             this.Label_gender.TabIndex = 4;
@@ -126,7 +126,7 @@ namespace Tiệm_nét
             this.Label_address.BackColor = System.Drawing.Color.Transparent;
             this.Label_address.Font = new System.Drawing.Font("OCR A Extended", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_address.Location = new System.Drawing.Point(24, 311);
-            this.Label_address.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Label_address.Margin = new System.Windows.Forms.Padding(4);
             this.Label_address.Name = "Label_address";
             this.Label_address.Size = new System.Drawing.Size(205, 31);
             this.Label_address.TabIndex = 5;
@@ -143,7 +143,7 @@ namespace Tiệm_nét
             this.Label_manager.Name = "Label_manager";
             this.Label_manager.Size = new System.Drawing.Size(219, 31);
             this.Label_manager.TabIndex = 6;
-            this.Label_manager.Text = "ManagerID :";
+            this.Label_manager.Text = "Manager :";
             // 
             // Label_branch
             // 
@@ -151,7 +151,7 @@ namespace Tiệm_nét
             this.Label_branch.BackColor = System.Drawing.Color.Transparent;
             this.Label_branch.Font = new System.Drawing.Font("OCR A Extended", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_branch.Location = new System.Drawing.Point(24, 416);
-            this.Label_branch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Label_branch.Margin = new System.Windows.Forms.Padding(4);
             this.Label_branch.Name = "Label_branch";
             this.Label_branch.Size = new System.Drawing.Size(189, 31);
             this.Label_branch.TabIndex = 7;
@@ -162,7 +162,7 @@ namespace Tiệm_nét
             this.name.BackColor = System.Drawing.Color.Transparent;
             this.name.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name.Location = new System.Drawing.Point(836, 431);
-            this.name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.name.Margin = new System.Windows.Forms.Padding(4);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(3, 2);
             this.name.TabIndex = 16;
@@ -309,14 +309,14 @@ namespace Tiệm_nét
             this.txtBranch.PlaceholderText = "";
             this.txtBranch.SelectedText = "";
             this.txtBranch.ShadowDecoration.Parent = this.txtBranch;
-            this.txtBranch.Size = new System.Drawing.Size(336, 31);
+            this.txtBranch.Size = new System.Drawing.Size(305, 31);
             this.txtBranch.TabIndex = 131;
             // 
             // guna2PictureBox7
             // 
             this.guna2PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.Image")));
             this.guna2PictureBox7.Location = new System.Drawing.Point(788, 581);
-            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox7.Name = "guna2PictureBox7";
             this.guna2PictureBox7.ShadowDecoration.Parent = this.guna2PictureBox7;
             this.guna2PictureBox7.Size = new System.Drawing.Size(52, 37);
@@ -328,7 +328,7 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox6.Image")));
             this.guna2PictureBox6.Location = new System.Drawing.Point(688, 574);
-            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
             this.guna2PictureBox6.ShadowDecoration.Parent = this.guna2PictureBox6;
             this.guna2PictureBox6.Size = new System.Drawing.Size(63, 50);
@@ -340,7 +340,7 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
             this.guna2PictureBox5.Location = new System.Drawing.Point(567, 574);
-            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox5.Name = "guna2PictureBox5";
             this.guna2PictureBox5.ShadowDecoration.Parent = this.guna2PictureBox5;
             this.guna2PictureBox5.Size = new System.Drawing.Size(75, 50);
@@ -352,7 +352,7 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
             this.guna2PictureBox3.Location = new System.Drawing.Point(467, 566);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
             this.guna2PictureBox3.Size = new System.Drawing.Size(61, 50);
@@ -364,7 +364,7 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.Location = new System.Drawing.Point(348, 566);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
             this.guna2PictureBox2.Size = new System.Drawing.Size(72, 50);
@@ -376,7 +376,7 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
             this.guna2PictureBox8.Location = new System.Drawing.Point(212, 553);
-            this.guna2PictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox8.Name = "guna2PictureBox8";
             this.guna2PictureBox8.ShadowDecoration.Parent = this.guna2PictureBox8;
             this.guna2PictureBox8.Size = new System.Drawing.Size(79, 65);
@@ -398,7 +398,7 @@ namespace Tiệm_nét
             this.btDelete.ImageRotate = 0F;
             this.btDelete.ImageSize = new System.Drawing.Size(68, 68);
             this.btDelete.Location = new System.Drawing.Point(405, 462);
-            this.btDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btDelete.Name = "btDelete";
             this.btDelete.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btDelete.PressedState.Parent = this.btDelete;
@@ -421,7 +421,7 @@ namespace Tiệm_nét
             this.btEdit.ImageRotate = 0F;
             this.btEdit.ImageSize = new System.Drawing.Size(68, 68);
             this.btEdit.Location = new System.Drawing.Point(145, 462);
-            this.btEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btEdit.Name = "btEdit";
             this.btEdit.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btEdit.PressedState.Parent = this.btEdit;
@@ -444,7 +444,7 @@ namespace Tiệm_nét
             this.btReload.ImageRotate = 0F;
             this.btReload.ImageSize = new System.Drawing.Size(56, 56);
             this.btReload.Location = new System.Drawing.Point(275, 462);
-            this.btReload.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btReload.Margin = new System.Windows.Forms.Padding(4);
             this.btReload.Name = "btReload";
             this.btReload.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btReload.PressedState.Parent = this.btReload;
@@ -465,7 +465,7 @@ namespace Tiệm_nét
             this.btCancel.Image = global::Tiệm_nét.Properties.Resources.buttoncancael;
             this.btCancel.ImageRotate = 0F;
             this.btCancel.Location = new System.Drawing.Point(747, 481);
-            this.btCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btCancel.Name = "btCancel";
             this.btCancel.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btCancel.PressedState.Parent = this.btCancel;
@@ -486,7 +486,7 @@ namespace Tiệm_nét
             this.btConfirm.Image = global::Tiệm_nét.Properties.Resources.buttoncomfirm;
             this.btConfirm.ImageRotate = 0F;
             this.btConfirm.Location = new System.Drawing.Point(601, 481);
-            this.btConfirm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btConfirm.Margin = new System.Windows.Forms.Padding(4);
             this.btConfirm.Name = "btConfirm";
             this.btConfirm.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btConfirm.PressedState.Parent = this.btConfirm;
@@ -505,7 +505,7 @@ namespace Tiệm_nét
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.Location = new System.Drawing.Point(963, 535);
-            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
@@ -527,7 +527,7 @@ namespace Tiệm_nét
             this.btAdd.ImageRotate = 0F;
             this.btAdd.ImageSize = new System.Drawing.Size(68, 68);
             this.btAdd.Location = new System.Drawing.Point(15, 462);
-            this.btAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btAdd.Name = "btAdd";
             this.btAdd.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btAdd.PressedState.Parent = this.btAdd;
@@ -542,7 +542,7 @@ namespace Tiệm_nét
             this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.Location = new System.Drawing.Point(13, 1);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(108, 107);
@@ -582,7 +582,7 @@ namespace Tiệm_nét
             this.Dataview.EnableHeadersVisualStyles = false;
             this.Dataview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.Dataview.Location = new System.Drawing.Point(553, 114);
-            this.Dataview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Dataview.Margin = new System.Windows.Forms.Padding(4);
             this.Dataview.Name = "Dataview";
             this.Dataview.RowHeadersVisible = false;
             this.Dataview.RowHeadersWidth = 51;
@@ -679,7 +679,7 @@ namespace Tiệm_nét
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Staff";
             this.Text = "Staff";
             this.Load += new System.EventHandler(this.Staff_Load);

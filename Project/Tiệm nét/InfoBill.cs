@@ -92,7 +92,8 @@ namespace Tiệm_nét
                 {
                     int index = Dataview.CurrentCell.RowIndex;
                     string Cid = Dataview.Rows[index].Cells[0].Value.ToString().Trim();
-                    Khachhang C = db.Khachhangs.ToList().SingleOrDefault(x => x.Id == int.Parse(txtID.Text.Trim()));
+                    int tmpid = int.Parse(txtID.Text.Trim());
+                    Khachhang C = db.Khachhangs.ToList().SingleOrDefault(x => x.Id == tmpid);
                     db.Khachhangs.Remove(C);
                     db.SaveChanges();
                     Load_data();
@@ -115,8 +116,8 @@ namespace Tiệm_nét
             txtTotal.Text = Dataview.Rows[index].Cells[3].Value.ToString().Trim();
             txtTime.Text = Dataview.Rows[index].Cells[4].Value.ToString().Trim();
             txtExtrafee.Text = Dataview.Rows[index].Cells[5].Value.ToString().Trim();
-            txtDecription.Text = Dataview.Rows[index].Cells[5].Value.ToString().Trim();
-            txtStaffid.Text = Dataview.Rows[index].Cells[5].Value.ToString().Trim();
+            txtDecription.Text = Dataview.Rows[index].Cells[6].Value.ToString().Trim();
+            txtStaffid.Text = Dataview.Rows[index].Cells[7].Value.ToString().Trim();
         }
 
         private void btConfirm_Click(object sender, EventArgs e)

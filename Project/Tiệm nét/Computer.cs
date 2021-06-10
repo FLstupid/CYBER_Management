@@ -73,37 +73,41 @@ namespace Tiệm_nét
             btEditOff();
             if (Add)
             {
-                    
-            try
-            {
-                db.Maytinhs.Add(new Maytinh
+                try
                 {
-                    Id = int.Parse(txtCID.Text),
-                    Status = txtStatus.Text,
-                    Time_use = int.Parse(txtTimeused.Text.Trim()),
-                    Id_Phongmay = int.Parse(cbRoomID.Text.Trim())
-                });
-                db.SaveChanges();
-                LoadData();
-                MessageBox.Show("Đã thêm dữ liệu thành công!");
-            }
-            catch (Exception) { MessageBox.Show("Error Save"); }
-
-            }
+                    if (cbRoomID.SelectedIndex == -1) MessageBox.Show("Vui long chọn id room", @"Message", MessageBoxButtons.OK);
+                    else
+                    {
+                        db.Maytinhs.Add(new Maytinh
+                        {
+                            Id = int.Parse(txtCID.Text),
+                            Status = txtStatus.Text,
+                            Time_use = int.Parse(txtTimeused.Text.Trim()),
+                            Id_Phongmay = int.Parse(cbRoomID.Text.Trim())
+                        });
+                        db.SaveChanges();
+                        LoadData();
+                        MessageBox.Show("Đã thêm dữ liệu thành công!");
+                    }
+                }
+                catch (Exception) { MessageBox.Show("Error Save"); }
+            } 
             else
             {
-                try 
+                try
                 {
-                    int r = Data.CurrentCell.RowIndex;
-                    string tmpID = Data.Rows[r].Cells[0].Value.ToString();
-                    Maytinh cpt = db.Maytinhs.SingleOrDefault(x => x.Id == int.Parse(tmpID));
-                    cpt.Id = int.Parse(txtCID.Text);
-                    cpt.Status = txtStatus.Text;
-                    cpt.Time_use = int.Parse(txtTimeused.Text.Trim());
-                    cpt.Id_Phongmay = int.Parse(cbRoomID.Text.Trim());
-                    db.SaveChanges();
-                    LoadData();
-                    MessageBox.Show("Đã sửa xong!");
+                    if (cbRoomID.SelectedIndex == -1) MessageBox.Show("Vui long chọn id room", @"Message", MessageBoxButtons.OK);
+                    else {
+                        int r = Data.CurrentCell.RowIndex;
+                        string tmpID = Data.Rows[r].Cells[0].Value.ToString();
+                        int tmpid = int.Parse(tmpID);
+                        Maytinh cpt = db.Maytinhs.SingleOrDefault(x => x.Id == tmpid);
+                        cpt.Status = txtStatus.Text;
+                        cpt.Time_use = int.Parse(txtTimeused.Text);
+                        db.SaveChanges();
+                        LoadData();
+                        MessageBox.Show("Đã sửa xong!");
+                    }
                 }
                 catch (Exception)
                 {
@@ -148,7 +152,7 @@ namespace Tiệm_nét
                 try
                 {
                     int index = Data.CurrentCell.RowIndex;
-                    string Cid = Data.Rows[index].Cells[0].Value.ToString().Trim();
+                    string Cid = Data.Rows[index].Cells[0].Value.ToString();
                     Maytinh Cpt = db.Maytinhs.ToList().SingleOrDefault(x => x.Id == int.Parse(Cid));
                     db.Maytinhs.Remove(Cpt);
                     db.SaveChanges();

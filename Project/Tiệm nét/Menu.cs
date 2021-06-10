@@ -118,5 +118,10 @@ namespace Tiệm_nét
             Panel_show.Visible = true;
             s.FormClosed += Closed_event;
         }
+
+        private void btMinize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

@@ -35,8 +35,6 @@ namespace Tiệm_nét
             this.label1 = new System.Windows.Forms.Label();
             this.txtUser = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            this.linkForgotPassword = new System.Windows.Forms.LinkLabel();
-            this.linkSignup = new System.Windows.Forms.LinkLabel();
             this.btEnter = new Guna.UI2.WinForms.Guna2Button();
             this.btExit = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -66,7 +64,7 @@ namespace Tiệm_nét
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(294, 502);
+            this.label1.Location = new System.Drawing.Point(322, 389);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(143, 25);
@@ -122,34 +120,6 @@ namespace Tiệm_nét
             this.txtPassword.Size = new System.Drawing.Size(404, 44);
             this.txtPassword.TabIndex = 5;
             this.txtPassword.UseSystemPasswordChar = true;
-            // 
-            // linkForgotPassword
-            // 
-            this.linkForgotPassword.AutoSize = true;
-            this.linkForgotPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkForgotPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.linkForgotPassword.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.linkForgotPassword.Location = new System.Drawing.Point(232, 361);
-            this.linkForgotPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkForgotPassword.Name = "linkForgotPassword";
-            this.linkForgotPassword.Size = new System.Drawing.Size(213, 29);
-            this.linkForgotPassword.TabIndex = 7;
-            this.linkForgotPassword.TabStop = true;
-            this.linkForgotPassword.Text = "Forgot password ?";
-            // 
-            // linkSignup
-            // 
-            this.linkSignup.AutoSize = true;
-            this.linkSignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkSignup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.linkSignup.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.linkSignup.Location = new System.Drawing.Point(277, 407);
-            this.linkSignup.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkSignup.Name = "linkSignup";
-            this.linkSignup.Size = new System.Drawing.Size(99, 29);
-            this.linkSignup.TabIndex = 8;
-            this.linkSignup.TabStop = true;
-            this.linkSignup.Text = "Sign Up";
             // 
             // btEnter
             // 
@@ -211,11 +181,11 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox6.Image")));
-            this.guna2PictureBox6.Location = new System.Drawing.Point(-12, 347);
+            this.guna2PictureBox6.Location = new System.Drawing.Point(-22, 378);
             this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
             this.guna2PictureBox6.ShadowDecoration.Parent = this.guna2PictureBox6;
-            this.guna2PictureBox6.Size = new System.Drawing.Size(257, 235);
+            this.guna2PictureBox6.Size = new System.Drawing.Size(235, 187);
             this.guna2PictureBox6.TabIndex = 14;
             this.guna2PictureBox6.TabStop = false;
             this.guna2PictureBox6.UseTransparentBackground = true;
@@ -274,11 +244,11 @@ namespace Tiệm_nét
             // 
             this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
-            this.guna2PictureBox3.Location = new System.Drawing.Point(201, 463);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(201, 347);
             this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
-            this.guna2PictureBox3.Size = new System.Drawing.Size(85, 78);
+            this.guna2PictureBox3.Size = new System.Drawing.Size(113, 101);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox3.TabIndex = 72;
             this.guna2PictureBox3.TabStop = false;
@@ -299,8 +269,6 @@ namespace Tiệm_nét
             this.Controls.Add(this.guna2PictureBox6);
             this.Controls.Add(this.btExit);
             this.Controls.Add(this.btEnter);
-            this.Controls.Add(this.linkSignup);
-            this.Controls.Add(this.linkForgotPassword);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label1);
@@ -329,8 +297,6 @@ namespace Tiệm_nét
         private Guna.UI2.WinForms.Guna2TextBox txtUser;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button btEnter;
-        private System.Windows.Forms.LinkLabel linkSignup;
-        private System.Windows.Forms.LinkLabel linkForgotPassword;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
         private Guna.UI2.WinForms.Guna2ImageButton btExit;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
