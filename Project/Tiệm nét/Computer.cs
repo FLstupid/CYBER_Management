@@ -87,6 +87,7 @@ namespace Tiệm_nét
                         });
                         db.SaveChanges();
                         LoadData();
+                        btEditOff();
                         MessageBox.Show("Đã thêm dữ liệu thành công!");
                     }
                 }
@@ -106,6 +107,7 @@ namespace Tiệm_nét
                         cpt.Time_use = int.Parse(txtTimeused.Text);
                         db.SaveChanges();
                         LoadData();
+                        btEditOff();
                         MessageBox.Show("Đã sửa xong!");
                     }
                 }
@@ -140,6 +142,8 @@ namespace Tiệm_nét
         private void btEdit_Click(object sender, EventArgs e)
         {
             btEditOn();
+            btAdd.Enabled = false;
+            btDelete.Enabled = false;
         }
 
         private void btDelete_Click(object sender, EventArgs e)
@@ -167,7 +171,8 @@ namespace Tiệm_nét
         }
         private void btExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Parent.Visible = false;
+            this.Hide();
         }
 
         private void Computer_Load(object sender, EventArgs e)

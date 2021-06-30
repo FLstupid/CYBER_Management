@@ -95,6 +95,7 @@ namespace Tiệm_nét
             this.txtUser.ShadowDecoration.Parent = this.txtUser;
             this.txtUser.Size = new System.Drawing.Size(404, 44);
             this.txtUser.TabIndex = 4;
+            this.txtUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtID_KeyPress);
             // 
             // txtPassword
             // 

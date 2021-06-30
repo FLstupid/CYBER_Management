@@ -236,7 +236,8 @@ namespace Tiệm_nét
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Parent.Visible = false;
+            this.Hide();
         }
 
         private void txtstaffID_Leave(object sender, EventArgs e)

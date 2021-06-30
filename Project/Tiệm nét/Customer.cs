@@ -22,7 +22,8 @@ namespace Tiệm_nét
 
         private void btExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Parent.Visible = false;
+            this.Hide();
         }
         private void setEditOff()
         {
@@ -103,7 +104,7 @@ namespace Tiệm_nét
         private void btEdit_Click(object sender, EventArgs e)
         {
             if (txtCID.Text.Equals(""))
-            { MessageBox.Show("Staff id can not null"); }
+            { MessageBox.Show("Customer id can not null"); }
             else
             {
                 Add = false;
@@ -136,11 +137,11 @@ namespace Tiệm_nét
                     db.Khachhangs.Remove(C);
                     db.SaveChanges();
                     Load_data();
-                    MessageBox.Show($"Đã xóa thành công máy tính có ID = {Cid}.", @"Message", MessageBoxButtons.OK);
+                    MessageBox.Show($"Đã xóa thành công khách hàng có ID = {Cid}.", @"Message", MessageBoxButtons.OK);
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Không xóa được staff hiện hành.", @"Message", MessageBoxButtons.OK);
+                    MessageBox.Show("Không xóa được khách hàng hiện hành.", @"Message", MessageBoxButtons.OK);
                 }
             }
         }
@@ -158,76 +159,71 @@ namespace Tiệm_nét
 
         private void btConfirm_Click(object sender, EventArgs e)
         {
-            var phongmay = db.Phongmays.ToList().Where(x => x.Id == int.Parse(txtRID.Text)).Count();
-            var maytinh = db.Maytinhs.ToList().Where(x => x.Id == int.Parse(txtComputerID.Text)).Count();
-            if (phongmay == 0) { MessageBox.Show("Room ID not exist"); }
-            else if (maytinh == 0) { MessageBox.Show("Computer ID not exist"); }
-            else
+            if (Add)
             {
-                if (Add)
-                    if (txtCID.Text == "") MessageBox.Show(@"Chưa nhập id khách hàng ! Vui lòng nhập id.", @"Message", MessageBoxButtons.OK,
-                           MessageBoxIcon.Warning);
-                    else if (txtCName.Text == "") MessageBox.Show("Chưa nhập tên khách hàng! Vui lòng nhập", @"Message", MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-                    else if (txtPasword.Text == "") MessageBox.Show("Chưa nhập mật khẩu! Vui lòng nhập", @"Message", MessageBoxButtons.OK,
-                         MessageBoxIcon.Warning);
-                    else if (txtPhone.Text == "") MessageBox.Show("Chưa nhập số điện thoại khách hàng! Vui lòng nhập", @"Message", MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-                    else if (txtComputerID.Text == "") MessageBox.Show("Chưa nhập ID máy tính! Vui lòng nhập", @"Message", MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-                    else if (txtRID.Text == "") MessageBox.Show("Chưa nhập phòng máy! Vui lòng nhập", @"Message", MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-                    else
-                    {
-                        try
-                        {
-                            db.Khachhangs.Add(new Khachhang
-                            {
-                                Id = int.Parse(txtCID.Text.Trim()),
-                                Name = txtCName.Text,
-                                Password = txtPasword.Text,
-                                Phone = txtPhone.Text,
-                                Id_maytinh = db.Maytinhs.ToList().SingleOrDefault(x => x.Id == int.Parse(txtComputerID.Text)).Id,
-                                Id_phongmay = db.Phongmays.ToList().SingleOrDefault(x => x.Id == int.Parse(txtRID.Text)).Id
-                            });
-                            db.SaveChanges();
-                            Load_data();
-                            MessageBox.Show("Đã thêm dữ liệu thành công!");
-                        }
-                        catch (Exception) { MessageBox.Show("Error Save"); }
-                    }
+                if (txtCID.Text == "") MessageBox.Show(@"Chưa nhập id khách hàng ! Vui lòng nhập id.", @"Message", MessageBoxButtons.OK,
+                       MessageBoxIcon.Warning);
+                else if (txtCName.Text == "") MessageBox.Show("Chưa nhập tên khách hàng! Vui lòng nhập", @"Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                else if (txtPasword.Text == "") MessageBox.Show("Chưa nhập mật khẩu! Vui lòng nhập", @"Message", MessageBoxButtons.OK,
+                     MessageBoxIcon.Warning);
+                else if (txtPhone.Text == "") MessageBox.Show("Chưa nhập số điện thoại khách hàng! Vui lòng nhập", @"Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                else if (txtComputerID.Text == "") MessageBox.Show("Chưa nhập ID máy tính! Vui lòng nhập", @"Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                else if (txtRID.Text == "") MessageBox.Show("Chưa nhập phòng máy! Vui lòng nhập", @"Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
                 else
                 {
-                    if (txtCID.Text == "") MessageBox.Show("Chưa nhập id khách hàng! Vui lòng nhập ID", @"Message", MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-                    else if (txtCName.Text == "") MessageBox.Show("Chưa nhập tên khách hàng! Vui lòng nhập tên khách hàng", @"Message", MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-                    else if (txtPasword.Text == "") MessageBox.Show("Chưa nhập mật khẩu! Vui lòng nhập mật khẩu", @"Message", MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-                    else if (txtPhone.Text == "") MessageBox.Show("Chưa nhập chi số điện thoại của khách hàng! Vui lòng nhập số điện thoại của khách hàng", @"Message", MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-                    else if (txtComputerID.Text == "") MessageBox.Show("Chưa nhập hoặc nhập sai mã số máy tính! Vui lòng nhập lại mã số máy", @"Message", MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-                    else if (txtRID.Text == "") MessageBox.Show("Chưa nhập mã phòng máy! Vui lòng nhập mã phòng máy", @"Message", MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-                    else
+                    try
                     {
-                        try
+                        db.Khachhangs.Add(new Khachhang
                         {
-                            Khachhang customer = db.Khachhangs.ToList().SingleOrDefault(x => x.Id == int.Parse(txtCID.Text.Trim()));
-                            customer.Name = txtCName.Text;
-                            customer.Password = txtPasword.Text;
-                            customer.Phone = txtPhone.Text;
-                            customer.Id_maytinh = db.Maytinhs.ToList().SingleOrDefault(x => x.Id == int.Parse(txtComputerID.Text)).Id;
-                            customer.Id_phongmay = db.Phongmays.ToList().SingleOrDefault(x => x.Id == int.Parse(txtRID.Text)).Id;
-                            db.SaveChanges();
-                            Load_data();
-                            MessageBox.Show("Đã sửa xong!");
-                        }
-                        catch (Exception)
-                        {
-                            MessageBox.Show("Error Edit");
-                        }
+                            Id = int.Parse(txtCID.Text.Trim()),
+                            Name = txtCName.Text,
+                            Password = txtPasword.Text,
+                            Phone = txtPhone.Text,
+                            Id_maytinh = db.Maytinhs.ToList().SingleOrDefault(x => x.Id == int.Parse(txtComputerID.Text)).Id,
+                            Id_phongmay = db.Phongmays.ToList().SingleOrDefault(x => x.Id == int.Parse(txtRID.Text)).Id
+                        });
+                        db.SaveChanges();
+                        Load_data();
+                        MessageBox.Show("Đã thêm dữ liệu thành công!");
+                    }
+                    catch (Exception) { MessageBox.Show("Error Save"); }
+                }
+            }
+            else
+            {
+                if (txtCID.Text == "") MessageBox.Show("Chưa nhập id khách hàng! Vui lòng nhập ID", @"Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                else if (txtCName.Text == "") MessageBox.Show("Chưa nhập tên khách hàng! Vui lòng nhập tên khách hàng", @"Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                else if (txtPasword.Text == "") MessageBox.Show("Chưa nhập mật khẩu! Vui lòng nhập mật khẩu", @"Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                else if (txtPhone.Text == "") MessageBox.Show("Chưa nhập chi số điện thoại của khách hàng! Vui lòng nhập số điện thoại của khách hàng", @"Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                else if (txtComputerID.Text == "") MessageBox.Show("Chưa nhập hoặc nhập sai mã số máy tính! Vui lòng nhập lại mã số máy", @"Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                else if (txtRID.Text == "") MessageBox.Show("Chưa nhập mã phòng máy! Vui lòng nhập mã phòng máy", @"Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                else
+                {
+                    try
+                    {
+                        Khachhang customer = db.Khachhangs.ToList().SingleOrDefault(x => x.Id == int.Parse(txtCID.Text.Trim()));
+                        customer.Name = txtCName.Text;
+                        customer.Password = txtPasword.Text;
+                        customer.Phone = txtPhone.Text;
+                        customer.Id_maytinh = db.Maytinhs.ToList().SingleOrDefault(x => x.Id == int.Parse(txtComputerID.Text)).Id;
+                        customer.Id_phongmay = db.Phongmays.ToList().SingleOrDefault(x => x.Id == int.Parse(txtRID.Text)).Id;
+                        db.SaveChanges();
+                        Load_data();
+                        MessageBox.Show("Đã sửa xong!");
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Error Edit");
                     }
                 }
             }

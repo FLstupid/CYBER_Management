@@ -41,7 +41,8 @@ namespace Tiệm_nét
 
         private void btExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Parent.Visible = false;
+            this.Hide();
         }
         private void btAdd_Click(object sender, EventArgs e)
         {
@@ -73,15 +74,16 @@ namespace Tiệm_nét
                 {
                     int index = Dataview.CurrentCell.RowIndex;
                     string Bill = Dataview.Rows[index].Cells[0].Value.ToString().Trim();
-                    Chinhanh B = db.Chinhanhs.ToList().SingleOrDefault(x => x.Id == int.Parse(Bill));
-                    db.Chinhanhs.Remove(B);
+                    int tmpid = int.Parse(Bill);
+                    Hoadon_thucan B = db.Hoadon_thucan.ToList().SingleOrDefault(x => x.Id == tmpid);
+                    db.Hoadon_thucan.Remove(B);
                     db.SaveChanges();
                     Load_data();
-                    MessageBox.Show($"Đã xóa thành công máy tính có ID = {Bill}.", @"Message", MessageBoxButtons.OK);
+                    MessageBox.Show($"Đã xóa thành công hóa đơn có ID = {Bill}.", @"Message", MessageBoxButtons.OK);
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Không xóa được staff hiện hành.", @"Message", MessageBoxButtons.OK);
+                    MessageBox.Show("Không xóa được hóa đơn hiện hành.", @"Message", MessageBoxButtons.OK);
                 }
             }
         }
@@ -111,7 +113,7 @@ namespace Tiệm_nét
                         Id_khachhang = db.Khachhangs.ToList().SingleOrDefault(x=>x.Name == txtCName.Text).Id,
                         Id_nhanvien = db.Nhanviens.ToList().SingleOrDefault(x => x.Name == txtSName.Text).Id,
                         Total = int.Parse(txtCount.Text),
-                        Date = DateTime.Today
+                        Date = DateTime.Now
                     });
                     db.SaveChanges();
                     Load_data();

@@ -20,6 +20,10 @@ namespace Tiệm_nét
         Computer c = new Computer();
         branch b = new branch();
         Service service = new Service();
+        Customer cus = new Customer();
+        FoodCategries cate = new FoodCategries();
+        InfoBill Fbill = new InfoBill();
+        Statistic Fstatistic = new Statistic();
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             DialogResult CheckExit = MessageBox.Show("Có muốn Exit không?", "Exit confirm!",
@@ -36,12 +40,6 @@ namespace Tiệm_nét
             Panel_show.Controls.Add(st);
             Panel_show.Visible = true;
             st.Show();
-            st.FormClosed += Closed_event;
-        }
-
-        private void Closed_event(object sender, FormClosedEventArgs e)
-        {
-            Panel_show.Visible = false;
         }
 
         private void btComputer_Click(object sender, EventArgs e)
@@ -51,7 +49,6 @@ namespace Tiệm_nét
             Panel_show.Controls.Add(c);
             Panel_show.Visible = true;
             c.Show();
-            c.FormClosed += Closed_event;
         }
 
         private void btBranch_Click(object sender, EventArgs e)
@@ -61,7 +58,6 @@ namespace Tiệm_nét
             Panel_show.Controls.Add(b);
             b.Show();
             Panel_show.Visible = true;
-            b.FormClosed += Closed_event;
         }
 
         private void btService_Click(object sender, EventArgs e)
@@ -71,52 +67,42 @@ namespace Tiệm_nét
             Panel_show.Controls.Add(service);
             service.Show();
             Panel_show.Visible = true;
-            service.FormClosed += Closed_event;
         }
 
         private void btCustomer_Click(object sender, EventArgs e)
         {
             Panel_show.Controls.Clear();
-            Customer s = new Customer();
-            s.TopLevel = false;
-            Panel_show.Controls.Add(s);
-            s.Show();
+            cus.TopLevel = false;
+            Panel_show.Controls.Add(cus);
+            cus.Show();
             Panel_show.Visible = true;
-            s.FormClosed += Closed_event;
         }
 
         private void guna2ImageButton1_Click_1(object sender, EventArgs e)
         {
-
             Panel_show.Controls.Clear();
-            FoodCategries s = new FoodCategries();
-            s.TopLevel = false;
-            Panel_show.Controls.Add(s);
-            s.Show();
+            cate.TopLevel = false;
+            Panel_show.Controls.Add(cate);
+            cate.Show();
             Panel_show.Visible = true;
-            s.FormClosed += Closed_event;
         }
 
         private void btBillmerchant_Click(object sender, EventArgs e)
         {
             Panel_show.Controls.Clear();
-            InfoBill s = new InfoBill();
-            s.TopLevel = false;
-            Panel_show.Controls.Add(s);
-            s.Show();
+            Fbill.TopLevel = false;
+            Panel_show.Controls.Add(Fbill);
+            Fbill.Show();
             Panel_show.Visible = true;
-            s.FormClosed += Closed_event;
         }
 
         private void btStatistic_Click(object sender, EventArgs e)
         {
             Panel_show.Controls.Clear();
-            Statistic s = new Statistic();
-            s.TopLevel = false;
-            Panel_show.Controls.Add(s);
-            s.Show();
+            Fstatistic.TopLevel = false;
+            Panel_show.Controls.Add(Fstatistic);
+            Fstatistic.Show();
             Panel_show.Visible = true;
-            s.FormClosed += Closed_event;
         }
 
         private void btMinize_Click(object sender, EventArgs e)

@@ -22,7 +22,8 @@ namespace Tiệm_nét
 
         private void btExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Parent.Visible = false;
+            this.Hide();
         }
         private void setEditOff()
         {
@@ -97,12 +98,12 @@ namespace Tiệm_nét
                     db.Khachhangs.Remove(C);
                     db.SaveChanges();
                     Load_data();
-                    MessageBox.Show($"Đã xóa thành công máy tính có ID = {Cid}.", @"Message", MessageBoxButtons.OK);
+                    MessageBox.Show($"Đã xóa thành công Bill có ID = {Cid}.", @"Message", MessageBoxButtons.OK);
                     setEditOff();
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Không xóa được staff hiện hành.", @"Message", MessageBoxButtons.OK);
+                    MessageBox.Show("Không xóa được bill hiện hành.", @"Message", MessageBoxButtons.OK);
                 }
             }
         }

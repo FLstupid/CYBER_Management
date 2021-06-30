@@ -21,7 +21,8 @@ namespace Tiệm_nét
 
         private void btExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Parent.Visible = false;
+            this.Hide();
         }
         private void setEditOff()
         {

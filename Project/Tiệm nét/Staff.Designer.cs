@@ -57,7 +57,7 @@ namespace Tiệm_nét
             this.btReload = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btCancel = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btConfirm = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btExit = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btAdd = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Dataview = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -495,23 +495,23 @@ namespace Tiệm_nét
             this.btConfirm.UseTransparentBackground = true;
             this.btConfirm.Click += new System.EventHandler(this.btconfirm_Click);
             // 
-            // guna2ImageButton1
+            // btExit
             // 
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.Location = new System.Drawing.Point(963, 535);
-            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(105, 89);
-            this.guna2ImageButton1.TabIndex = 47;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            this.btExit.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btExit.CheckedState.Parent = this.btExit;
+            this.btExit.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
+            this.btExit.HoverState.ImageSize = new System.Drawing.Size(50, 50);
+            this.btExit.HoverState.Parent = this.btExit;
+            this.btExit.Image = ((System.Drawing.Image)(resources.GetObject("btExit.Image")));
+            this.btExit.ImageRotate = 0F;
+            this.btExit.Location = new System.Drawing.Point(963, 535);
+            this.btExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btExit.Name = "btExit";
+            this.btExit.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btExit.PressedState.Parent = this.btExit;
+            this.btExit.Size = new System.Drawing.Size(105, 89);
+            this.btExit.TabIndex = 47;
+            this.btExit.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // btAdd
             // 
@@ -666,7 +666,7 @@ namespace Tiệm_nét
             this.Controls.Add(this.btReload);
             this.Controls.Add(this.btCancel);
             this.Controls.Add(this.btConfirm);
-            this.Controls.Add(this.guna2ImageButton1);
+            this.Controls.Add(this.btExit);
             this.Controls.Add(this.btAdd);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.name);
@@ -708,7 +708,7 @@ namespace Tiệm_nét
         private Guna.UI2.WinForms.Guna2HtmlLabel name;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2ImageButton btAdd;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private Guna.UI2.WinForms.Guna2ImageButton btExit;
         private Guna.UI2.WinForms.Guna2ImageButton btConfirm;
         private Guna.UI2.WinForms.Guna2ImageButton btCancel;
         private Guna.UI2.WinForms.Guna2ImageButton btReload;

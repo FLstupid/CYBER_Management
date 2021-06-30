@@ -28,9 +28,6 @@ namespace Tiệm_nét
         void btEditOn()
         {
             btConfirm.Visible = btCancel.Visible = txtFName.Enabled = txtPrice.Enabled = true;
-            btAdd.Enabled = false;
-            btEdit.Enabled = false;
-            btDelete.Enabled = false;
         }
 
         void Reset()
@@ -38,7 +35,6 @@ namespace Tiệm_nét
             txtFID.ResetText();
             txtFName.ResetText();
             txtPrice.ResetText();
-           
         }
         private void Load_data()
         {
@@ -50,7 +46,8 @@ namespace Tiệm_nét
 
         private void btExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Parent.Visible = false;
+            this.Hide();
         }
 
         private void Cate_Load(object sender, EventArgs e)
@@ -62,6 +59,7 @@ namespace Tiệm_nét
         private void btAdd_Click(object sender, EventArgs e)
         {
             Add = true;
+            Reset();
             btEditOn();
             btDelete.Enabled = btEdit.Enabled = false;
         }
@@ -75,6 +73,7 @@ namespace Tiệm_nét
         private void btReload_Click(object sender, EventArgs e)
         {
             Load_data();
+            Loadinfo();
             btEditOff();
         }
 
@@ -109,7 +108,6 @@ namespace Tiệm_nét
             txtFID.Text = Dataview.Rows[index].Cells[0].Value.ToString().Trim();
             txtFName.Text = Dataview.Rows[index].Cells[1].Value.ToString().Trim();
             txtPrice.Text = Dataview.Rows[index].Cells[2].Value.ToString().Trim();
-   
         }
 
         private void btConfirm_Click(object sender, EventArgs e)
@@ -155,6 +153,7 @@ namespace Tiệm_nét
         private void btCancel_Click(object sender, EventArgs e)
         {
             btEditOff();
+            Reset();
             Load_data();
         }
         private void txtFID_KeyDown(object sender, KeyEventArgs e)
@@ -173,7 +172,7 @@ namespace Tiệm_nét
             if (int.TryParse(txtFID.Text.Trim(), out result))
                 if (db.Nhanviens.ToList().Where(x => x.Id == result).Count() == 0)
                 {
-                    MessageBox.Show("Staff id not exist");
+                    MessageBox.Show("Food id not exist");
                     txtFID.Focus();
                 }
                 else

@@ -23,7 +23,7 @@ namespace Tiệm_nét
                 case "0":
                     var d0 = db.Chinhanhs;
                     var info0 = from i in d0
-                               select new { i.Id, i.Chinhanh1,i.District.District1 };
+                               select new { i.Id, Branch = i.Chinhanh1, District = i.District.District1 };
                     dataview.DataSource = info0.ToList();
                         break;
                 case "1":
@@ -65,7 +65,39 @@ namespace Tiệm_nét
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Parent.Visible = false;
+            this.Hide();
+        }
+
+        private void btPrint_Click(object sender, EventArgs e)
+        {
+            switch (cbChoose.Text)
+            {
+                case "Branch":
+                    BranchReport branchReport = new BranchReport();
+                    branchReport.Show();
+                    break;
+                case "Staff":
+                    StaffReport staffReport = new StaffReport();
+                    staffReport.Show();
+                    break;
+                case "Computer":
+                    ComputerReport computerReport = new ComputerReport();
+                    computerReport.Show();
+                    break;
+                case "Customer":
+                    CustomerReport customerReport = new CustomerReport();
+                    customerReport.Show();
+                    break;
+                case "Bill":
+                    BillReport billReport = new BillReport();
+                    billReport.Show();
+                    break;
+                case "Bill Food":
+                    BillFoodstatisticReport billFoodstatisticReport = new BillFoodstatisticReport();
+                    billFoodstatisticReport.Show();
+                    break;
+            }
         }
     }
 }
