@@ -1,0 +1,338 @@
+﻿++Solution 'Cyber' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:Cyber.sln
+++Cyber
+i:{00000000-0000-0000-0000-000000000000}:Cyber
+++Properties
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\properties\
+++AssemblyInfo.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\properties\assemblyinfo.cs
+++Resources.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\properties\resources.resx
+++Settings.settings
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\properties\settings.settings
+++References
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++EntityFramework
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++EntityFramework.SqlServer
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++Guna.UI2
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++Microsoft.CSharp
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++Microsoft.ReportViewer.Common
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++Microsoft.ReportViewer.DataVisualization
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++Microsoft.ReportViewer.Design
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++Microsoft.ReportViewer.ProcessingObjectModel
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++Microsoft.ReportViewer.WinForms
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++Microsoft.SqlServer.Types
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++System
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++System.ComponentModel.DataAnnotations
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++System.Core
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++System.Data
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++System.Data.DataSetExtensions
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++System.Data.Entity
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++System.Deployment
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++System.DirectoryServices
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++System.Drawing
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++System.Net.Http
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++System.Runtime.Serialization
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++System.Security
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++System.Windows.Forms
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++System.Xml
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++System.Xml.Linq
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:
+++Resources
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\resources\
+++btcustomer.png
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\resources\btcustomer.png
+++buttonbranch.png
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\resources\buttonbranch.png
+++buttoncancael.png
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\resources\buttoncancael.png
+++buttoncomfirm.png
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\resources\buttoncomfirm.png
+++buttonsevice.png
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\resources\buttonsevice.png
+++buttonsevicehovert.png
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\resources\buttonsevicehovert.png
+++buttonstaff.png
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\resources\buttonstaff.png
+++cover-thuatngu-800x450.jpg
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\resources\cover-thuatngu-800x450.jpg
+++download (1).jfif
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\resources\download (1).jfif
+++download (2).jfif
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\resources\download (2).jfif
+++download.jfif
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\resources\download.jfif
+++icon máy tính.png
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\resources\icon máy tính.png
+++SqlServerTypes
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\sqlservertypes\
+++x64
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\sqlservertypes\x64\
+++x86
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\sqlservertypes\x86\
+++Loader.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\sqlservertypes\loader.cs
+++readme.htm
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\sqlservertypes\readme.htm
+++App.config
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\app.config
+++Bill_FoodReport.rdlc
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\bill_foodreport.rdlc
+++BillFood.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\billfood.cs
+++BillFood.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\billfood.designer.cs
+++BillFood.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\billfood.resx
+++BillFoodstatisticReport.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\billfoodstatisticreport.cs
+++BillFoodstatisticReport.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\billfoodstatisticreport.designer.cs
+++BillFoodstatisticReport.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\billfoodstatisticreport.resx
+++BillFoodstatisticReport.rdlc
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\billfoodstatisticreport.rdlc
+++BillReport.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\billreport.cs
+++BillReport.rdlc
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\billreport.rdlc
+++branch.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\branch.cs
+++BranchReport.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\branchreport.cs
+++BranchReport.rdlc
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\branchreport.rdlc
+++ClassDiagram1.cd
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\classdiagram1.cd
+++ClassDiagram2.cd
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\classdiagram2.cd
+++Computer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\computer.cs
+++Computer.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\computer.designer.cs
+++Computer.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\computer.resx
+++ComputerReport.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\computerreport.cs
+++ComputerReport.rdlc
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\computerreport.rdlc
+++Customer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\customer.cs
+++CustomerReport.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\customerreport.cs
+++CustomerReport.rdlc
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\customerreport.rdlc
+++dsBill.xsd
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbill.xsd
+++dsBill_Food.xsd
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbill_food.xsd
+++dsBillFoodstatistics.xsd
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbillfoodstatistics.xsd
+++dsBranch.xsd
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbranch.xsd
+++dsComputer.xsd
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dscomputer.xsd
+++dsCustomer.xsd
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dscustomer.xsd
+++dsStaff.xsd
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsstaff.xsd
+++FoodCategries.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\foodcategries.cs
+++InfoBill.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\infobill.cs
+++Loading.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\loading.cs
+++Login.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\login.cs
+++Menu.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\menu.cs
+++Model.edmx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\model.edmx
+++Model.Context.tt
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\model.context.tt
+++Model.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\model.designer.cs
+++Model.edmx.diagram
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\model.edmx.diagram
+++Model.tt
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\model.tt
+++packages.config
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\packages.config
+++Program.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\program.cs
+++Service.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\service.cs
+++Staff.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\staff.cs
+++StaffReport.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\staffreport.cs
+++StaffReport.rdlc
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\staffreport.rdlc
+++Statistic.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\statistic.cs
+++Resources.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\properties\resources.designer.cs
+++Settings.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\properties\settings.designer.cs
+++msvcr120.dll
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\sqlservertypes\x64\msvcr120.dll
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\sqlservertypes\x86\msvcr120.dll
+++SqlServerSpatial140.dll
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\sqlservertypes\x64\sqlserverspatial140.dll
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\sqlservertypes\x86\sqlserverspatial140.dll
+++BillReport.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\billreport.designer.cs
+++BillReport.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\billreport.resx
+++branch.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\branch.designer.cs
+++branch.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\branch.resx
+++BranchReport.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\branchreport.designer.cs
+++BranchReport.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\branchreport.resx
+++ComputerReport.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\computerreport.designer.cs
+++ComputerReport.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\computerreport.resx
+++Customer.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\customer.designer.cs
+++Customer.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\customer.resx
+++CustomerReport.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\customerreport.designer.cs
+++CustomerReport.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\customerreport.resx
+++dsBill.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbill.designer.cs
+++dsBill.xsc
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbill.xsc
+++dsBill.xss
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbill.xss
+++dsBill_Food.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbill_food.cs
+++dsBill_Food.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbill_food.designer.cs
+++dsBill_Food.xsc
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbill_food.xsc
+++dsBill_Food.xss
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbill_food.xss
+++dsBillFoodstatistics.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbillfoodstatistics.designer.cs
+++dsBillFoodstatistics.xsc
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbillfoodstatistics.xsc
+++dsBillFoodstatistics.xss
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbillfoodstatistics.xss
+++dsBranch.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbranch.designer.cs
+++dsBranch.xsc
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbranch.xsc
+++dsBranch.xss
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsbranch.xss
+++dsComputer.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dscomputer.designer.cs
+++dsComputer.xsc
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dscomputer.xsc
+++dsComputer.xss
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dscomputer.xss
+++dsCustomer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dscustomer.cs
+++dsCustomer.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dscustomer.designer.cs
+++dsCustomer.xsc
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dscustomer.xsc
+++dsCustomer.xss
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dscustomer.xss
+++dsStaff.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsstaff.designer.cs
+++dsStaff.xsc
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsstaff.xsc
+++dsStaff.xss
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\dsstaff.xss
+++FoodCategries.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\foodcategries.designer.cs
+++FoodCategries.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\foodcategries.resx
+++InfoBill.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\infobill.designer.cs
+++InfoBill.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\infobill.resx
+++Loading.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\loading.designer.cs
+++Loading.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\loading.resx
+++Login.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\login.designer.cs
+++Login.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\login.resx
+++Menu.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\menu.designer.cs
+++Menu.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\menu.resx
+++Model.Context.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\model.context.cs
+++Chinhanh.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\chinhanh.cs
+++Chitiet_hoadon.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\chitiet_hoadon.cs
+++District.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\district.cs
+++Hoadon.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\hoadon.cs
+++Hoadon_thucan.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\hoadon_thucan.cs
+++Khachhang.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\khachhang.cs
+++Maytinh.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\maytinh.cs
+++Model.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\model.cs
+++Nhanvien.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\nhanvien.cs
+++Phongmay.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\phongmay.cs
+++sysdiagram.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\sysdiagram.cs
+++Thucan.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\thucan.cs
+++Service.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\service.designer.cs
+++Service.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\service.resx
+++Staff.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\staff.designer.cs
+++Staff.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\staff.resx
+++StaffReport.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\staffreport.designer.cs
+++StaffReport.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\staffreport.resx
+++Statistic.Designer.cs
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\statistic.designer.cs
+++Statistic.resx
+i:{d7ed1787-9048-47a4-9346-eff0aa869faa}:c:\users\admin\onedrive\documents\github\cyber_management\project\tiệm nét\statistic.resx
