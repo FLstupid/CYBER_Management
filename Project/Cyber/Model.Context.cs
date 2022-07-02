@@ -25,16 +25,16 @@ namespace Tiệm_nét
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<Chinhanh> Chinhanhs { get; set; }
-        public DbSet<Chitiet_hoadon> Chitiet_hoadon { get; set; }
-        public DbSet<District> Districts { get; set; }
-        public DbSet<Hoadon> Hoadons { get; set; }
-        public DbSet<Hoadon_thucan> Hoadon_thucan { get; set; }
-        public DbSet<Khachhang> Khachhangs { get; set; }
-        public DbSet<Maytinh> Maytinhs { get; set; }
-        public DbSet<Nhanvien> Nhanviens { get; set; }
-        public DbSet<Phongmay> Phongmays { get; set; }
-        public DbSet<sysdiagram> sysdiagrams { get; set; }
-        public DbSet<Thucan> Thucans { get; set; }
+        private DbSet<Chinhanh> Chinhanhs { get; set; }
+        private DbSet<Chitiet_hoadon> Chitiet_hoadon { get; set; }
+        private DbSet<District> Districts { get; set; }
+        private DbSet<Hoadon> Hoadons { get; set; }
+        private DbSet<Hoadon_thucan> Hoadon_thucan { get; set; }
+        private DbSet<Khachhang> Khachhangs { get; set; }
+        private DbSet<Maytinh> Maytinhs { get; set; }
+        private DbSet<Nhanvien> Nhanviens { get; set; }
+        private DbSet<Phongmay> Phongmays { get; set; }
+        private DbSet<sysdiagram> sysdiagrams { get; set; }
+        private DbSet<Thucan> Thucans { get; set; }
     }
 }

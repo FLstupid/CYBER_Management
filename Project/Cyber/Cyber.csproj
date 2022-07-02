@@ -108,29 +108,11 @@
     <Compile Include="BillFood.Designer.cs">
       <DependentUpon>BillFood.cs</DependentUpon>
     </Compile>
-    <Compile Include="BillFoodstatisticReport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BillFoodstatisticReport.Designer.cs">
-      <DependentUpon>BillFoodstatisticReport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BillReport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BillReport.Designer.cs">
-      <DependentUpon>BillReport.cs</DependentUpon>
-    </Compile>
     <Compile Include="branch.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="branch.Designer.cs">
       <DependentUpon>branch.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BranchReport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BranchReport.Designer.cs">
-      <DependentUpon>BranchReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Chinhanh.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -138,67 +120,14 @@
     <Compile Include="Chitiet_hoadon.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="ComputerReport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ComputerReport.Designer.cs">
-      <DependentUpon>ComputerReport.cs</DependentUpon>
-    </Compile>
     <Compile Include="Customer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Customer.Designer.cs">
       <DependentUpon>Customer.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomerReport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomerReport.Designer.cs">
-      <DependentUpon>CustomerReport.cs</DependentUpon>
-    </Compile>
     <Compile Include="District.cs">
       <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="dsBill.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dsBill.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dsBillFoodstatistics.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dsBillFoodstatistics.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dsBill_Food.cs">
-      <DependentUpon>dsBill_Food.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dsBill_Food.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dsBill_Food.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dsBranch.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dsBranch.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dsComputer.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dsComputer.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dsCustomer.cs">
-      <DependentUpon>dsCustomer.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dsCustomer.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dsCustomer.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dsStaff.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dsStaff.xsd</DependentUpon>
     </Compile>
     <Compile Include="ChangePassword.cs">
       <SubType>Form</SubType>
@@ -314,12 +243,6 @@
     <Compile Include="StaffMenu.Designer.cs">
       <DependentUpon>StaffMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="StaffReport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StaffReport.Designer.cs">
-      <DependentUpon>StaffReport.cs</DependentUpon>
-    </Compile>
     <Compile Include="StaffSalary.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -353,31 +276,11 @@
     <EmbeddedResource Include="BillFood.resx">
       <DependentUpon>BillFood.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BillFoodstatisticReport.rdlc" />
-    <EmbeddedResource Include="BillFoodstatisticReport.resx">
-      <DependentUpon>BillFoodstatisticReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BillReport.rdlc" />
-    <EmbeddedResource Include="BillReport.resx">
-      <DependentUpon>BillReport.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="branch.resx">
       <DependentUpon>branch.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BranchReport.rdlc" />
-    <EmbeddedResource Include="BranchReport.resx">
-      <DependentUpon>BranchReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ComputerReport.rdlc" />
-    <EmbeddedResource Include="ComputerReport.resx">
-      <DependentUpon>ComputerReport.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CustomerReport.rdlc" />
-    <EmbeddedResource Include="CustomerReport.resx">
-      <DependentUpon>CustomerReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
@@ -428,10 +331,6 @@
     <EmbeddedResource Include="StaffMenu.resx">
       <DependentUpon>StaffMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StaffReport.rdlc" />
-    <EmbeddedResource Include="StaffReport.resx">
-      <DependentUpon>StaffReport.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="StaffSalary.resx">
       <DependentUpon>StaffSalary.cs</DependentUpon>
     </EmbeddedResource>
@@ -442,83 +341,6 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="dsBill.xsc">
-      <DependentUpon>dsBill.xsd</DependentUpon>
-    </None>
-    <None Include="dsBill.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dsBill.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="dsBill.xss">
-      <DependentUpon>dsBill.xsd</DependentUpon>
-    </None>
-    <None Include="dsBillFoodstatistics.xsc">
-      <DependentUpon>dsBillFoodstatistics.xsd</DependentUpon>
-    </None>
-    <None Include="dsBillFoodstatistics.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dsBillFoodstatistics.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="dsBillFoodstatistics.xss">
-      <DependentUpon>dsBillFoodstatistics.xsd</DependentUpon>
-    </None>
-    <None Include="dsBill_Food.xsc">
-      <DependentUpon>dsBill_Food.xsd</DependentUpon>
-    </None>
-    <None Include="dsBill_Food.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dsBill_Food.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="dsBill_Food.xss">
-      <DependentUpon>dsBill_Food.xsd</DependentUpon>
-    </None>
-    <None Include="dsBranch.xsc">
-      <DependentUpon>dsBranch.xsd</DependentUpon>
-    </None>
-    <None Include="dsBranch.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dsBranch.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="dsBranch.xss">
-      <DependentUpon>dsBranch.xsd</DependentUpon>
-    </None>
-    <None Include="dsComputer.xsc">
-      <DependentUpon>dsComputer.xsd</DependentUpon>
-    </None>
-    <None Include="dsComputer.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dsComputer.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="dsComputer.xss">
-      <DependentUpon>dsComputer.xsd</DependentUpon>
-    </None>
-    <None Include="dsCustomer.xsc">
-      <DependentUpon>dsCustomer.xsd</DependentUpon>
-    </None>
-    <None Include="dsCustomer.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dsCustomer.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="dsCustomer.xss">
-      <DependentUpon>dsCustomer.xsd</DependentUpon>
-    </None>
-    <None Include="dsStaff.xsc">
-      <DependentUpon>dsStaff.xsd</DependentUpon>
-    </None>
-    <None Include="dsStaff.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dsStaff.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="dsStaff.xss">
-      <DependentUpon>dsStaff.xsd</DependentUpon>
-    </None>
     <None Include="Model.edmx.diagram">
       <DependentUpon>Model.edmx</DependentUpon>
     </None>
