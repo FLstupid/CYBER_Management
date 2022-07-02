@@ -289,7 +289,6 @@
     <EmbeddedResource Include="BillReport.resx">
       <DependentUpon>BillReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Bill_FoodReport.rdlc" />
     <EmbeddedResource Include="branch.resx">
       <DependentUpon>branch.cs</DependentUpon>
     </EmbeddedResource>
