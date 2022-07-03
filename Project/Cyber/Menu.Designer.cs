@@ -36,10 +36,6 @@ namespace Tiệm_nét
             this.btCategories = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btCustomer = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btService = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btBranch = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btComputer = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -56,10 +52,10 @@ namespace Tiệm_nét
             this.btStatistic = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.Panel_show = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btMinize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btExit = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.txtCID = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientPanel1.SuspendLayout();
             this.Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -74,25 +70,21 @@ namespace Tiệm_nét
             this.guna2GradientPanel1.Controls.Add(this.btCategories);
             this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel7);
             this.guna2GradientPanel1.Controls.Add(this.btCustomer);
-            this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel4);
-            this.guna2GradientPanel1.Controls.Add(this.btService);
-            this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel3);
-            this.guna2GradientPanel1.Controls.Add(this.btBranch);
             this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2GradientPanel1.Controls.Add(this.btComputer);
             this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2GradientPanel1.Controls.Add(this.btStaff);
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(-3, 12);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(-3, 46);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(89, 604);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(96, 570);
             this.guna2GradientPanel1.TabIndex = 14;
             // 
             // guna2HtmlLabel12
             // 
             this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel12.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(16, 583);
+            this.guna2HtmlLabel12.Location = new System.Drawing.Point(7, 543);
             this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
             this.guna2HtmlLabel12.Size = new System.Drawing.Size(77, 21);
             this.guna2HtmlLabel12.TabIndex = 25;
@@ -110,7 +102,7 @@ namespace Tiệm_nét
             this.btCategories.Image = ((System.Drawing.Image)(resources.GetObject("btCategories.Image")));
             this.btCategories.ImageRotate = 0F;
             this.btCategories.ImageSize = new System.Drawing.Size(90, 90);
-            this.btCategories.Location = new System.Drawing.Point(7, 508);
+            this.btCategories.Location = new System.Drawing.Point(7, 457);
             this.btCategories.Name = "btCategories";
             this.btCategories.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btCategories.PressedState.Image")));
             this.btCategories.PressedState.ImageSize = new System.Drawing.Size(50, 50);
@@ -124,7 +116,7 @@ namespace Tiệm_nét
             // 
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(14, 484);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(15, 398);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(71, 21);
             this.guna2HtmlLabel7.TabIndex = 23;
@@ -142,7 +134,7 @@ namespace Tiệm_nét
             this.btCustomer.Image = global::Tiệm_nét.Properties.Resources.btcustomer;
             this.btCustomer.ImageRotate = 0F;
             this.btCustomer.ImageSize = new System.Drawing.Size(90, 90);
-            this.btCustomer.Location = new System.Drawing.Point(0, 409);
+            this.btCustomer.Location = new System.Drawing.Point(7, 314);
             this.btCustomer.Name = "btCustomer";
             this.btCustomer.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btCustomer.PressedState.Parent = this.btCustomer;
@@ -151,73 +143,11 @@ namespace Tiệm_nét
             this.btCustomer.UseTransparentBackground = true;
             this.btCustomer.Click += new System.EventHandler(this.btCustomer_Click);
             // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(16, 385);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(52, 21);
-            this.guna2HtmlLabel4.TabIndex = 21;
-            this.guna2HtmlLabel4.Text = "Service";
-            // 
-            // btService
-            // 
-            this.btService.AnimatedGIF = true;
-            this.btService.BackColor = System.Drawing.Color.Transparent;
-            this.btService.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btService.CheckedState.Parent = this.btService;
-            this.btService.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btService.HoverState.Image")));
-            this.btService.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btService.HoverState.Parent = this.btService;
-            this.btService.Image = global::Tiệm_nét.Properties.Resources.buttonsevice;
-            this.btService.ImageRotate = 0F;
-            this.btService.ImageSize = new System.Drawing.Size(90, 90);
-            this.btService.Location = new System.Drawing.Point(3, 311);
-            this.btService.Name = "btService";
-            this.btService.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btService.PressedState.Parent = this.btService;
-            this.btService.Size = new System.Drawing.Size(79, 80);
-            this.btService.TabIndex = 20;
-            this.btService.UseTransparentBackground = true;
-            this.btService.Click += new System.EventHandler(this.btService_Click);
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(21, 287);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(52, 21);
-            this.guna2HtmlLabel3.TabIndex = 19;
-            this.guna2HtmlLabel3.Text = "Branch";
-            // 
-            // btBranch
-            // 
-            this.btBranch.AnimatedGIF = true;
-            this.btBranch.BackColor = System.Drawing.Color.Transparent;
-            this.btBranch.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btBranch.CheckedState.Parent = this.btBranch;
-            this.btBranch.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btBranch.HoverState.Image")));
-            this.btBranch.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btBranch.HoverState.Parent = this.btBranch;
-            this.btBranch.Image = global::Tiệm_nét.Properties.Resources.buttonbranch;
-            this.btBranch.ImageRotate = 0F;
-            this.btBranch.ImageSize = new System.Drawing.Size(90, 90);
-            this.btBranch.Location = new System.Drawing.Point(3, 212);
-            this.btBranch.Name = "btBranch";
-            this.btBranch.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btBranch.PressedState.Parent = this.btBranch;
-            this.btBranch.Size = new System.Drawing.Size(79, 80);
-            this.btBranch.TabIndex = 18;
-            this.btBranch.UseTransparentBackground = true;
-            this.btBranch.Click += new System.EventHandler(this.btBranch_Click);
-            // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(14, 177);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(7, 250);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(73, 21);
             this.guna2HtmlLabel2.TabIndex = 17;
@@ -235,7 +165,7 @@ namespace Tiệm_nét
             this.btComputer.Image = global::Tiệm_nét.Properties.Resources.icon_máy_tính;
             this.btComputer.ImageRotate = 0F;
             this.btComputer.ImageSize = new System.Drawing.Size(90, 90);
-            this.btComputer.Location = new System.Drawing.Point(3, 103);
+            this.btComputer.Location = new System.Drawing.Point(7, 166);
             this.btComputer.Name = "btComputer";
             this.btComputer.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btComputer.PressedState.Parent = this.btComputer;
@@ -248,11 +178,12 @@ namespace Tiệm_nét
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(24, 79);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(26, 117);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(37, 21);
             this.guna2HtmlLabel1.TabIndex = 15;
             this.guna2HtmlLabel1.Text = "Staff";
+            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
             // btStaff
             // 
@@ -266,7 +197,7 @@ namespace Tiệm_nét
             this.btStaff.Image = global::Tiệm_nét.Properties.Resources.buttonstaff;
             this.btStaff.ImageRotate = 0F;
             this.btStaff.ImageSize = new System.Drawing.Size(90, 90);
-            this.btStaff.Location = new System.Drawing.Point(3, 3);
+            this.btStaff.Location = new System.Drawing.Point(7, 40);
             this.btStaff.Name = "btStaff";
             this.btStaff.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btStaff.PressedState.Parent = this.btStaff;
@@ -426,15 +357,6 @@ namespace Tiệm_nét
             this.guna2PictureBox5.TabStop = false;
             this.guna2PictureBox5.UseTransparentBackground = true;
             // 
-            // Panel_show
-            // 
-            this.Panel_show.Location = new System.Drawing.Point(92, 115);
-            this.Panel_show.Name = "Panel_show";
-            this.Panel_show.ShadowDecoration.Parent = this.Panel_show;
-            this.Panel_show.Size = new System.Drawing.Size(800, 498);
-            this.Panel_show.TabIndex = 83;
-            this.Panel_show.Visible = false;
-            // 
             // guna2PictureBox4
             // 
             this.guna2PictureBox4.BackColor = System.Drawing.Color.Transparent;
@@ -486,13 +408,44 @@ namespace Tiệm_nét
             this.btExit.UseTransparentBackground = true;
             this.btExit.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
+            // txtCID
+            // 
+            this.txtCID.BorderColor = System.Drawing.Color.White;
+            this.txtCID.BorderRadius = 10;
+            this.txtCID.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.txtCID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCID.DefaultText = "";
+            this.txtCID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCID.DisabledState.FillColor = System.Drawing.Color.Transparent;
+            this.txtCID.DisabledState.ForeColor = System.Drawing.Color.Black;
+            this.txtCID.DisabledState.Parent = this.txtCID;
+            this.txtCID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCID.FocusedState.Parent = this.txtCID;
+            this.txtCID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCID.ForeColor = System.Drawing.Color.Black;
+            this.txtCID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCID.HoverState.Parent = this.txtCID;
+            this.txtCID.Location = new System.Drawing.Point(23, 1);
+            this.txtCID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCID.Name = "txtCID";
+            this.txtCID.PasswordChar = '\0';
+            this.txtCID.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtCID.PlaceholderText = "Hello, NameUser";
+            this.txtCID.SelectedText = "";
+            this.txtCID.ShadowDecoration.Parent = this.txtCID;
+            this.txtCID.Size = new System.Drawing.Size(193, 44);
+            this.txtCID.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtCID.TabIndex = 156;
+            this.txtCID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Menu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(894, 616);
-            this.Controls.Add(this.Panel_show);
+            this.Controls.Add(this.txtCID);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.Panel);
             this.Controls.Add(this.guna2PictureBox4);
@@ -503,6 +456,7 @@ namespace Tiệm_nét
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             this.Panel.ResumeLayout(false);
@@ -520,14 +474,8 @@ namespace Tiệm_nét
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2ImageButton btStaff;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2ImageButton btService;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2ImageButton btBranch;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2ImageButton btComputer;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private Guna.UI2.WinForms.Guna2ImageButton btCustomer;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
@@ -535,7 +483,6 @@ namespace Tiệm_nét
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
         private Guna.UI2.WinForms.Guna2ImageButton btBillmerchant;
-        private Guna.UI2.WinForms.Guna2ImageButton btStatistic;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
@@ -543,6 +490,9 @@ namespace Tiệm_nét
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private Guna.UI2.WinForms.Guna2ImageButton btCategories;
-        private Guna.UI2.WinForms.Guna2Panel Panel_show;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2ImageButton btCustomer;
+        private Guna.UI2.WinForms.Guna2ImageButton btStatistic;
+        private Guna.UI2.WinForms.Guna2TextBox txtCID;
     }
 }

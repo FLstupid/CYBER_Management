@@ -78,6 +78,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminBillInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminBillInformation.Designer.cs">
+      <DependentUpon>AdminBillInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminComputer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminComputer.Designer.cs">
+      <DependentUpon>AdminComputer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminfood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminfood.Designer.cs">
+      <DependentUpon>Adminfood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSalary.Designer.cs">
+      <DependentUpon>AdminSalary.cs</DependentUpon>
+    </Compile>
     <Compile Include="BillFood.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +200,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsStaff.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hoadon.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -247,6 +277,18 @@
     <Compile Include="FoodCategries.Designer.cs">
       <DependentUpon>FoodCategries.cs</DependentUpon>
     </Compile>
+    <Compile Include="Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary.Designer.cs">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeBill.Designer.cs">
+      <DependentUpon>SeeBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="Service.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,11 +302,29 @@
     <Compile Include="Staff.Designer.cs">
       <DependentUpon>Staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="StaffInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffInformation.Designer.cs">
+      <DependentUpon>StaffInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffMenu.Designer.cs">
+      <DependentUpon>StaffMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="StaffReport.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StaffReport.Designer.cs">
       <DependentUpon>StaffReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffSalary.Designer.cs">
+      <DependentUpon>StaffSalary.cs</DependentUpon>
     </Compile>
     <Compile Include="Statistic.cs">
       <SubType>Form</SubType>
@@ -278,6 +338,18 @@
     <Compile Include="Thucan.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminBillInformation.resx">
+      <DependentUpon>AdminBillInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminComputer.resx">
+      <DependentUpon>AdminComputer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminfood.resx">
+      <DependentUpon>Adminfood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSalary.resx">
+      <DependentUpon>AdminSalary.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BillFood.resx">
       <DependentUpon>BillFood.cs</DependentUpon>
     </EmbeddedResource>
@@ -307,6 +379,9 @@
     <EmbeddedResource Include="CustomerReport.resx">
       <DependentUpon>CustomerReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InfoBill.resx">
       <DependentUpon>InfoBill.cs</DependentUpon>
     </EmbeddedResource>
@@ -335,15 +410,30 @@
     <EmbeddedResource Include="FoodCategries.resx">
       <DependentUpon>FoodCategries.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Salary.resx">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeBill.resx">
+      <DependentUpon>SeeBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Service.resx">
       <DependentUpon>Service.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staff.resx">
       <DependentUpon>Staff.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StaffInformation.resx">
+      <DependentUpon>StaffInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffMenu.resx">
+      <DependentUpon>StaffMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StaffReport.rdlc" />
     <EmbeddedResource Include="StaffReport.resx">
       <DependentUpon>StaffReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffSalary.resx">
+      <DependentUpon>StaffSalary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Statistic.resx">
       <DependentUpon>Statistic.cs</DependentUpon>
@@ -480,6 +570,7 @@
     <None Include="Resources\buttonbranch.png" />
     <None Include="Resources\buttonsevice.png" />
     <None Include="Resources\btcustomer.png" />
+    <None Include="Resources\buttonadd.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -16,7 +16,11 @@ namespace Tiệm_nét
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD:Project/Tiệm nét/Program.cs
+            Application.Run(new Menu());
+=======
             Application.Run(new Statistic());
+>>>>>>> b61e802e1b76c2a329dbd5a5f22bf44679ef29c0:Project/Cyber/Program.cs
         }
     }
 }

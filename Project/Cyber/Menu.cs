@@ -109,5 +109,15 @@ namespace Tiệm_nét
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
